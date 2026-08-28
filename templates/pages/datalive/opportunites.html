@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Opportunité - Elixir Group{% endblock title %}
+
+{% block contents %}
+    <section class="actualites opportunities-page">
+        <h1>Quelles sont les opportunités qui vous sont destinées en rejoignant Elixir Group?</h1>
+        <p>Avantages</p>
+        {% if opportunites %}
+            <div class="boxs datalive-grid">
+                {% for opportunite in opportunites %}
+                    <article class="box opportunity-card">
+                        <time datetime="{{ opportunite.date|date:'Y-m-d' }}">{{ opportunite.date|date:'d F Y' }}</time>
+                        <h2>{{ opportunite.titre }}</h2>
+                        <p>{{ opportunite.description }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-state"><i class="fa-solid fa-briefcase"></i><h2>Aucune opportunité publiée pour le moment.</h2><p>Les prochaines opportunités apparaîtront ici.</p></div>
+        {% endif %}
+    </section>
+{% endblock contents %}

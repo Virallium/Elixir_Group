@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Nos offres - Elixir Group{% endblock title %}
+
+{% block contents %}
+    {% if request.user.is_authenticated %}
+        <div class="page-shell offers-page"><section class="page-hero page-hero-yellow"><p class="eyebrow">Nos offres</p><h1>Choisir le bon niveau d'accompagnement.</h1><p>Des formats souples pour répondre à un besoin ponctuel comme à une transformation de fond.</p></section><section class="content-section"><div class="boxs offer-grid"><article class="box offer-card"><p class="eyebrow">Diagnostic</p><h2>Éclairer</h2><p>Un regard externe pour comprendre votre situation, identifier les priorités et décider des prochaines étapes.</p><a href="{% url 'contact' %}">En parler <i class="fa-solid fa-arrow-right"></i></a></article><article class="box offer-card featured"><p class="eyebrow">Projet</p><h2>Construire</h2><p>Une équipe dédiée pour concevoir et déployer une solution adaptée à vos usages et à vos ressources.</p><a href="{% url 'contact' %}">Démarrer un projet <i class="fa-solid fa-arrow-right"></i></a></article><article class="box offer-card"><p class="eyebrow">Partenariat</p><h2>Accélérer</h2><p>Un accompagnement continu pour structurer la croissance, les collaborations et la mesure de l'impact.</p><a href="{% url 'contact' %}">Devenir partenaire <i class="fa-solid fa-arrow-right"></i></a></article></div></section></div>
+        <div class="services">
+            <p><strong>Services</strong></p>
+            <h3>des services adaptés à votre personne,à votre emploi du temps</h3>
+            <div class='boxs'>
+                
+            </div>
+        </div>
+        {% else %}
+            <div class='required_login'>
+                <p><span class="Icon"></span>Vous dévriez vous connecter pour voir les contenu de cette page</p>
+            </div>
+    {% endif %}
+{% endblock contents %}

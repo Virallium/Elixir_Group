@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Supprimer {{ label }}{% endblock title %}
+
+{% block contents %}
+<main class="admin-dashboard">
+    <section class="admin-panel" style="max-width: 600px; margin: 0 auto;">
+        <p class="eyebrow">Administration</p>
+        <h1>Supprimer {{ label }}</h1>
+        <p>Voulez-vous vraiment supprimer « {{ object }} » ?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Confirmer la suppression</button>
+            <a href="{% url 'dashboard' %}">Annuler</a>
+        </form>
+    </section>
+</main>
+{% endblock contents %}

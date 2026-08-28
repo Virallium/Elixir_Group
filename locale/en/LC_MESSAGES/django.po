@@ -1,0 +1,341 @@
+# Translation catalog for Elixir Group.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elixir Group\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Accueil - Elixir Group"
+msgstr "Home - Elixir Group"
+
+msgid "Accueil"
+msgstr "Home"
+
+msgid "Actualité"
+msgstr "News"
+
+msgid "DataLive||Actualité"
+msgstr "DataLive||News"
+
+msgid "Analyses"
+msgstr "Analysis"
+
+msgid "Articles"
+msgstr "Articles"
+
+msgid "Evenements"
+msgstr "Events"
+
+msgid "Interviews"
+msgstr "Interviews"
+
+msgid "Opportunités"
+msgstr "Opportunities"
+
+msgid "Publications"
+msgstr "Publications"
+
+msgid "Apropos"
+msgstr "About us"
+
+msgid "Ecosystème"
+msgstr "Ecosystem"
+
+msgid "Domaines d'intervention"
+msgstr "Areas of focus"
+
+msgid "Nos solutions"
+msgstr "Our solutions"
+
+msgid "Nos offres"
+msgstr "Our services"
+
+msgid "Nos partenaires"
+msgstr "Our partners"
+
+msgid "Projets et réalisations"
+msgstr "Projects and achievements"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Carrière"
+msgstr "Careers"
+
+msgid "Se connecter"
+msgstr "Log in"
+
+msgid "Déconnexion"
+msgstr "Log out"
+
+msgid "Elixir Group"
+msgstr "Elixir Group"
+
+msgid "L'intelligence, l'innovation et les solutions <br>au services des territoires africains"
+msgstr "Intelligence, innovation and solutions <br>for African territories"
+
+msgid "Elixir Group est un écosystème africain qui réunit expertise, données, technologies et investissements pour concevoir des solutions concrètes à fort impact."
+msgstr "Elixir Group is an African ecosystem bringing together expertise, data, technology and investment to design practical, high-impact solutions."
+
+msgid "Découvrir Elixir Group"
+msgstr "Discover Elixir Group"
+
+msgid "Explorer nos solutions"
+msgstr "Explore our solutions"
+
+msgid "Un écosystème de pôles spécialisés"
+msgstr "An ecosystem of specialized divisions"
+
+msgid "Des expertises connectées pour faire émerger de nouvelles possibilités"
+msgstr "Connected expertise that unlocks new possibilities"
+
+msgid "De la donnée à la technologie, de l'investissement à l'accompagnement stratégique, nos pôles réunissent les compétences qui transforment les idées en solutions utiles."
+msgstr "From data and technology to investment and strategic support, our divisions bring together the skills that turn ideas into useful solutions."
+
+msgid "Découvrir nos pôles"
+msgstr "Discover our divisions"
+
+msgid "Voir notre écosystème"
+msgstr "Explore our ecosystem"
+
+msgid "DataLive"
+msgstr "DataLive"
+
+msgid "Lire les signaux du présent <br>pour décider avec justesse"
+msgstr "Read today's signals <br>to make better decisions"
+
+msgid "Nous transformons les données en informations claires, en analyses pertinentes et en opportunités concrètes pour mieux comprendre les marchés et les territoires africains."
+msgstr "We turn data into clear information, relevant analysis and concrete opportunities to better understand African markets and territories."
+
+msgid "Explorer DataLive"
+msgstr "Explore DataLive"
+
+msgid "Consulter nos analyses"
+msgstr "View our analysis"
+
+msgid "Un impact qui se mesure sur le terrain"
+msgstr "Impact that can be measured on the ground"
+
+msgid "Imaginer aujourd'hui"
+msgstr "Imagine today"
+
+msgid "les territoires de demain"
+msgstr "the territories of tomorrow"
+
+msgid "Elixir Group accompagne les organisations qui veulent passer à l'action avec des projets responsables, des outils adaptés et une ambition commune : créer une croissance durable."
+msgstr "Elixir Group supports organizations ready to take action through responsible projects, adapted tools and a shared ambition: creating sustainable growth."
+
+msgid "Découvrir nos projets"
+msgstr "Discover our projects"
+
+msgid "Construire avec nous"
+msgstr "Build with us"
+
+msgid "Elixir Group en quelques mots"
+msgstr "Elixir Group in a few words"
+
+msgid "Un groupe. Plusieurs expertise. Une même ambition."
+msgstr "One group. Many areas of expertise. One shared ambition."
+
+msgid "Elixir Group est une structure faîtière qui fédère plusieurs pôles spécialisés autour d'une ambition commune: celle de transformer les données, les technologies et les idéesw en solutions à impact <br> <span>Notre écosystème intervient auprès des entreprises, instituitions, organisations et porteurs de projets pour repondre aux enjeux de developpement, d'innovation et de transformation des territoirres"
+msgstr "Elixir Group is an umbrella organization bringing together specialized divisions around a shared ambition: transforming data, technology and ideas into impactful solutions. <br> <span>Our ecosystem supports companies, institutions, organizations and project leaders in addressing development, innovation and territorial transformation challenges."
+
+msgid "En savoir plus sur Elixir Group"
+msgstr "Learn more about Elixir Group"
+
+msgid "Notre Mission"
+msgstr "Our mission"
+
+msgid "Développer des solutions innovantes permettantsaux institutions,entreprises, organisations et citoyens de mieux comprendre, gérer et développer leurs territoires , leurs organisations et leurs activités."
+msgstr "Develop innovative solutions that help institutions, businesses, organizations and citizens better understand, manage and develop their territories, organizations and activities."
+
+msgid "Nos valeurs"
+msgstr "Our values"
+
+msgid "Excellence"
+msgstr "Excellence"
+
+msgid "Innovation"
+msgstr "Innovation"
+
+msgid "Intégrité"
+msgstr "Integrity"
+
+msgid "Responsabilité"
+msgstr "Responsibility"
+
+msgid "Collaboration"
+msgstr "Collaboration"
+
+msgid "Professionalisme"
+msgstr "Professionalism"
+
+msgid "Esprit d'équipe"
+msgstr "Team spirit"
+
+msgid "Transparence"
+msgstr "Transparency"
+
+msgid "Création de valeur"
+msgstr "Value creation"
+
+msgid "Développement durable"
+msgstr "Sustainable development"
+
+msgid "Nos grands domaines d'intervention"
+msgstr "Our key areas of focus"
+
+msgid "Intelligence Territoriale"
+msgstr "Territorial intelligence"
+
+msgid "Comprendre, analyser et valoriser les territoires grâce à la donnée."
+msgstr "Understand, analyze and enhance territories through data."
+
+msgid "Data & Technologies"
+msgstr "Data & technology"
+
+msgid "Transformer les données et les technologies en solutions opérationnelles."
+msgstr "Turn data and technology into operational solutions."
+
+msgid "Media & Information"
+msgstr "Media & information"
+
+msgid "Produire, diffuser et valoriser l'information."
+msgstr "Produce, share and enhance information."
+
+msgid "Formation & connexion"
+msgstr "Training & connection"
+
+msgid "Développer les compétence et connecter les acteurs."
+msgstr "Develop skills and connect stakeholders."
+
+msgid "Solutions opérationnelles"
+msgstr "Operational solutions"
+
+msgid "Transformer les projets en réalisations concrètes."
+msgstr "Turn projects into concrete achievements."
+
+msgid "Investissement & conseil"
+msgstr "Investment & advisory"
+
+msgid "Accompagner les entrepriser, projets et opportunités d'investissements"
+msgstr "Support businesses, projects and investment opportunities."
+
+msgid "Elixir en chiffres"
+msgstr "Elixir in numbers"
+
+msgid "Projets réalisés"
+msgstr "Completed projects"
+
+msgid "Partenaires"
+msgstr "Partners"
+
+msgid "Experts"
+msgstr "Experts"
+
+msgid "Territoires couverts"
+msgstr "Territories covered"
+
+msgid "Pôles spécialisés"
+msgstr "Specialized divisions"
+
+msgid "Clients accompagnés"
+msgstr "Clients supported"
+
+msgid "Nous construisons des collaborations durables avec celles et ceux qui partagent notre ambition pour des territoires africains plus résilients et plus innovants."
+msgstr "We build lasting partnerships with those who share our ambition for more resilient and innovative African territories."
+
+msgid "Institutions publiques"
+msgstr "Public institutions"
+
+msgid "Nous appuyons les décideurs avec des données fiables et des outils d'aide à la décision."
+msgstr "We support decision-makers with reliable data and decision-making tools."
+
+msgid "Entreprises et investisseurs"
+msgstr "Businesses and investors"
+
+msgid "Nous révélons les opportunités et accompagnons les projets vers une croissance responsable."
+msgstr "We uncover opportunities and guide projects towards responsible growth."
+
+msgid "Organisations et communautés"
+msgstr "Organizations and communities"
+
+msgid "Nous rapprochons les expertises, les talents et les besoins pour créer un impact durable."
+msgstr "We bring expertise, talent and needs together to create lasting impact."
+
+msgid "Une équipe engagée pour transformer les idées en impact"
+msgstr "A committed team turning ideas into impact"
+
+msgid "Notre comité réunit des profils complémentaires en stratégie, données, technologie et développement territorial."
+msgstr "Our team brings together complementary profiles in strategy, data, technology and territorial development."
+
+msgid "Vision stratégique"
+msgstr "Strategic vision"
+
+msgid "Nous donnons une direction claire aux projets et relions chaque décision à un résultat concret."
+msgstr "We give projects a clear direction and connect every decision to a tangible outcome."
+
+msgid "Expertise de terrain"
+msgstr "Field expertise"
+
+msgid "Nous concevons des solutions adaptées aux réalités locales et aux usages de leurs bénéficiaires."
+msgstr "We design solutions adapted to local realities and the needs of their beneficiaries."
+
+msgid "Culture de collaboration"
+msgstr "A culture of collaboration"
+
+msgid "Nous faisons circuler les compétences pour faire avancer les projets avec méthode et confiance."
+msgstr "We share skills to move projects forward with method and confidence."
+
+msgid "Construisons les territoires de demain"
+msgstr "Let's build the territories of tomorrow"
+
+msgid "Vous portez une idée, une expertise ou un projet à fort potentiel ? Rejoignez un écosystème qui transforme les défis africains en solutions utiles, inclusives et durables."
+msgstr "Do you have an idea, expertise or high-potential project? Join an ecosystem that turns African challenges into useful, inclusive and sustainable solutions."
+
+msgid "Découvrir nos opportunités"
+msgstr "Discover our opportunities"
+
+msgid "Liens rapides"
+msgstr "Quick links"
+
+msgid "À propos"
+msgstr "About us"
+
+msgid "Nos politiques"
+msgstr "Our policies"
+
+msgid "Mentions légales"
+msgstr "Legal notice"
+
+msgid "Politiques de confidentialité"
+msgstr "Privacy policy"
+
+msgid "Conditions générales"
+msgstr "Terms and conditions"
+
+msgid "Politique de protection des données"
+msgstr "Data protection policy"
+
+msgid "Adresse du siège"
+msgstr "Head office address"
+
+msgid "Identification Légale RCCM"
+msgstr "Legal RCCM registration"
+
+msgid "Page introuvable - Elixir Group"
+msgstr "Page not found - Elixir Group"
+
+msgid "Cette page a quitté son territoire"
+msgstr "This page has left its territory"
+
+msgid "L'adresse demandée est introuvable ou n'est plus disponible. Repartons depuis un point de départ clair."
+msgstr "The requested address could not be found or is no longer available. Let's start again from a clear point."
+
+msgid "Retour à l'accueil"
+msgstr "Back to home"
+
+msgid "Nous contacter"
+msgstr "Contact us"

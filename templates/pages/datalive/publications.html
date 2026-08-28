@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Publications - Elixir Group{% endblock title %}
+{% block contents %}
+<div class="page-shell publications-page">
+	<section class="page-hero page-hero-blue"><p class="eyebrow">DataLive · Publications</p><h1>Des ressources pour mieux décider.</h1><p>Guides, notes et contenus de référence sur les territoires africains.</p></section>
+	<section class="content-section">
+		{% if publications %}
+			<div class="boxs datalive-grid">
+				{% for publication in publications %}
+					<article class="box editorial-card">
+						{% if publication.photo %}<img src="{{ publication.photo.url }}" alt="{{ publication.titre }}">{% else %}<i class="fa-solid fa-file-lines"></i>{% endif %}
+						<time datetime="{{ publication.date|date:'Y-m-d' }}">{{ publication.date|date:'d F Y' }}</time>
+						<h2>{{ publication.titre }}</h2>
+						<p>{{ publication.description }}</p>
+					</article>
+				{% endfor %}
+			</div>
+		{% else %}
+			<div class="empty-state"><i class="fa-solid fa-file-lines"></i><h2>Aucune publication disponible pour le moment.</h2><p>Les prochaines ressources apparaîtront ici.</p></div>
+		{% endif %}
+	</section>
+</div>
+{% endblock contents %}

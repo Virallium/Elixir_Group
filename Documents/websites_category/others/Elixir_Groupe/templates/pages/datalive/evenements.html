@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Événements - Elixir Group{% endblock title %}
+
+{% block contents %}
+    <div class="page-shell datalive-page">
+        <section class="page-hero page-hero-blue">
+            <p class="eyebrow">DataLive · Agenda</p>
+            <h1>Les événements qui réunissent les idées et les acteurs.</h1>
+            <p>Retrouvez les rencontres, ateliers et temps forts organisés par Elixir Group.</p>
+        </section>
+        <section class="content-section">
+            {% if evenements %}
+                <div class="boxs datalive-grid">
+                    {% for evenement in evenements %}
+                        <article class="box event-card">
+                            <time datetime="{{ evenement.date|date:'Y-m-d' }}">{{ evenement.date|date:'d F Y' }}</time>
+                            <h2>{{ evenement.titre }}</h2>
+                            <p>{{ evenement.description }}</p>
+                            <p class="event-speaker"><i class="fa-solid fa-user"></i> {{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}<br><span>{{ evenement.idInt.specialites }}</span></p>
+                            <a href="{% url 'evenements_detail' evenement.id %}">Voir Plus</a>
+                        </article>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state"><i class="fa-regular fa-calendar"></i><h2>Aucun événement publié pour le moment.</h2><p>Les prochains rendez-vous apparaîtront ici dès leur ajout dans l'administration.</p></div>
+            {% endif %}
+        </section>
+    </div>
+{% endblock contents %}

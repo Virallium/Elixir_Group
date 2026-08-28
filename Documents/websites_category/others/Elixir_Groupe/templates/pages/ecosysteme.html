@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Notre écosystème - Elixir Group{% endblock title %}
+
+{% block contents %}
+<div class="page-shell ecosystem-page">
+	{% if request.user.is_authenticated %}
+        <section class="page-hero page-hero-blue">
+            <p class="eyebrow">Notre écosystème</p>
+            <h1>Des pôles connectés pour des réponses qui avancent.</h1>
+            <p>Chaque expertise garde sa profondeur, tout en travaillant avec les autres pour répondre aux enjeux complexes.</p>
+        </section>
+        <section class="content-section">
+            <div class="section-heading"><p class="eyebrow">Nos pôles</p><h2>Une chaîne de valeur pensée pour passer de l'idée au résultat.</h2></div>
+            <div class="boxs ecosystem-grid">
+                <article class="box"><span class="number">01</span><h3>Intelligence territoiriale</h3><p><span>Elixir Data Solutions Technologie & numérique web, mobile, IA, bases de données, SIG web</span>Des données et analyses pour comprendre les marchés, les territoires et les signaux émergents.</p></article>
+                <article class="box"><span class="number">02</span><h3>Data & Technologies</h3><p><span>Elixir Data / SED Intelligence territorial SIG, cartographie, collecte analyse territoriale</span>Des outils numériques conçus pour simplifier les décisions et améliorer les opérations.</p></article>
+                <article class="box"><span class="number">03</span><h3>Formation & connexion</h3><p><span>Elixir ConnectConnexion & compétences Formations, événements, coworking.</span>Un accompagnement stratégique pour clarifier les priorités et structurer l'action.</p></article>
+                <article class="box"><span class="number">04</span><h3>Valoriasation immobilière</h3><span>Elixir Data Live Média & visibilité, informations, contenus, valorisatio, visibilité</span><p>Une lecture des opportunités et des partenariats pour soutenir les projets prometteurs.</p></article>
+                <article class="box"><span class="number">05</span><h3>Investissement & conseil</h3><span>H&M Solutions opérationnelles construction, transport, logistique, D-investInvestissement & conseil Projets, PME, stratégie, investissements</span><p>Une lecture des opportunités et des partenariats pour soutenir les projets prometteurs.</p></article>
+            </div>
+            
+        </section>
+        {% else %}
+            <div class='required_login'>
+                <p><span class="Icon"></span>Vous dévriez vous connecter pour voir les contenu de cette page</p>
+            </div>
+    {% endif %}
+</div>
+{% endblock contents %}

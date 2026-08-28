@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Interviews - Elixir Group{% endblock title %}
+
+{% block contents %}
+<div class="page-shell datalive-page">
+	<section class="page-hero"><p class="eyebrow">DataLive · Interviews</p><h1>Les voix qui font avancer les territoires.</h1><p>Découvrez les échanges et les perspectives des intervenants de notre écosystème.</p></section>
+	<section class="content-section">
+		{% if interviews %}
+			<div class="boxs datalive-grid">
+				{% for interview in interviews %}
+					<article class="box interview-card"><p class="project-tag">Interview</p><h2>{{ interview.evenement.titre }}</h2><p>{{ interview.evenement.description }}</p><p class="event-speaker"><i class="fa-solid fa-microphone"></i> {{ interview.evenement.idInt.prenom }} {{ interview.evenement.idInt.nom }}<br><span>{{ interview.evenement.idInt.specialites }}</span></p></article>
+				{% endfor %}
+			</div>
+		{% else %}
+			<div class="empty-state"><i class="fa-solid fa-microphone"></i><h2>Aucune interview publiée pour le moment.</h2><p>Les prochaines conversations apparaîtront ici.</p></div>
+		{% endif %}
+	</section>
+</div>
+{% endblock contents %}

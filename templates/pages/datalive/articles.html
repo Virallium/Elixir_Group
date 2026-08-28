@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Articles - Elixir Group{% endblock title %}
+
+{% block contents %}
+    <div class="page-shell datalive-page">
+        <section class="page-hero page-hero-blue">
+            <p class="eyebrow">DataLive · Actualités</p>
+            <h1>Les actualités d'Elixir Group.</h1>
+            <p>Retrouvez nos dernières informations, analyses et publications.</p>
+        </section>
+        <section class="content-section">
+            {% if actualites %}
+                <div class="boxs datalive-grid">
+                    {% for actualite in actualites %}
+                        <article class="box editorial-card">
+                            <time datetime="{{ actualite.date_publiee|date:'Y-m-d' }}">{{ actualite.date_publiee|date:'d F Y' }}</time>
+                            <h2>{{ actualite.titre }}</h2>
+                            <p>{{ actualite.description }}</p>
+                            {% if actualite.source %}<a href="{{ actualite.source }}" target="_blank" rel="noopener">Lire la source</a>{% endif %}
+                        </article>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state"><i class="fa-regular fa-newspaper"></i><h2>Aucune actualité publiée pour le moment.</h2><p>Les prochaines actualités apparaîtront ici.</p></div>
+            {% endif %}
+        </section>
+    </div>
+{% endblock contents %}

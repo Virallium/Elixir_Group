@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Analyses - Elixir Group{% endblock title %}
+
+{% block contents %}
+    <section class="actualites analyses-page">
+        {% if request.user.is_authenticated %}
+            <h1>Suivez les détences des nos analyses chaques jours sans aucune intérruption.</h1>
+            <p>Informez-vous toujours ici en avance</p>
+            <a href="{% url 'home' %}">Elixir Group</a>
+            <div class="boxs">
+                
+            </div>
+            {% else %}
+                <div class='required_login'>
+                    <p><span class="Icon"></span>Vous dévriez vous connecter pour voir les contenu de cette page</p>
+                </div>
+        {% endif %}
+    </section>
+{% endblock contents %}

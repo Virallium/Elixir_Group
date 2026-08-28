@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inscription - Elixir Group{% endblock title %}
+
+{% block style %}
+	<link rel="stylesheet" href="{% static 'style/style.css' %}">
+	<style>
+		.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 120px 24px 60px; background: linear-gradient(135deg, #f4f7fb 0%, #e5edf8 100%); }
+		.auth-card { width: min(100%, 460px); padding: 42px; background: #fff; border-top: 5px solid #1d61d8; box-shadow: 0 18px 50px rgba(24, 51, 89, .14); }
+		.auth-card h1 { margin: 0 0 10px; color: #15243a; font-family: Poppins, sans-serif; font-size: 2rem; }
+		.auth-card > p { margin: 0 0 28px; color: #68778d; }
+		.auth-field { display: grid; gap: 8px; margin-bottom: 20px; }
+		.auth-field label { color: #24354d; font-weight: 600; }
+		.auth-field input { width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #cbd5e1; border-radius: 4px; font: inherit; }
+		.auth-field input:focus { outline: 3px solid rgba(29, 97, 216, .18); border-color: #1d61d8; }
+		.auth-errors, .field-error { color: #b42318; font-size: .9rem; }
+		.auth-errors { margin-bottom: 18px; }
+		.auth-submit { width: 100%; padding: 14px; border: 0; border-radius: 4px; background: #1d61d8; color: #fff; cursor: pointer; font: 600 1rem Poppins, sans-serif; }
+		.auth-submit:hover { background: #174eaf; }
+		.auth-switch { margin-top: 24px !important; text-align: center; }
+		.auth-switch a { color: #1d61d8; font-weight: 600; }
+	</style>
+{% endblock style %}
+
+{% block animation_loading %}{% endblock animation_loading %}
+{% block header %}{% endblock header %}
+
+{% block contents %}
+<main class="auth-page">
+	<section class="auth-card" aria-labelledby="register-title">
+		<h1 id="register-title">Creer un compte</h1>
+		<p>Rejoignez l espace Elixir Group.</p>
+
+		{% if form.non_field_errors %}
+			<div class="auth-errors" role="alert">{{ form.non_field_errors }}</div>
+		{% endif %}
+
+		<form method="post" novalidate>
+			{% csrf_token %}
+			<div class="auth-field">
+				{{ form.username.label_tag }}
+				{{ form.username }}
+				{% for error in form.username.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
+			</div>
+			<div class="auth-field">
+				{{ form.name.label_tag }}
+				{{ form.name }}
+				{% for error in form.name.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
+			</div>
+			<div class="auth-field">
+				{{ form.password.label_tag }}
+				{{ form.password }}
+				{% for error in form.password.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
+			</div>
+			<button class="auth-submit" type="submit">Creer mon compte</button>
+		</form>
+		<p class="auth-switch">Deja inscrit ? <a href="{% url 'login' %}">Se connecter</a></p>
+	</section>
+</main>
+{% endblock contents %}

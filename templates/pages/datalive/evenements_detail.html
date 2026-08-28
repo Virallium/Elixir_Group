@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}{{ evenement.titre }} - Elixir Group{% endblock title %}
+
+{% block contents %}
+<div class="page-shell datalive-page">
+	<section class="page-hero page-hero-blue">
+		<p class="eyebrow">DataLive · Agenda</p>
+		<h1>{{ evenement.titre }}</h1>
+		<p><i class="fa-regular fa-calendar"></i> {{ evenement.date|date:'d F Y' }}</p>
+	</section>
+
+	<section class="content-section">
+		<div class="boxs datalive-grid">
+			<article class="box event-card">
+				<p class="project-tag">Présentation</p>
+				<h2>À propos de cet événement</h2>
+				<p>{{ evenement.description }}</p>
+			</article>
+
+			<article class="box event-card">
+				<p class="project-tag">Intervenant</p>
+				{% if evenement.idInt.photo %}
+					<img src="{{ evenement.idInt.photo.url }}" alt="{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}">
+				{% endif %}
+				<h2>{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}</h2>
+				<p>{{ evenement.idInt.specialites|default:'Intervenant Elixir Group' }}</p>
+			</article>
+		</div>
+
+		{% if interviews %}
+			<section class="content-section">
+				<p class="eyebrow">Contenu associé</p>
+				<h2>Interviews liées</h2>
+				<div class="boxs datalive-grid">
+					{% for interview in interviews %}
+						<article class="box interview-card">
+							<i class="fa-solid fa-microphone"></i>
+							<h3>Interview de l'événement</h3>
+							<p>Retrouvez les échanges liés à cet événement.</p>
+						</article>
+					{% endfor %}
+				</div>
+			</section>
+		{% endif %}
+
+		{% if partenaires %}
+			<section class="content-section">
+				<p class="eyebrow">Écosystème</p>
+				<h2>Partenaires associés</h2>
+				<div class="boxs datalive-grid">
+					{% for partenaire in partenaires %}
+						<article class="box editorial-card">
+							{% if partenaire.logo %}<img src="{{ partenaire.logo.url }}" alt="Logo partenaire">{% endif %}
+							<h3>Partenaire #{{ partenaire.idPart }}</h3>
+						</article>
+					{% endfor %}
+				</div>
+			</section>
+		{% endif %}
+
+		<a href="{% url 'evenements' %}">Retour aux événements</a>
+	</section>
+</div>
+{% endblock contents %}

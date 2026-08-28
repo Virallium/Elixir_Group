@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Espace personnel - Elixir Group{% endblock title %}
+{% block animation_loading %}{% endblock animation_loading %}
+{% block header %}{% endblock header %}
+
+{% block contents %}
+<main class="staff-login-page">
+	<section class="staff-login-shell" aria-labelledby="staff-login-title">
+		<div class="staff-login-intro">
+			<a class="staff-brand" href="{% url 'home' %}">
+				<img src="{% static 'photos/logo_transparent.png' %}" alt="Elixir Group">
+				<span>Elixir Group</span>
+			</a>
+			<p class="eyebrow">Accès sécurisé</p>
+			<h1 id="staff-login-title">L'espace de travail de votre équipe.</h1>
+			<p class="staff-login-description">Retrouvez vos outils, vos projets et les informations utiles à votre mission au sein d'Elixir Group.</p>
+			<div class="staff-login-points">
+				<span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Connexion protégée</span>
+				<span><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Pilotage des activités</span>
+			</div>
+		</div>
+		<div class="staff-login-form-wrap">
+			<div class="staff-login-heading">
+				<span class="staff-login-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+				<div>
+					<p class="eyebrow">Espace personnel</p>
+					<h2>Bienvenue</h2>
+				</div>
+			</div>
+			<p class="staff-login-note">Connectez-vous avec vos identifiants administrateur.</p>
+
+			{% if messages %}
+				{% for message in messages %}
+					<div class="auth-message {{ message.tags }}" role="alert">{{ message }}</div>
+				{% endfor %}
+			{% endif %}
+			{% if form.non_field_errors %}
+				<div class="auth-errors" role="alert">{{ form.non_field_errors }}</div>
+			{% endif %}
+
+			<form method="post" class="staff-login-form" novalidate>
+				{% csrf_token %}
+				<div class="auth-field">
+					{{ form.username.label_tag }}
+					{{ form.username }}
+					{% for error in form.username.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
+				</div>
+				<div class="auth-field">
+					{{ form.password.label_tag }}
+					{{ form.password }}
+					{% for error in form.password.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
+				</div>
+				<button class="auth-submit" type="submit"><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Ouvrir ma session</button>
+			</form>
+			<a class="staff-back-link" href="{% url 'login' %}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Retour à la connexion générale</a>
+		</div>
+	</section>
+</main>
+{% endblock contents %}

@@ -45,7 +45,19 @@ def interviews(request):
     return render(request, 'pages/datalive/interviews.html', {'interviews': interviews})
 
 def analyses(request):
-    return render(request, 'pages/datalive/analyses.html')
+    analyses = [
+        {
+            'titre': 'Cartographie des opportunités urbaines',
+            'description': 'Une lecture des évolutions démographiques, des infrastructures et des dynamiques économiques qui structurent les territoires en plein essor.',
+            'lien': '#',
+        },
+        {
+            'titre': 'Les dynamiques du marché africain',
+            'description': 'Des tendances utiles pour mieux comprendre les mutations des secteurs clés, les habitudes de consommation et les leviers d’investissement.',
+            'lien': '#',
+        },
+    ]
+    return render(request, 'pages/datalive/analyses.html', {'analyses': analyses})
 
 def articles(request):
     actualites = Actualites.objects.all().order_by('-date_publiee')

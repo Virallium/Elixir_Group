@@ -3,18 +3,40 @@
 {% block title %}Analyses - Elixir Group{% endblock title %}
 
 {% block contents %}
-    <section class="actualites analyses-page">
-        {% if request.user.is_authenticated %}
-            <h1>Suivez les détences des nos analyses chaques jours sans aucune intérruption.</h1>
-            <p>Informez-vous toujours ici en avance</p>
-            <a href="{% url 'home' %}">Elixir Group</a>
-            <div class="boxs">
-                
-            </div>
+    <div class="page-shell datalive-page">
+        <section class="page-hero page-hero-blue">
+            <p class="eyebrow">DataLive · Analyses</p>
+            <h1>Des analyses pour lire les territoires avec plus de clarté.</h1>
+            <p>Des regards croisés sur les marchés, les tendances et les mutations qui façonnent les territoires africains.</p>
+        </section>
+
+        <section class="content-section">
+            {% if request.user.is_authenticated %}
+                {% if analyses %}
+                    <div class="boxs datalive-grid">
+                        {% for analyse in analyses %}
+                            <article class="box editorial-card">
+                                <p class="project-tag">Analyse</p>
+                                <h2>{{ analyse.titre }}</h2>
+                                <p>{{ analyse.description }}</p>
+                                {% if analyse.lien and analyse.lien != '#' %}
+                                    <a href="{{ analyse.lien }}" target="_blank" rel="noopener">Lire l'analyse</a>
+                                {% endif %}
+                            </article>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="empty-state">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h2>Aucune analyse disponible pour le moment.</h2>
+                        <p>Les prochaines analyses apparaîtront ici.</p>
+                    </div>
+                {% endif %}
             {% else %}
-                <div class='required_login'>
-                    <p><span class="Icon"></span>Vous dévriez vous connecter pour voir les contenu de cette page</p>
+                <div class="required_login">
+                    <p><span class="Icon"></span>Vous devez vous connecter pour voir le contenu de cette page.</p>
                 </div>
-        {% endif %}
-    </section>
+            {% endif %}
+        </section>
+    </div>
 {% endblock contents %}

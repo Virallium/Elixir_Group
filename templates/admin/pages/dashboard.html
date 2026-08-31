@@ -1,107 +1,282 @@
 {% extends "base.html" %}
-{% block title %}Administration Interface{% endblock title %}
+{% block title %}Administration Interface - Elixir Group{% endblock title %}
 
 {% block contents %}
 <main class="admin-dashboard">
-	<section class="admin-hero">
-		<div>
-			<p class="eyebrow">Espace de pilotage</p>
-			<h1>Bonjour, {{ user.first_name }} {{ user.last_name }}</h1>
-			<p>Suivez les contenus, les événements et les personnes qui font vivre votre écosystème.</p>
-		</div>
-		{% comment %} <a class="admin-primary-action" href="{% url 'admin:index' %}"><i class="fa-solid fa-sliders"></i> Ouvrir l'administration</a> {% endcomment %}
-	</section>
+    <section class="admin-hero">
+        <div>
+            <p class="eyebrow">Espace de pilotage</p>
+            <h1>Bonjour, {{ user.first_name }} {{ user.last_name }}</h1>
+            <p>Suivez les contenus, les événements et les personnes qui font vivre votre écosystème.</p>
+        </div>
+    </section>
 
-	<section class="admin-stats" aria-label="Résumé des contenus">
-		<article><span class="admin-stat-icon"><i class="fa-solid fa-calendar-days"></i></span><div><strong>{{ stats.evenements }}</strong><span>Événements</span></div></article>
-		<article><span class="admin-stat-icon"><i class="fa-solid fa-microphone"></i></span><div><strong>{{ stats.interviews }}</strong><span>Interviews</span></div></article>
-		<article><span class="admin-stat-icon"><i class="fa-solid fa-users"></i></span><div><strong>{{ stats.intervenants }}</strong><span>Intervenants</span></div></article>
-		<article><span class="admin-stat-icon"><i class="fa-solid fa-handshake"></i></span><div><strong>{{ stats.partenaires }}</strong><span>Partenaires</span></div></article>
-	</section>
+    <section class="admin-stats" aria-label="Résumé des contenus">
+        <article class="admin-stat-card">
+            <span class="admin-stat-icon"><i class="fa-solid fa-calendar-days"></i></span>
+            <div><strong>{{ stats.evenements }}</strong><span>Événements</span></div>
+        </article>
+        <article class="admin-stat-card">
+            <span class="admin-stat-icon"><i class="fa-solid fa-microphone"></i></span>
+            <div><strong>{{ stats.interviews }}</strong><span>Interviews</span></div>
+        </article>
+        <article class="admin-stat-card">
+            <span class="admin-stat-icon"><i class="fa-solid fa-users"></i></span>
+            <div><strong>{{ stats.intervenants }}</strong><span>Intervenants</span></div>
+        </article>
+        <article class="admin-stat-card">
+            <span class="admin-stat-icon"><i class="fa-solid fa-handshake"></i></span>
+            <div><strong>{{ stats.partenaires }}</strong><span>Partenaires</span></div>
+        </article>
+    </section>
 
-	<section class="admin-content-grid">
-		<div class="admin-panel admin-events-panel">
-			<div class="admin-panel-heading"><div><p class="eyebrow">Agenda</p><h2>Événements récents</h2></div><span><a href="{% url 'Aj-Evenements' %}">Ajouter</a> <a href="{% url 'evenements' %}">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></div>
-			{% if evenements %}
-				<div class="admin-event-list">
-					{% for evenement in evenements|slice:':6' %}
-					<article class="admin-event-row"><time datetime="{{ evenement.date|date:'Y-m-d' }}"><strong>{{ evenement.date|date:'d' }}</strong><span>{{ evenement.date|date:'M Y' }}</span></time><div><h3>{{ evenement.titre }}</h3><p>{{ evenement.description|truncatechars:110 }}</p><small><i class="fa-solid fa-user"></i> {{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}</small></div></article>
-					<div class="crud" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); place-items:center; gap:1rem;">
-						<a href="{% url 'Aj-Evenements' %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:4px;" >Ajouter</a>
-						<a href="{% url 'update-item' 'evenement' evenement.pk %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:1rem;">Modifier</a>
-						<form method="post" action="{% url 'delete-item' 'evenement' evenement.pk %}" style="display:inline;">
-							{% csrf_token %}<button type="submit" style="color:#fff; background:red; padding:.4rem; border:0; border-radius:1rem;">Supprimer</button>
-						</form>
-					</div>
-					{% endfor %}
-				</div>
-			{% else %}<div class="admin-empty"><i class="fa-regular fa-calendar"></i><p>Aucun événement enregistré.</p></div>{% endif %}
-		</div>
+    <section class="admin-content-grid">
+        <!-- Événements Récents -->
+        <div class="admin-panel admin-events-panel">
+            <div class="admin-panel-heading">
+                <div>
+                    <p class="eyebrow">Agenda</p>
+                    <h2>Événements récents</h2>
+                </div>
+                <div class="panel-header-actions">
+                    <a href="{% url 'Aj-Evenements' %}" class="btn-action primary">Ajouter</a>
+                    <a href="{% url 'evenements' %}" class="btn-action link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
 
-		<div class="admin-side-panels">
-			<div class="admin-panel">
+            {% if evenements %}
+                <div class="admin-event-list">
+                    {% for evenement in evenements|slice:':6' %}
+                    <article class="admin-event-row">
+                        <time datetime="{{ evenement.date|date:'Y-m-d' }}">
+                            <strong>{{ evenement.date|date:'d' }}</strong>
+                            <span>{{ evenement.date|date:'M Y' }}</span>
+                        </time>
+                        <div class="event-details">
+                            <h3>{{ evenement.titre }}</h3>
+                            <p>{{ evenement.description|truncatechars:110 }}</p>
+                            <small><i class="fa-solid fa-user"></i> {{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}</small>
+                        </div>
+                        <div class="crud-actions">
+                            <a href="{% url 'update-item' 'evenement' evenement.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'evenement' evenement.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="admin-empty">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>Aucun événement enregistré.</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Interviews -->
+        <div class="admin-panel admin-events-panel">
+            <div class="admin-panel-heading">
+                <div>
+                    <p class="eyebrow">Interviews</p>
+                    <h2>Interviews récentes</h2>
+                </div>
+                <div class="panel-header-actions">
+                    <a href="{% url 'Aj-Interviews' %}" class="btn-action primary">Ajouter</a>
+                    <a href="{% url 'interviews' %}" class="btn-action link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            {% if interviews %}
+                <div class="admin-event-list">
+                    {% for interview in interviews|slice:':6' %}
+                    <article class="admin-event-row">
+                        <time datetime="{{ interview.evenement.date|date:'Y-m-d' }}">
+                            <strong>{{ interview.evenement.date|date:'d' }}</strong>
+                            <span>{{ interview.evenement.date|date:'M Y' }}</span>
+                        </time>
+                        <div class="event-details">
+                            <h3>{{ interview.evenement.titre }}</h3>
+                            <p>{{ interview.evenement.description|truncatechars:110 }}</p>
+                            <small><i class="fa-solid fa-microphone"></i> {{ interview.evenement.idInt.prenom }} {{ interview.evenement.idInt.nom }}</small>
+                        </div>
+                        <div class="crud-actions">
+                            <a href="{% url 'update-item' 'interview' interview.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'interview' interview.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="admin-empty">
+                    <i class="fa-solid fa-microphone"></i>
+                    <p>Aucune interview enregistrée.</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Panneaux Latéraux -->
+        <div class="admin-side-panels">
+            <!-- Intervenants -->
+            <div class="admin-panel">
                 <div class="admin-panel-heading">
                     <h2>Intervenants</h2>
                     <span class="admin-count">{{ stats.intervenants }}</span>
                 </div>
                 <ul class="admin-people-list">
                     {% for intervenant in intervenants|slice:':5' %}
-					<li><span class="admin-avatar">{{ intervenant.prenom|first|upper }}{{ intervenant.nom|first|upper }}</span><span><strong>{{ intervenant.prenom }} {{ intervenant.nom }}</strong><small>{{ intervenant.specialites|default:'Expert Elixir' }}</small></span><a href="{% url 'update-item' 'intervenant' intervenant.pk %}">Modifier</a><form method="post" action="{% url 'delete-item' 'intervenant' intervenant.pk %}" style="display:inline;">{% csrf_token %}<button type="submit">Supprimer</button></form></li>{% empty %}
-                    <li class="admin-muted">Aucun intervenant.</li>{% endfor %}
+                    <li>
+                        <span class="admin-avatar">{{ intervenant.prenom|first|upper }}{{ intervenant.nom|first|upper }}</span>
+                        <div class="person-info">
+                            <strong>{{ intervenant.prenom }} {{ intervenant.nom }}</strong>
+                            <small>{{ intervenant.specialites|default:'Expert Elixir' }}</small>
+                        </div>
+                        <div class="crud-actions-inline">
+                            <a href="{% url 'update-item' 'intervenant' intervenant.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'intervenant' intervenant.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="admin-muted">Aucun intervenant.</li>
+                    {% endfor %}
                 </ul>
-				<div class="crud" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); place-items:center; gap:1rem;">
-					<a href="{% url 'Aj-Intervenants' %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:4px;" >Ajouter</a>
-				</div>
+                <div class="panel-footer-action">
+                    <a href="{% url 'Aj-Intervenants' %}" class="btn-action primary block">Ajouter un intervenant</a>
+                </div>
             </div>
-			<div class="admin-panel"><div class="admin-panel-heading"><h2>Partenaires</h2><span class="admin-count">{{ stats.partenaires }}</span></div><ul class="admin-partner-list">{% for partenaire in partenaires|slice:':5' %}<li>{% if partenaire.logo %}<img src="{{ partenaire.logo.url }}" alt="Logo partenaire">{% else %}<span class="admin-logo-placeholder"><i class="fa-solid fa-building"></i></span>{% endif %}<span>Partenaire #{{ partenaire.idPart }}</span><a href="{% url 'update-item' 'partenaire' partenaire.pk %}">Modifier</a><form method="post" action="{% url 'delete-item' 'partenaire' partenaire.pk %}" style="display:inline;">{% csrf_token %}<button type="submit">Supprimer</button></form></li>{% empty %}<li class="admin-muted">Aucun partenaire.</li>{% endfor %}</ul><a href="{% url 'Aj-Partenaires' %}">Ajouter</a></div>
-		</div>
-		<div class="admin-side-panels">
-			<div class="admin-panel">
+
+            <!-- Partenaires -->
+            <div class="admin-panel">
+                <div class="admin-panel-heading">
+                    <h2>Partenaires</h2>
+                    <span class="admin-count">{{ stats.partenaires }}</span>
+                </div>
+                <ul class="admin-partner-list">
+                    {% for partenaire in partenaires|slice:':5' %}
+                    <li>
+                        {% if partenaire.logo %}
+                            <img src="{{ partenaire.logo.url }}" alt="Logo partenaire">
+                        {% else %}
+                            <span class="admin-logo-placeholder"><i class="fa-solid fa-building"></i></span>
+                        {% endif %}
+                        <span class="partner-name">Partenaire #{{ partenaire.idPart }}</span>
+                        <div class="crud-actions-inline">
+                            <a href="{% url 'update-item' 'partenaire' partenaire.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'partenaire' partenaire.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="admin-muted">Aucun partenaire.</li>
+                    {% endfor %}
+                </ul>
+                <div class="panel-footer-action">
+                    <a href="{% url 'Aj-Partenaires' %}" class="btn-action primary block">Ajouter un partenaire</a>
+                </div>
+            </div>
+
+            <!-- Actualités -->
+            <div class="admin-panel">
                 <div class="admin-panel-heading">
                     <h2>Actualités</h2>
                     <span class="admin-count">{{ stats.actualites }}</span>
                 </div>
                 <ul class="admin-people-list">
                     {% for actualite in actualites|slice:':5' %}
-					<li><span class="admin-avatar">{{ actualite.titre|first|upper }}</span><span><strong>{{ actualite.titre }}</strong><small>{{ actualite.description|default:'Aucune description disponible.' }}</small></span><a href="{% url 'update-item' 'actualite' actualite.pk %}">Modifier</a><form method="post" action="{% url 'delete-item' 'actualite' actualite.pk %}" style="display:inline;">{% csrf_token %}<button type="submit">Supprimer</button></form></li>{% empty %}
-                    <li class="admin-muted">Aucune actualité.</li>{% endfor %}
+                    <li>
+                        <span class="admin-avatar">{{ actualite.titre|first|upper }}</span>
+                        <div class="person-info">
+                            <strong>{{ actualite.titre }}</strong>
+                            <small>{{ actualite.description|default:'Aucune description disponible.' }}</small>
+                        </div>
+                        <div class="crud-actions-inline">
+                            <a href="{% url 'update-item' 'actualite' actualite.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'actualite' actualite.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="admin-muted">Aucune actualité.</li>
+                    {% endfor %}
                 </ul>
-				<div class="crud" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); place-items:center; gap:1rem;">
-					<a href="{% url 'Aj-Actualites' %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:4px;" >Ajouter</a>
-				</div>
+                <div class="panel-footer-action">
+                    <a href="{% url 'Aj-Actualites' %}" class="btn-action primary block">Ajouter une actualité</a>
+                </div>
             </div>
-		<div class="admin-side-panels">
-			<div class="admin-panel">
+
+            <!-- Publications -->
+            <div class="admin-panel">
                 <div class="admin-panel-heading">
                     <h2>Publications</h2>
                     <span class="admin-count">{{ stats.publications }}</span>
                 </div>
                 <ul class="admin-people-list">
                     {% for publication in publications|slice:':5' %}
-					<li><span class="admin-avatar">{{ publication.titre|first|upper }}</span><span><strong>{{ publication.titre }}</strong><small>{{ publication.description|default:'Aucune description disponible.' }}</small></span><a href="{% url 'update-item' 'publication' publication.pk %}">Modifier</a><form method="post" action="{% url 'delete-item' 'publication' publication.pk %}" style="display:inline;">{% csrf_token %}<button type="submit">Supprimer</button></form></li>{% empty %}
-                    <li class="admin-muted">Aucune publication.</li>{% endfor %}
+                    <li>
+                        <span class="admin-avatar">{{ publication.titre|first|upper }}</span>
+                        <div class="person-info">
+                            <strong>{{ publication.titre }}</strong>
+                            <small>{{ publication.description|default:'Aucune description disponible.' }}</small>
+                        </div>
+                        <div class="crud-actions-inline">
+                            <a href="{% url 'update-item' 'publication' publication.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'publication' publication.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="admin-muted">Aucune publication.</li>
+                    {% endfor %}
                 </ul>
-				<div class="crud" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); place-items:center; gap:1rem;">
-					<a href="{% url 'Aj-Publications' %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:4px;" >Ajouter</a>
-				</div>
+                <div class="panel-footer-action">
+                    <a href="{% url 'Aj-Publications' %}" class="btn-action primary block">Ajouter une publication</a>
+                </div>
             </div>
-		</div>
-		<div class="admin-side-panels">
-			<div class="admin-panel">
+
+            <!-- Opportunités -->
+            <div class="admin-panel">
                 <div class="admin-panel-heading">
                     <h2>Opportunités</h2>
                     <span class="admin-count">{{ stats.opportunites }}</span>
                 </div>
                 <ul class="admin-people-list">
                     {% for opportunaute in opportunites|slice:':5' %}
-					<li><span class="admin-avatar">{{ opportunaute.titre|first|upper }}</span><span><strong>{{ opportunaute.titre }}</strong><small>{{ opportunaute.description|default:'Aucune description disponible.' }}</small></span><a href="{% url 'update-item' 'opportunite' opportunaute.pk %}">Modifier</a><form method="post" action="{% url 'delete-item' 'opportunite' opportunaute.pk %}" style="display:inline;">{% csrf_token %}<button type="submit">Supprimer</button></form></li>{% empty %}
-                    <li class="admin-muted">Aucune opportunité.</li>{% endfor %}
+                    <li>
+                        <span class="admin-avatar">{{ opportunaute.titre|first|upper }}</span>
+                        <div class="person-info">
+                            <strong>{{ opportunaute.titre }}</strong>
+                            <small>{{ opportunaute.description|default:'Aucune description disponible.' }}</small>
+                        </div>
+                        <div class="crud-actions-inline">
+                            <a href="{% url 'update-item' 'opportunite' opportunaute.pk %}" class="btn-crud edit">Modifier</a>
+                            <form method="post" action="{% url 'delete-item' 'opportunite' opportunaute.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-crud delete">Supprimer</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="admin-muted">Aucune opportunité.</li>
+                    {% endfor %}
                 </ul>
-				<div class="crud" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); place-items:center; gap:1rem;">
-					<a href="{% url 'Aj-Opportunites' %}" style="color:#fff; background:var(--blue); padding:.4rem; border-radius:4px;" >Ajouter</a>
-				</div>
+                <div class="panel-footer-action">
+                    <a href="{% url 'Aj-Opportunites' %}" class="btn-action primary block">Ajouter une opportunité</a>
+                </div>
             </div>
-		</div>
-	</section>
+        </div>
+    </section>
 </main>
 {% endblock contents %}

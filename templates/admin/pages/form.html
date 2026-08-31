@@ -1,21 +1,50 @@
 {% extends "base.html" %}
 
-{% block title %}{{ label }}{% if object %} - modifier{% else %} - ajouter{% endif %}{% endblock title %}
+{% block title %}{{ label }}{% if object %} - Modifier{% else %} - Ajouter{% endif %}{% endblock title %}
 
 {% block contents %}
-<main class="admin-dashboard">
-    <section class="admin-panel" style="max-width: 760px; margin: 0 auto;">
+<main class="admin-dashboard admin-form-page">
+    <section class="admin-panel admin-form-card">
         <div class="admin-panel-heading">
             <div>
                 <p class="eyebrow">Administration</p>
-                <h1>{{ label }}{% if object %} : modifier{% else %} : ajouter{% endif %}</h1>
+                <h1>{{ label }}{% if object %} : Modifier{% else %} : Ajouter{% endif %}</h1>
             </div>
-            <a href="{% url 'dashboard' %}">Retour</a>
+            <a href="{% url 'dashboard' %}" class="btn-action link">
+                <i class="fa-solid fa-arrow-left"></i> Retour
+            </a>
         </div>
-        <form method="post" enctype="multipart/form-data">
+
+        <form method="post" enctype="multipart/form-data" class="admin-form" novalidate>
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Enregistrer</button>
+
+            {% if form.non_field_errors %}
+                <div class="auth-errors" role="alert">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+
+            <div class="form-fields-stack">
+                {% for field in form %}
+                    <div class="form-group {% if field.errors %}has-error{% endif %}">
+                        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                        {{ field }}
+                        {% if field.help_text %}
+                            <small class="form-help">{{ field.help_text }}</small>
+                        {% endif %}
+                        {% for error in field.errors %}
+                            <span class="field-error">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-action primary">
+                    <i class="fa-solid fa-floppy-disk"></i> Enregistrer
+                </button>
+                <a href="{% url 'dashboard' %}" class="btn-action secondary">Annuler</a>
+            </div>
         </form>
     </section>
 </main>

@@ -71,25 +71,22 @@
     {% block animation_loading %}
         <div class="loading">
             <div class="img">
-
+                <img src="{% static 'photos/logo_transparent.png' %}" alt="logo " >
             </div>
         </div>
     {% endblock animation_loading %}
     <div class="rgba"></div>
     {% block header %}
-        <header>
+        <header class="skeleton">
             <div class="logo">
                 <img src="{% static 'photos/logo_transparent.png' %}" alt="" width='50px'>
             </div>
             <nav>
                 <ul>
-                    <li><a href="{% url 'home' %}">{% translate "Accueil" %}</a></li>
                     <li>
                         <div class='datalive_contents' id="datalive">
                             <ul>
-                                <li>
-                                    <a id="plus">{% translate "Actualité" %}  <i class="fa-solid fa-plus"></i> </a>
-                                </li>
+                                <li class="plus"><a href="{% url 'home' %}">{% translate "Accueil || Actualité" %}</a></li>
                                 <div class="appear">
                                     <li><a href="{% url 'evenements' %}">{% translate "DataLive||Actualité" %}</a></li>
                                     <li><a href="{% url 'analyses' %}">{% translate "Analyses" %}</a></li>
@@ -102,25 +99,32 @@
                             </ul>
                         </div>
                     </li>
+                </ul>
+                <ul>
                     <li>
                         <div class='about' id="about">
                             <ul>
                                 <li>
-                                    <a id="plus">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </a>
+                                    <a class="plus" href="">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </a>
                                 </li>
                                 <div class="appear">
                                     <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
                                     <li><a href="{% url 'interventions' %}">{% translate "Domaines d'intervention" %}</a></li>
                                     <li><a href="{% url 'solutions' %}">{% translate "Nos solutions" %}</a></li>
                                     <li><a href="{% url 'offres' %}">{% translate "Nos offres" %}</a></li>
-                                    <li><a href="{% url 'home' %}#partenaires">{% translate "Nos partenaires" %}</a></li>
                                     <li><a href="{% url 'projets' %}">{% translate "Projets et réalisations" %}</a></li>
                                 </div>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="{% url 'contact' %}">{% translate "Contact" %}</a></li>
-                    <li><a href="{% url 'carriere' %}">{% translate "Carrière" %}</a></li>
+                </ul>
+                
+                <ul>
+                    <li><a href="{% url 'contact' %}" class="plus">{% translate "Contact" %}</a></li>
+                </ul>
+                <ul>
+                    <li><a href="{% url 'carriere' %}" class="plus">{% translate "Carrière" %}</a></li>
+                </ul>
                     <div class="btnLang">
                         <form action="{% url 'set_language' %}" method="post">
                             {% csrf_token %}
@@ -133,7 +137,6 @@
                             <button type="submit" name="language" value="en"{% if CURRENT_LANGUAGE == 'en' %} aria-current="true"{% endif %}>English</button>
                         </form>
                     </div>
-                </ul>
                 <div class="btns">
                     {% if request.user.is_authenticated %}
                         <form action="{% url 'logout' %}" method='post'>
@@ -148,13 +151,18 @@
                         <a href="{% url 'login' %}">{% translate "Se connecter" %}</a>
                     {% endif %}
                     
+                    
                 </div>
+
             </nav>
+            <div id="menu_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     {% endblock header %}
 
     {% block contents %}
-        <div class="main_content">
+        <div class="main_content skeleton">
             <div class="home">
                 <swiper-container
                 class="mySwiper"
@@ -231,13 +239,13 @@
                 </swiper-container>
             </div>
             <div class="about_us">
-                <div class="left">
+                <div class="left skeleton">
                     <h3>{%translate "Elixir Group en quelques mots"%}</h3>
                     <p>{%translate "Un groupe. Plusieurs expertise. Une même ambition."%}</p>
                     <p>{%translate "Elixir Group est une structure faîtière qui fédère plusieurs pôles spécialisés autour d'une ambition commune: celle de transformer les données, les technologies et les idéesw en solutions à impact <br> <span>Notre écosystème intervient auprès des entreprises, instituitions, organisations et porteurs de projets pour repondre aux enjeux de developpement, d'innovation et de transformation des territoirres"%}</span></p>
                     <a href="{% url 'about' %}">{%translate "En savoir plus sur Elixir Group"%}</a>
                 </div>
-                <div class="right">
+                <div class="right skeleton">
                     <h3><div class="icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>{%translate "Notre Mission"%}</h3>
                     <p>{%translate "Développer des solutions innovantes permettantsaux institutions,entreprises, organisations et citoyens de mieux comprendre, gérer et développer leurs territoires , leurs organisations et leurs activités."%} </p>
                     <div class="values">
@@ -258,34 +266,34 @@
                 </div>
             </div>
             <div class="intervention">
-                <h3>{%translate "Nos grands domaines d'intervention"%}</h3>
+                <h3 class="skeleton">{%translate "Nos grands domaines d'intervention"%}</h3>
                 <div class="boxs">
-                    <div class="box">
+                    <div class="box skeleeton">
                         <div class="icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
                         <h4>{%translate "Intelligence Territoriale"%}</h4>
                         <p>{%translate "Comprendre, analyser et valoriser les territoires grâce à la donnée."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
                         <h4>{%translate "Data & Technologies"%}</h4>
                         <p>{%translate "Transformer les données et les technologies en solutions opérationnelles."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-newspaper" aria-hidden="true"></i></div>
                         <h4>{%translate "Media & Information"%}</h4>
                         <p>{%translate "Produire, diffuser et valoriser l'information."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
                         <h4>{%translate "Formation & connexion"%}</h4>
                         <p>{%translate "Développer les compétence et connecter les acteurs."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
                         <h4>{%translate "Solutions opérationnelles"%}</h4>
                         <p>{%translate "Transformer les projets en réalisations concrètes."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
                         <h4>{%translate "Investissement & conseil"%}</h4>
                         <p>{%translate "Accompagner les entrepriser, projets et opportunités d'investissements"%}.</p>
@@ -293,34 +301,34 @@
                 </div>
             </div>
             <div class="stats">
-                <h3>{%translate "Elixir en chiffres"%}</h3>
+                <h3 class="skeleton">{%translate "Elixir en chiffres"%}</h3>
                 <div class="boxs">
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
                         <h2>{%translate "Projets réalisés"%}</h2>
                         <div class="chiffre">25+</div>
                     </div>
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></div>
                         <h2>{%translate "Partenaires"%}</h2>
                         <div class="chiffre">40+</div>
                     </div>
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
                         <h2>{%translate "Experts"%}</h2>
                         <div class="chiffre">60+</div>
                     </div>
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-earth-africa" aria-hidden="true"></i></div>
                         <h2>{%translate "Territoires couverts"%}</h2>
                         <div class="chiffre">12</div>
                     </div>
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
                         <h2>{%translate "Pôles spécialisés"%}</h2>
                         <div class="chiffre">06</div>
                     </div>
-                    <div class="text">
+                    <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
                         <h2>{%translate "Clients accompagnés"%}</h2>
                         <div class="chiffre">100+</div>
@@ -328,20 +336,20 @@
                 </div>
             </div>
             <div class="partenaires">
-                <h3>{%translate "Nos partenaires"%}</h3>
-                <p>{%translate "Nous construisons des collaborations durables avec celles et ceux qui partagent notre ambition pour des territoires africains plus résilients et plus innovants."%}</p>
+                <h3 class="skeleton">{%translate "Nos partenaires"%}</h3>
+                <p class="skeleton">{%translate "Nous construisons des collaborations durables avec celles et ceux qui partagent notre ambition pour des territoires africains plus résilients et plus innovants."%}</p>
                 <div class="boxs">
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
                         <h4>{%translate "Institutions publiques"%}</h4>
                         <p>{%translate "Nous appuyons les décideurs avec des données fiables et des outils d'aide à la décision."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
                         <h4>{%translate "Entreprises et investisseurs"%}</h4>
                         <p>{%translate "Nous révélons les opportunités et accompagnons les projets vers une croissance responsable."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-people-roof" aria-hidden="true"></i></div>
                         <h4>{%translate "Organisations et communautés"%}</h4>
                         <p>{%translate "Nous rapprochons les expertises, les talents et les besoins pour créer un impact durable."%}</p>
@@ -349,34 +357,34 @@
                 </div>
                 <div class="logos_partenaires" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); place-items:center;">
                     {% for partenaire in partenaires %}
-                        <div class="logo_partenaire">
+                        <div class="logo_partenaire skeleton">
                             <img src="{{ partenaire.logo.url }}" alt="{{ partenaire.nom }}" width="200px">
                         </div>
                     {% endfor %}
                 </div>
             </div>
             <div class="equipe">
-                <h2>{%translate 'Une équipe engagée pour transformer les idées en impact'%}</h2>
-                <p>{%translate "Notre comité réunit des profils complémentaires en stratégie, données, technologie et développement territorial."%}</p>
+                <h2 class="skeleton">{%translate 'Une équipe engagée pour transformer les idées en impact'%}</h2>
+                <p class="skeleton">{%translate "Notre comité réunit des profils complémentaires en stratégie, données, technologie et développement territorial."%}</p>
                 <div class="boxs">
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></div>
                         <h4>{%translate "Vision stratégique"%}</h4>
                         <p>{%translate "Nous donnons une direction claire aux projets et relions chaque décision à un résultat concret."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i></div>
                         <h4>{%translate "Expertise de terrain"%}</h4>
                         <p>{%translate "Nous concevons des solutions adaptées aux réalités locales et aux usages de leurs bénéficiaires."%}</p>
                     </div>
-                    <div class="box">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></div>
                         <h4>{%translate "Culture de collaboration"%}</h4>
                         <p>{%translate "Nous faisons circuler les compétences pour faire avancer les projets avec méthode et confiance."%}</p>
                     </div>
                 </div>
             </div>
-            <div class="join_us img">
+            <div class="join_us img skeleton">
                 <h2>{%translate 'Construisons les territoires de demain'%}</h2>
                 <p>{%translate "Vous portez une idée, une expertise ou un projet à fort potentiel ? Rejoignez un écosystème qui transforme les défis africains en solutions utiles, inclusives et durables."%}</p>
                 <a href="{% url 'carriere' %}">{%translate 'Découvrir nos opportunités'%} <div class="icon"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></div></a>

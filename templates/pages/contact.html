@@ -7,7 +7,45 @@
 	<section class="page-hero page-hero-blue"><p class="eyebrow">Parlons de votre projet</p><h1>Une question, une idée ou un défi à résoudre ?</h1><p>Notre équipe vous répond et vous oriente vers l'expertise la plus pertinente.</p></section>
 	<section class="content-section contact-layout">
 		<div><p class="eyebrow">Nous trouver</p><h2>Commençons par un échange simple.</h2><div class="contact-details"><p><i class="fa-solid fa-envelope"></i> elixirgroup@gmail.com</p><p><i class="fa-solid fa-location-dot"></i> Ngaliema, Binza Pigeon n°20<br>Kinshasa, République démocratique du Congo</p><p><i class="fa-solid fa-phone"></i> +243 000 000 000</p></div></div>
-		<form class="contact-form" method="post"><label for="name">Nom complet</label><input id="name" name="name" type="text" placeholder="Votre nom" required><label for="email">Adresse email</label><input id="email" name="email" type="email" placeholder="vous@exemple.com" required><label for="message">Votre message</label><textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre besoin" required></textarea><button type="submit">Envoyer le message <i class="fa-solid fa-arrow-right"></i></button></form>
+		<form id="contactForm" class="contact-form" method="post" novalidate>
+			<label for="name">Nom complet</label>
+			<input id="name" name="name" type="text" placeholder="Votre nom" required>
+			<label for="email">Adresse email</label>
+			<input id="email" name="email" type="email" placeholder="vous@exemple.com" required>
+			<label for="message">Votre message</label>
+			<textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre besoin" required></textarea>
+			<button type="submit">Envoyer le message <i class="fa-solid fa-arrow-right"></i></button>
+		</form>
 	</section>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contactForm');
+        if (!form) return;
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (!form.reportValidity()) {
+                return;
+            }
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const phoneNumber = '243000000000';
+
+            const whatsappText = encodeURIComponent(
+                'Bonjour Elixir Group,\n\n' +
+                'Nom: ' + name + '\n' +
+                'Email: ' + email + '\n\n' +
+                'Message:\n' + message
+            );
+
+            window.open('https://wa.me/' + phoneNumber + '?text=' + whatsappText, '_blank');
+            form.reset();
+        });
+    });
+</script>
 {% endblock contents %}

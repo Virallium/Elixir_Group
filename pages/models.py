@@ -4,7 +4,8 @@ class Actualites(models.Model):
     titre = models.CharField(max_length=100, verbose_name="Titre")
     description = models.TextField(verbose_name="Description")
     date_publiee = models.DateField(auto_now=True)
-    source = models.CharField(verbose_name="source")#models avec link pour lire les liens
+    source = models.URLField(verbose_name="Lien de la ressource", blank=True, null=True)
+
     def __str__(self):
         return self.titre
 

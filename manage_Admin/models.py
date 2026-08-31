@@ -21,6 +21,7 @@ class Evenements(models.Model):
 
 class Interview(models.Model):
     evenement = models.ForeignKey(Evenements, verbose_name="Événement", on_delete=models.CASCADE)
+    intervenant = models.ForeignKey(Intervenants, verbose_name="Intervenant", on_delete=models.CASCADE)
 
 
 class Partenaires(models.Model):

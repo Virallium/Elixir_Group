@@ -4,62 +4,79 @@
 
 {% block contents %}
 <div class="page-shell datalive-page">
-	<section class="page-hero page-hero-blue">
-		<p class="eyebrow">DataLive · Agenda</p>
-		<h1>{{ evenement.titre }}</h1>
-		<p><i class="fa-regular fa-calendar"></i> {{ evenement.date|date:'d F Y' }}</p>
-	</section>
+    <section class="page-hero page-hero-blue">
+        <p class="eyebrow">DataLive · Agenda</p>
+        <h1>{{ evenement.titre }}</h1>
+        <p><i class="fa-regular fa-calendar"></i> {{ evenement.date|date:'d F Y' }}</p>
+    </section>
 
-	<section class="content-section">
-		<div class="boxs datalive-grid">
-			<article class="box event-card">
-				<p class="project-tag">Présentation</p>
-				<h2>À propos de cet événement</h2>
-				<p>{{ evenement.description }}</p>
-			</article>
+    <section class="content-section">
+        <!-- Boîte unique englobant tout le contenu -->
+        <article class="single-main-box">
+            
+            <!-- Section 1 : À propos & Intervenant -->
+            <div class="box-section-grid">
+                <div class="box-subblock">
+                    <span class="project-tag">Présentation</span>
+                    <h2>À propos de cet événement</h2>
+                    <p>{{ evenement.description }}</p>
+                </div>
 
-			<article class="box event-card">
-				<p class="project-tag">Intervenant</p>
-				{% if evenement.idInt.photo %}
-					<img src="{{ evenement.idInt.photo.url }}" alt="{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}">
-				{% endif %}
-				<h2>{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}</h2>
-				<p>{{ evenement.idInt.specialites|default:'Intervenant Elixir Group' }}</p>
-			</article>
-		</div>
+                <div class="box-subblock speaker-profile">
+                    <span class="project-tag">Intervenant</span>
+                    {% if evenement.idInt.photo %}
+                        <img src="{{ evenement.idInt.photo.url }}" alt="{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}" class="speaker-img">
+                    {% endif %}
+                    <h2>{{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}</h2>
+                    <p class="speaker-role">{{ evenement.idInt.specialites|default:'Intervenant Elixir Group' }}</p>
+                </div>
+            </div>
 
-		{% if interviews %}
-			<section class="content-section">
-				<p class="eyebrow">Contenu associé</p>
-				<h2>Interviews liées</h2>
-				<div class="boxs datalive-grid">
-					{% for interview in interviews %}
-						<article class="box interview-card">
-							<i class="fa-solid fa-microphone"></i>
-							<h3>Interview de l'événement</h3>
-							<p>Retrouvez les échanges liés à cet événement.</p>
-						</article>
-					{% endfor %}
-				</div>
-			</section>
-		{% endif %}
+            <!-- Section 2 : Interviews liées (si existantes) -->
+            {% if interviews %}
+                <div class="box-divider"></div>
+                <div class="box-subblock">
+                    <p class="eyebrow-dark">Contenu associé</p>
+                    <h2 class="subblock-title">Interviews liées</h2>
+                    <div class="inner-grid">
+                        {% for interview in interviews %}
+                            <div class="inner-card interview-item">
+                                <i class="fa-solid fa-microphone"></i>
+                                <div>
+                                    <h3>Interview de l'événement</h3>
+                                    <p>Retrouvez les échanges liés à cet événement.</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
 
-		{% if partenaires %}
-			<section class="content-section">
-				<p class="eyebrow">Écosystème</p>
-				<h2>Partenaires associés</h2>
-				<div class="boxs datalive-grid">
-					{% for partenaire in partenaires %}
-						<article class="box editorial-card">
-							{% if partenaire.logo %}<img src="{{ partenaire.logo.url }}" alt="Logo partenaire">{% endif %}
-							<h3>Partenaire #{{ partenaire.idPart }}</h3>
-						</article>
-					{% endfor %}
-				</div>
-			</section>
-		{% endif %}
+            <!-- Section 3 : Partenaires associés (si existants) -->
+            {% if partenaires %}
+                <div class="box-divider"></div>
+                <div class="box-subblock">
+                    <p class="eyebrow-dark">Écosystème</p>
+                    <h2 class="subblock-title">Partenaires associés</h2>
+                    <div class="inner-grid partner-grid">
+                        {% for partenaire in partenaires %}
+                            <div class="inner-card partner-item">
+                                {% if partenaire.logo %}
+                                    <img src="{{ partenaire.logo.url }}" alt="Logo partenaire">
+                                {% endif %}
+                                <span>Partenaire #{{ partenaire.idPart }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
 
-		<a href="{% url 'evenements' %}">Retour aux événements</a>
-	</section>
+            <!-- Pied de la boîte : Bouton Retour -->
+            <div class="box-footer">
+                <a href="{% url 'evenements' %}" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Retour aux événements</a>
+            </div>
+
+        </article>
+    </section>
 </div>
 {% endblock contents %}

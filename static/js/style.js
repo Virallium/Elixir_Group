@@ -41,6 +41,11 @@ function menu(){
     menu_btn.addEventListener('click', ()=>{
         nav.classList.toggle('active')
     })
+    nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active')
+        })
+    })
 }
 menu()
 
@@ -84,13 +89,3 @@ function applyGlobalAOS(){
 }
 
 applyGlobalAOS();
-
-function prevent_navlinks(){
-    const links = document.querySelectorAll('.plus')
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-        });
-    });
-}
-prevent_navlinks()

@@ -63,7 +63,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     {% block script %}
-        <script src="{% static 'js/style.js' %}" defer></script>
+        <script src="{% static 'js/style.js' %}?v=3" defer></script>
     {% endblock script %}
 </head>
 <body>
@@ -88,7 +88,7 @@
                             <ul>
                                 <li class="plus"><a href="{% url 'home' %}">{% translate "Accueil || Actualité" %}<i class="fa-solid fa-plus"></i></a></li>
                                 <div class="appear">
-                                    <li><a href="{% url 'evenements' %}">{% translate "DataLive||Actualité" %}</a></li>
+                                    <li><a href="{% url 'home' %}">{% translate "DataLive||Actualité" %}</a></li>
                                     <li><a href="{% url 'analyses' %}">{% translate "Analyses" %}</a></li>
                                     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
                                     <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
@@ -120,10 +120,10 @@
                 </ul>
                 
                 <ul>
-                    <li><a href="{% url 'contact' %}" class="plus">{% translate "Contact" %}</a></li>
+                    <li><a href="{% url 'contact' %}">{% translate "Contact" %}</a></li>
                 </ul>
                 <ul>
-                    <li><a href="{% url 'carriere' %}" class="plus">{% translate "Carrière" %}</a></li>
+                    <li><a href="{% url 'carriere' %}">{% translate "Carrière" %}</a></li>
                 </ul>
                     <div class="btnLang">
                         <form action="{% url 'set_language' %}" method="post">
@@ -268,7 +268,7 @@
             <div class="intervention">
                 <h3 class="skeleton">{%translate "Nos grands domaines d'intervention"%}</h3>
                 <div class="boxs">
-                    <div class="box skeleeton">
+                    <div class="box skeleton">
                         <div class="icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
                         <h4>{%translate "Intelligence Territoriale"%}</h4>
                         <p>{%translate "Comprendre, analyser et valoriser les territoires grâce à la donnée."%}</p>

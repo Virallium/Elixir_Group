@@ -49,6 +49,18 @@ img {
     height: auto;
     display: block;
 }
+h1{
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+h2{
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+h3{
+    font-size: clamp(1rem, 2vw, 1.8rem);
+}
+p{
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
 
 /* ==========================================================================
    2. LOADING SECTION
@@ -356,7 +368,7 @@ swiper-slide .text {
 
 swiper-slide .text h3 {
     color: var(--yellow);
-    font-size: 1.1rem;
+    font-size: clamp(.9rem, 2vw, 1.5rem);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -452,17 +464,26 @@ swiper-slide .text .btns a:nth-child(2):hover {
 /* ==========================================================================
    6. INTERVENTION & PARTENAIRES & EQUIPE
    ========================================================================== */
-.intervention, .partenaires, .equipe {
+.intervention,.partenaires, .equipe {
     padding: 6rem 8%;
 }
-
+.partenaires{
+    display: block;
+    gap: 1rem;
+    align-items: center;
+}
+.partenaires p, .equipe p{
+    margin-bottom: 1rem;
+    color: var(--ink-soft);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
 .intervention {
     background: var(--paper);
 }
 
 .intervention > h3, .stats > h3, .partenaires > h3, .equipe > h2 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size:clamp(1.5rem, 2vw, 2rem);
     color: var(--ink);
     margin-bottom: 3rem;
     font-weight: 700;
@@ -470,7 +491,7 @@ swiper-slide .text .btns a:nth-child(2):hover {
 
 .boxs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -496,14 +517,14 @@ swiper-slide .text .btns a:nth-child(2):hover {
 }
 
 .box h4 {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     margin-bottom: 0.75rem;
     color: var(--ink);
 }
 
 .box p {
     color: var(--ink-soft);
-    font-size: 0.95rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
 /* ==========================================================================
@@ -535,7 +556,7 @@ swiper-slide .text .btns a:nth-child(2):hover {
 }
 
 .stats h2 {
-    font-size: 0.95rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     font-weight: 400;
     color: var(--line);
     margin-bottom: 0.5rem;
@@ -561,6 +582,9 @@ swiper-slide .text .btns a:nth-child(2):hover {
 .logo_partenaire img:hover {
     filter: grayscale(0%);
     opacity: 1;
+}
+.partenaires .boxs .box h4{
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* ==========================================================================
@@ -1677,7 +1701,7 @@ Détail evenements
 
 /* Titres et descriptions */
 .intervention-grid .box h3 {
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
     color: var(--ink, #102a43);
     font-weight: 700;
     margin-bottom: 0.75rem;
@@ -1868,7 +1892,7 @@ Détail evenements
 /* Layout 2 Colonnes (Infos / Formulaire) */
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 4rem;
     align-items: start;
     padding: 4rem 8%;
@@ -3001,14 +3025,22 @@ footer > p {
 
 @media (max-width: 576px) {
     swiper-slide .text h1 {
-        font-size: 1.8rem;
+        font-size: clamp(.9rem, 5vw, 2rem);
     }
 
     .footer {
         grid-template-columns: 1fr;
     }
 
-    .stats .boxs {
-        grid-template-columns: 1fr 1fr;
+    .stats .boxs{
+        grid-template-columns:1fr;
+    }
+    .partenaires .boxs, .equipe .boxs{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:360px){
+    .intervention .boxs, .page-hero .boxs{
+        grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     }
 }

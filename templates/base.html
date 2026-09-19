@@ -20,6 +20,7 @@
     {% block style %}
         <link rel="stylesheet" href="{% static 'style/style.css' %}">
     {% endblock style %}
+    <link rel="manifest" href="{% static 'manifest.webmanifest' %}">
     <title>{% block title %}{% translate "Accueil - Elixir Group" %}{% endblock title %}</title>
     <link rel="shortcut icon" href="{% static 'photos/logo_elixir.png' %}" type="icon">
     <link rel="manifest" href="{% static 'manifest.webmanifest' %}">
@@ -86,10 +87,8 @@
                     <li>
                         <div class='datalive_contents' id="datalive">
                             <ul>
-                                <li class="plus"><a href="{% url 'home' %}">{% translate "Accueil || Actualité" %}<i class="fa-solid fa-plus"></i></a></li>
+                                <li class="plus"><a href="{% url 'home' %}">{% translate "Accueil" %}<i class="fa-solid fa-plus"></i></a></li>
                                 <div class="appear">
-                                    <li><a href="{% url 'home' %}">{% translate "DataLive||Actualité" %}</a></li>
-                                    <li><a href="{% url 'analyses' %}">{% translate "Analyses" %}</a></li>
                                     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
                                     <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
                                     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
@@ -176,8 +175,8 @@
                         <img src=" {% static 'photos/nature.jpeg' %}" />
                         <div class="text">
                             <h3>{% translate 'Elixir Group'%}</h3>
-                            <h1>{% translate "L'intelligence, l'innovation et les solutions <br>au services des territoires africains"%}</h1>
-                            <p>{%translate "Elixir Group est un écosystème africain qui réunit expertise, données, technologies et investissements pour concevoir des solutions concrètes à fort impact."%}</p>
+                            <h1>{% translate "Intelligence territoriale, innovation, connexion et les solutions <br>au services des territoires africains"%}</h1>
+                            <p>{%translate "Elixir Group est un écosystème africain qui réunit expertise, données, technologies et investissements intelligente dans tous les secteurs."%}</p>
                             <div class='btns'>
                                 <a href="{% url 'about' %}">
                                     {%translate 'Découvrir Elixir Group'%}
@@ -311,27 +310,23 @@
                     <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></div>
                         <h2>{%translate "Partenaires"%}</h2>
-                        <div class="chiffre">40+</div>
+                        <div class="chiffre">10+</div>
                     </div>
                     <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
                         <h2>{%translate "Experts"%}</h2>
                         <div class="chiffre">60+</div>
                     </div>
-                    <div class="text skeleton">
-                        <div class="icon"><i class="fa-solid fa-earth-africa" aria-hidden="true"></i></div>
-                        <h2>{%translate "Territoires couverts"%}</h2>
-                        <div class="chiffre">12</div>
-                    </div>
+                
                     <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
                         <h2>{%translate "Pôles spécialisés"%}</h2>
-                        <div class="chiffre">06</div>
+                        <div class="chiffre">03</div>
                     </div>
                     <div class="text skeleton">
                         <div class="icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
                         <h2>{%translate "Clients accompagnés"%}</h2>
-                        <div class="chiffre">100+</div>
+                        <div class="chiffre">50+</div>
                     </div>
                 </div>
             </div>
@@ -430,10 +425,10 @@
                     </ul>
                 </div>
                 <div class="infos">
-                    <p>Email: <a href="mailto:elixirgroup@gmail.com">mailto:elixirgroup@gmail.com</a></p>
-                    <p>tel: <a href="tel:243000000000">243000000000</a></p>
-                    <p>{%translate "Adresse du siège"%}: <span>Ngaliema Binza pigeaon n°20</span></p>
-                    <p>{%translate "Identification Légale RCCM"%}: <span>00000000</span></p>
+                    {% comment %} <p>Email: <a href="mailto:elixirgroup@gmail.com">mailto:elixirgroup@gmail.com</a></p> {% endcomment %}
+                    <p>tel: <a href="tel:243000000000">243828126851</a></p>
+                    <p>{%translate "Adresse du siège"%}: <span>N°45 Av, KASA-VUBU, C/NGIRI-NGIRI, KINSHASA</span></p>
+                    <p>{%translate "Identification Légale RCCM"%}: <span>CD/KNG/RCCM/25-B02810 ID NAT:01-F4200-N79274E NIF:A256471Q</span></p>
                 </div>
             </div>
             <p>&copy;Copyright reserved Elixir-Group 2026</p>
@@ -441,5 +436,13 @@
     {% endblock footer %}
    </main>
    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+   <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js', {scope: '/'})
+                    .catch((error) => console.error('Service worker registration failed:', error));
+            });
+        }
+    </script>
 </body>
 </html>

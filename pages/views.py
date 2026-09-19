@@ -1,7 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from manage_Admin.models import Evenements, Evenements_Partenaires, Interview, Partenaires
 from .models import *
+from pathlib import Path
 
+from django.conf import settings
+from django.http import FileResponse
 def notfound(request, exception):
     return render(request, 'pages/404.html', status=404)
 
@@ -44,20 +47,7 @@ def interviews(request):
     interviews = Interview.objects.select_related('evenement', 'evenement__idInt').order_by('-evenement__date')
     return render(request, 'pages/datalive/interviews.html', {'interviews': interviews})
 
-def analyses(request):
-    analyses = [
-        {
-            'titre': 'Cartographie des opportunités urbaines',
-            'description': 'Une lecture des évolutions démographiques, des infrastructures et des dynamiques économiques qui structurent les territoires en plein essor.',
-            'lien': '#',
-        },
-        {
-            'titre': 'Les dynamiques du marché africain',
-            'description': 'Des tendances utiles pour mieux comprendre les mutations des secteurs clés, les habitudes de consommation et les leviers d’investissement.',
-            'lien': '#',
-        },
-    ]
-    return render(request, 'pages/datalive/analyses.html', {'analyses': analyses})
+
 
 def articles(request):
     actualites = Actualites.objects.all().order_by('-date_publiee')
@@ -87,6 +77,11 @@ def evenements_detail(request, evenement_id):
         'interviews': interviews,
     })
 
-
-
-
+def service_worker(request):
+    response = FileResponse(
+        (Path(settings.BASE_DIR) / 'static' / 'js' / 'service-worker.js').open('rb'),
+        content_type='application/javascript',
+    )
+    response['Service-Worker-Allowed'] = '/'
+    response['Cache-Control'] = 'no-cache'
+    return response

@@ -1,0 +1,25 @@
+{
+    "name": "Elixir Group",
+    "short_name": "Elixir",
+    "description": "la transformation des territoires pour mieux préparer l'avenir.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1d61d8",
+    "lang": "fr",
+    "icons": [
+        {
+            "src": "/static/photos/logo_transparent.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/static/photos/logo_transparent.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

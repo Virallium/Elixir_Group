@@ -9,11 +9,6 @@ class Actualites(models.Model):
     def __str__(self):
         return self.titre
 
-class Analyses(models.Model):
-    note = models.IntegerField(verbose_name="Analyser")
-    def __str__(self):
-        return self.note
-
 class Publication(models.Model):
     photo = models.ImageField(upload_to='Publication') 
     titre = models.CharField(verbose_name='Titre', max_length=25)

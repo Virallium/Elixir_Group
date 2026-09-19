@@ -87,8 +87,9 @@
                     <li>
                         <div class='datalive_contents' id="datalive">
                             <ul>
-                                <li class="plus"><a href="{% url 'home' %}">{% translate "Accueil" %}<i class="fa-solid fa-plus"></i></a></li>
+                                <li class="plus"><a>{% translate "Accueil" %}<i class="fa-solid fa-plus"></i></a></li>
                                 <div class="appear">
+                                    <li class="plus"><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
                                     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
                                     <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
                                     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
@@ -104,9 +105,10 @@
                         <div class='about' id="about">
                             <ul>
                                 <li>
-                                    <a class="plus" href="">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </a>
+                                    <a class="plus">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </a>
                                 </li>
                                 <div class="appear">
+                                    <li><a href='{% url "about" %}'class="plus">{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
                                     <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
                                     <li><a href="{% url 'interventions' %}">{% translate "Domaines d'intervention" %}</a></li>
                                     <li><a href="{% url 'solutions' %}">{% translate "Nos solutions" %}</a></li>

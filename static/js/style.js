@@ -89,3 +89,13 @@ function applyGlobalAOS(){
 }
 
 applyGlobalAOS();
+
+function preventload(){
+    const hovered_link= document.querySelectorAll('.plus')
+    hovered_link.forEach(a => {
+        a.addEventListener('click',(e)=>{
+            e.preventDefault()
+        })
+    }); 
+}
+preventload()

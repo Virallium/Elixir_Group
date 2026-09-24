@@ -1,30 +1,48 @@
 {% extends "base.html" %}
-
-{% block title %}À propos - Elixir Group{% endblock title %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "À propos - Elixir Group" %}{% endblock title %}
 
 {% block contents %}
 <div class="page-shell about-page">
 	<section class="page-hero">
-		<p class="eyebrow">Notre identité</p>
-		<h1>{% trans 'Elixir group est une structure fatière' %}</h1>
-		<p>{% trans 'L\'ambition commun est celui de transformer les données, technologies et les idées en solution à impact direct' %}</p>
+		<p class="eyebrow">{% trans "Notre identité" %}</p>
+		<h1>{% trans "Elixir Group est une structure faîtière" %}</h1>
+		<p>{% trans "L'ambition commune est de transformer les données, les technologies et les idées en solutions à impact direct" %}</p>
 	</section>
 	<section class="content-section split-section">
 		<div>
-			<p class="eyebrow">Un groupe, plusieurs expertises</p>
-			<h2>Une même ambition : rendre l'action plus utile.</h2>
+			<p class="eyebrow">{% trans "Un groupe, plusieurs expertises" %}</p>
+			<h2>{% trans "Une même ambition : rendre l'action plus utile." %}</h2>
 		</div>
 		<div>
-			<p>Nous croisons la donnée, la technologie, le conseil, la formation et l'investissement pour concevoir des réponses adaptées aux réalités du terrain.</p>
-			<p>Notre rôle est de relier les bonnes personnes, les bons outils et les bonnes informations afin de faire avancer les projets de manière concrète.</p>
+			<p>{% trans "Nous croisons la donnée, la technologie, le conseil, la formation et l'investissement pour concevoir des réponses adaptées aux réalités du terrain." %}</p>
+			<p>{% trans "Notre rôle est de relier les bonnes personnes, les bons outils et les bonnes informations afin de faire avancer les projets de manière concrète." %}</p>
+		</div>
+	</section>
+	<section class='elixir-team'>
+		<h2>{% trans "Elixir team" %}</h2>
+		<div class="images">
+			<div class="img">
+				<img src="{% static 'photos/elixir_team3.jpg' %}" alt="{% trans 'photo de la communauté elixir' %}">
+			</div>
+			<div class="img">
+				<img src="{% static 'photos/elixir_team1.jpg' %}" alt="{% trans 'photo de la communauté elixir' %}">
+			</div>
+			<div class="img">
+				<img src="{% static 'photos/elixir_team2.jpg' %}" alt="{% trans 'photo de la communauté elixir' %}">
+			</div>
+		</div>
+		<div class="text">
+			{% trans "Nous réunissons des profils aux compétences complémentaires pour accompagner les organisations dans leur transformation numérique, leur stratégie de développement et la mise en œuvre de solutions concrètes, durables et utiles." %}
 		</div>
 	</section>
 	<section class="content-section light-section">
-		<p class="eyebrow">Ce qui nous guide</p>
+		<p class="eyebrow">{% trans "Ce qui nous guide" %}</p>
 		<div class="boxs">
-			<article class="box"><div class="icon"><i class="fa-solid fa-compass"></i></div><h3>Vision</h3><p>Lire les transformations des territoires pour mieux préparer l'avenir.</p></article>
-			<article class="box"><div class="icon"><i class="fa-solid fa-shield-heart"></i></div><h3>Intégrité</h3><p>Travailler avec exigence, transparence et respect des réalités locales.</p></article>
-			<article class="box"><div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></div><h3>Impact</h3><p>Mesurer l'utilité de chaque solution sur le terrain.</p></article>
+			<article class="box"><div class="icon"><i class="fa-solid fa-compass"></i></div><h3>{% trans "Vision" %}</h3><p>{% trans "Lire les transformations des territoires pour mieux préparer l'avenir." %}</p></article>
+			<article class="box"><div class="icon"><i class="fa-solid fa-shield-heart"></i></div><h3>{% trans "Intégrité" %}</h3><p>{% trans "Travailler avec exigence, transparence et respect des réalités locales." %}</p></article>
+			<article class="box"><div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></div><h3>{% trans "Impact" %}</h3><p>{% trans "Mesurer l'utilité de chaque solution sur le terrain." %}</p></article>
 		</div>
 	</section>
 </div>

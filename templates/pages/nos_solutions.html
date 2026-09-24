@@ -1,151 +1,152 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Nos solutions - Elixir Group{% endblock title %}
+{% block title %}{% trans "Nos solutions - Elixir Group" %}{% endblock title %}
 
 {% block contents %}
 <div class="page-shell solutions-page">
 	<section class="page-hero page-hero-blue" data-aos="fade-up" data-aos-delay="100">
-		<p class="eyebrow">Nos solutions</p>
-		<h1>Des outils lisibles pour des décisions plus solides.</h1>
-		<p>Du diagnostic à la mise en œuvre, nous adaptons notre intervention à votre contexte et à vos objectifs.</p>
+		<p class="eyebrow">{% trans "Nos solutions" %}</p>
+		<h1>{% trans "Des outils lisibles pour des décisions plus solides." %}</h1>
+		<p>{% trans "Du diagnostic à la mise en œuvre, nous adaptons notre intervention à votre contexte et à vos objectifs." %}</p>
 	</section>
 	<section class="content-section split-section" data-aos="fade-up" data-aos-delay="150">
-		<div><p class="eyebrow">Notre méthode</p><h2>Comprendre. Concevoir. Déployer.</h2></div>
+		<div><p class="eyebrow">{% trans "Notre méthode" %}</p><h2>{% trans "Comprendre. Concevoir. Déployer." %}</h2></div>
 		<div class="steps">
             <div data-aos="fade-right" data-aos-delay="200">
                 <span>01</span>
-                <p><strong>Comprendre</strong><br>Nous partons de vos besoins, de vos données et de votre terrain.</p>
+                <p><strong>{% trans "Comprendre" %}</strong><br>{% trans "Nous partons de vos besoins, de vos données et de votre terrain." %}</p>
             </div>
             <div data-aos="fade-right" data-aos-delay="300">
-                <span>02</span><p><strong>Concevoir</strong><br>Nous construisons une réponse claire, réaliste et mesurable.</p></div>
+                <span>02</span><p><strong>{% trans "Concevoir" %}</strong><br>{% trans "Nous construisons une réponse claire, réaliste et mesurable." %}</p></div>
                 <div data-aos="fade-right" data-aos-delay="400">
-                    <span>03</span><p><strong>Déployer</strong><br>Nous vous accompagnons jusqu'à l'appropriation de la solution.</p>
+                    <span>03</span><p><strong>{% trans "Déployer" %}</strong><br>{% trans "Nous vous accompagnons jusqu'à l'appropriation de la solution." %}</p>
                 </div>
             </div>
 	</section>
     <section class='solutions'>
-        <h2 class="pole-title">Pôle Service Elixir Data</h2>
+        <h2 class="pole-title">{% trans "Pôle Service Elixir Data" %}</h2>
         <div class='boxs solution-grid'>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
                 <div class='icon'>
                     <i class='fa-solid fa-location-dot'></i>
                 </div>
-                <p class="service-name">Intelligence territoriale</p>
-                <p class='description'>Vous avez besoin de connaître un territoire, ses enjeux et ses opportunités ?</p>
+                <p class="service-name">{% trans "Intelligence territoriale" %}</p>
+                <p class='description'>{% trans "Vous avez besoin de connaître un territoire, ses enjeux et ses opportunités ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="180">
                 <div class='icon'><i class='fa-solid fa-layer-group'></i></div>
-                <p class="service-name">Géomatique et SIG</p>
-                <p class='description'>Vous avez besoin d'une solution numérique pour analyser, modéliser et piloter vos données spatiales ?</p>
+                <p class="service-name">{% trans "Géomatique et SIG" %}</p>
+                <p class='description'>{% trans "Vous avez besoin d'une solution numérique pour analyser, modéliser et piloter vos données spatiales ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
                 <div class='icon'><i class='fa-solid fa-map'></i></div>
-                <p class="service-name">Cartographie</p>
-                <p class='description'>Vous avez besoin de collecter, organiser et visualiser les informations utiles à la prise de décision ?</p>
+                <p class="service-name">{% trans "Cartographie" %}</p>
+                <p class='description'>{% trans "Vous avez besoin de collecter, organiser et visualiser les informations utiles à la prise de décision ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="340">
                 <div class='icon'><i class='fa-solid fa-chart-area'></i></div>
-                <p class="service-name">Analyse territoriale</p>
-                <p class='description'>Vous souhaitez mieux comprendre les dynamiques, les tendances et les leviers de développement ?</p>
+                <p class="service-name">{% trans "Analyse territoriale" %}</p>
+                <p class='description'>{% trans "Vous souhaitez mieux comprendre les dynamiques, les tendances et les leviers de développement ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="420">
                 <div class='icon'><i class='fa-solid fa-city'></i></div>
-                <p class="service-name">Urbanisme et aménagement</p>
-                <p class='description'>Vous voulez concevoir des projets urbains et territoriaux plus cohérents, durables et efficaces ?</p>
+                <p class="service-name">{% trans "Urbanisme et aménagement" %}</p>
+                <p class='description'>{% trans "Vous voulez concevoir des projets urbains et territoriaux plus cohérents, durables et efficaces ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="500">
                 <div class='icon'><i class='fa-solid fa-flask'></i></div>
-                <p class="service-name">Recherche scientifique</p>
-                <p class='description'>Vous souhaitez appuyer une étude, une analyse ou une innovation avec un cadre scientifique solide ?</p>
+                <p class="service-name">{% trans "Recherche scientifique" %}</p>
+                <p class='description'>{% trans "Vous souhaitez appuyer une étude, une analyse ou une innovation avec un cadre scientifique solide ?" %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="560">
                 <div class='icon'><i class='fa-solid fa-screwdriver-wrench'></i></div>
-                <p class="service-name">Assistance technique</p>
-                <p class='description'>Vous cherchez un accompagnement pratique pour renforcer la qualité et la performance de vos projets ?</p>
+                <p class="service-name">{% trans "Assistance technique" %}</p>
+                <p class='description'>{% trans "Vous cherchez un accompagnement pratique pour renforcer la qualité et la performance de vos projets ?" %}</p>
             </div>
         </div>
 
-        <h2 class="pole-title">Pôle connect</h2>
+        <h2 class="pole-title">{% trans "Pôle connect" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
                 <div class='icon'><i class='fa-solid fa-graduation-cap'></i></div>
-                <p class="service-name">Formation</p>
-                <p class='description'>Des formations pour renforcer les compétences et accompagner les transformations professionnelles.</p>
+                <p class="service-name">{% trans "Formation" %}</p>
+                <p class='description'>{% trans "Des formations pour renforcer les compétences et accompagner les transformations professionnelles." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="140">
                 <div class='icon'><i class='fa-solid fa-users'></i></div>
-                <p class="service-name">Coworking</p>
-                <p class='description'>Un espace de travail collaboratif pour partager, créer et avancer ensemble.</p>
+                <p class="service-name">{% trans "Coworking" %}</p>
+                <p class='description'>{% trans "Un espace de travail collaboratif pour partager, créer et avancer ensemble." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="180">
                 <div class='icon'><i class='fa-solid fa-book-open'></i></div>
-                <p class="service-name">Bibliothèque numérique</p>
-                <p class='description'>Des ressources documentaires pour accéder rapidement à des connaissances utiles et fiables.</p>
+                <p class="service-name">{% trans "Bibliothèque numérique" %}</p>
+                <p class='description'>{% trans "Des ressources documentaires pour accéder rapidement à des connaissances utiles et fiables." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="220">
                 <div class='icon'><i class='fa-solid fa-calendar-days'></i></div>
-                <p class="service-name">Evenementiel</p>
-                <p class='description'>Des événements pensés pour fédérer, informer et encourager les échanges concrets.</p>
+                <p class="service-name">{% trans "Événementiel" %}</p>
+                <p class='description'>{% trans "Des événements pensés pour fédérer, informer et encourager les échanges concrets." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
                 <div class='icon'><i class='fa-solid fa-user-gear'></i></div>
-                <p class="service-name">Accompagnement des étudiants et chercheurs</p>
-                <p class='description'>Un soutien méthodologique pour structurer les projets, idées et démarches de recherche.</p>
+                <p class="service-name">{% trans "Accompagnement des étudiants et chercheurs" %}</p>
+                <p class='description'>{% trans "Un soutien méthodologique pour structurer les projets, idées et démarches de recherche." %}</p>
             </div>
         </div>
 
-        <h2 class="pole-title">Pôle data live</h2>
+        <h2 class="pole-title">{% trans "Pôle data live" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
                 <div class='icon'><i class='fa-solid fa-video'></i></div>
-                <p class="service-name">Montage audiovisuel</p>
-                <p class='description'>Des contenus visuels clairs et percutants pour raconter les projets avec impact.</p>
+                <p class="service-name">{% trans "Montage audiovisuel" %}</p>
+                <p class='description'>{% trans "Des contenus visuels clairs et percutants pour raconter les projets avec impact." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="140">
                 <div class='icon'><i class='fa-solid fa-bullhorn'></i></div>
-                <p class="service-name">Communication digitale</p>
-                <p class='description'>Une présence digitale pensée pour mieux informer, attirer et engager les audiences.</p>
+                <p class="service-name">{% trans "Communication digitale" %}</p>
+                <p class='description'>{% trans "Une présence digitale pensée pour mieux informer, attirer et engager les audiences." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="180">
                 <div class='icon'><i class='fa-solid fa-microphone'></i></div>
-                <p class="service-name">Podcast</p>
-                <p class='description'>Des conversations qui donnent de la voix aux idées, aux expertises et aux initiatives.</p>
+                <p class="service-name">{% trans "Podcast" %}</p>
+                <p class='description'>{% trans "Des conversations qui donnent de la voix aux idées, aux expertises et aux initiatives." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="220">
                 <div class='icon'><i class='fa-solid fa-camera'></i></div>
-                <p class="service-name">Couverture évenementielle</p>
-                <p class='description'>Une mise en image professionnelle des événements pour renforcer leur portée et leur visibilité.</p>
+                <p class="service-name">{% trans "Couverture événementielle" %}</p>
+                <p class='description'>{% trans "Une mise en image professionnelle des événements pour renforcer leur portée et leur visibilité." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
                 <div class='icon'><i class='fa-solid fa-id-badge'></i></div>
-                <p class="service-name">Visibilité profil professionnels</p>
-                <p class='description'>Une image digitale plus forte pour valoriser les compétences et les expertises.</p>
+                <p class="service-name">{% trans "Visibilité profil professionnels" %}</p>
+                <p class='description'>{% trans "Une image digitale plus forte pour valoriser les compétences et les expertises." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="300">
                 <div class='icon'><i class='fa-solid fa-camera-retro'></i></div>
-                <p class="service-name">Photographie</p>
-                <p class='description'>Des clichés qui racontent une histoire, une ambiance et un niveau d'expertise.</p>
+                <p class="service-name">{% trans "Photographie" %}</p>
+                <p class='description'>{% trans "Des clichés qui racontent une histoire, une ambiance et un niveau d'expertise." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="340">
                 <div class='icon'><i class='fa-solid fa-newspaper'></i></div>
-                <p class="service-name">Couverture médiatique</p>
-                <p class='description'>Une présence dans les médias pour amplifier la visibilité et la crédibilité des initiatives.</p>
+                <p class="service-name">{% trans "Couverture médiatique" %}</p>
+                <p class='description'>{% trans "Une présence dans les médias pour amplifier la visibilité et la crédibilité des initiatives." %}</p>
             </div>
         </div>
-        <h2 class="pole-title">Smart Immo</h2>
+        <h2 class="pole-title">{% trans "Smart Immo" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
                 <div class='icon'><i class='fa-solid fa-chart-area'></i></div>
-                <p class="service-name">Investissement Immobilier</p>
-                <p class='description'>Des programmes d'investissements immobiliers adapté au context du pays</p>
+                <p class="service-name">{% trans "Investissement Immobilier" %}</p>
+                <p class='description'>{% trans "Des programmes d'investissements immobiliers adaptés au contexte du pays." %}</p>
             </div>
         </div>
-        <h2 class="pole-title">Cap</h2>
+        <h2 class="pole-title">{% trans "Cap" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
                 <div class='icon'><i class='fa-solid fa-chart-area'></i></div>
-                <p class="service-name">Programme Spéciale</p>
-                <p class='description'>Un programme spécial d'élixir group spécialisé dans la valorisation ds collectivités territoriales et la promotion des investissements en <strong>RDC</strong></p>
+                <p class="service-name">{% trans "Programme spéciale" %}</p>
+                <p class='description'>{% trans "Un programme spécial d'Elixir Group spécialisé dans la valorisation des collectivités territoriales et la promotion des investissements en RDC." %}</p>
             </div>
         </div>
     </section>

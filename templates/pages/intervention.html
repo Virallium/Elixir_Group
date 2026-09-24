@@ -1,13 +1,14 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Domaines d'intervention - Elixir Group{% endblock title %}
+{% block title %}{% trans "Domaines d'intervention - Elixir Group" %}{% endblock title %}
 
 {% block contents %}
 <div class="page-shell intervention-page">
 	<section class="page-hero page-hero-yellow">
-		<p class="eyebrow">Domaines d'intervention</p>
-		<h1>Des expertises au service des décisions concrètes.</h1>
-		<p>Nous intervenons là où la donnée, l'innovation et la coordination peuvent créer une différence mesurable.</p>
+		<p class="eyebrow">{% trans "Domaines d'intervention" %}</p>
+		<h1>{% trans "Des expertises au service des décisions concrètes." %}</h1>
+		<p>{% trans "Nous intervenons là où la donnée, l'innovation et la coordination peuvent créer une différence mesurable." %}</p>
 	</section>
 	<section class="content-section">
 		<div class="boxs intervention-grid">
@@ -15,36 +16,36 @@
 				<div class="icon">
 					<i class="fa-solid fa-location-dot"></i>
 				</div>
-				<h3>Intelligence territoriale</h3>
-				{% comment %} <p>Cartographier les enjeux et révéler les dynamiques qui transforment les territoires.</p> {% endcomment %}
+				<h3>{% trans "Intelligence territoriale" %}</h3>
+				{% comment %} <p>{% trans "Cartographier les enjeux et révéler les dynamiques qui transforment les territoires." %}</p> {% endcomment %}
 			</article>
 			<article class="box">
 				<div class="icon">
 					<i class="fa-solid fa-bullhorn"></i>
 				</div>
-				<h3>Couverture médiatique et visibilité</h3>
-				{% comment %} <p>Collecter, structurer et valoriser l'information pour la rendre exploitable.</p> {% endcomment %}
+				<h3>{% trans "Couverture médiatique et visibilité" %}</h3>
+				{% comment %} <p>{% trans "Collecter, structurer et valoriser l'information pour la rendre exploitable." %}</p> {% endcomment %}
 			</article>
 			<article class="box">
 				<div class="icon">
 					<i class="fa-solid fa-graduation-cap"></i>
 				</div>
-				<h3>Connexion d'expertise et formation</h3>
-				{% comment %} <p>Faire émerger des solutions nouvelles, testables et adaptées aux usages.</p> {% endcomment %}
+				<h3>{% trans "Connexion d'expertise et formation" %}</h3>
+				{% comment %} <p>{% trans "Faire émerger des solutions nouvelles, testables et adaptées aux usages." %}</p> {% endcomment %}
 			</article>
 			<article class="box">
 				<div class="icon">
 					<i class="fa-solid fa-building"></i>
 				</div>
-				<h3>Cartographie et valorisation immobilière</h3>
-				{% comment %} <p>Renforcer les compétences et connecter les acteurs autour de pratiques partagées.</p> {% endcomment %}
+				<h3>{% trans "Cartographie et valorisation immobilière" %}</h3>
+				{% comment %} <p>{% trans "Renforcer les compétences et connecter les acteurs autour de pratiques partagées." %}</p> {% endcomment %}
 			</article>
 			<article class="box">
 				<div class="icon">
 					<i class="fa-solid fa-scale-balanced"></i>
 				</div>
-				<h3>Conseil de structuration légal d'un cabinet</h3>
-				{% comment %} <p>Renforcer les compétences et connecter les acteurs autour de pratiques partagées.</p> {% endcomment %}
+				<h3>{% trans "Conseil de structuration légal d'un cabinet" %}</h3>
+				{% comment %} <p>{% trans "Renforcer les compétences et connecter les acteurs autour de pratiques partagées." %}</p> {% endcomment %}
 			</article>
 		</div>
 	</section>

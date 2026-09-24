@@ -1,41 +1,42 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Projets et réalisations - Elixir Group{% endblock title %}
+{% block title %}{% trans "Projets et réalisations - Elixir Group" %}{% endblock title %}
 
 {% block contents %}
 <div class="page-shell projects-page">
     <section class="page-hero">
-        <p class="eyebrow">Projets & réalisations</p>
-        <h1>Des idées qui prennent forme sur le terrain.</h1>
-        <p>Quelques exemples de la manière dont nos expertises se transforment en résultats concrets.</p>
+        <p class="eyebrow">{% trans "Projets & réalisations" %}</p>
+        <h1>{% trans "Des idées qui prennent forme sur le terrain." %}</h1>
+        <p>{% trans "Quelques exemples de la manière dont nos expertises se transforment en résultats concrets." %}</p>
     </section>
 
     <section class="content-section">
         <div class="section-heading">
-            <p class="eyebrow">Notre portefeuille</p>
-            <h2>Des réalisations pensées avec, et pour, leurs utilisateurs.</h2>
+            <p class="eyebrow">{% trans "Notre portefeuille" %}</p>
+            <h2>{% trans "Des réalisations pensées avec, et pour, leurs utilisateurs." %}</h2>
         </div>
 
         <div class="boxs project-grid">
             <article class="box project-card">
-                <h3 class="eyebrow">Cartographie du site hydroélectrique d'INGA</h3>
-                <p>Étude détaillée des infrastructures et de leurs interactions pour soutenir la planification et la gestion de la centrale.</p>
+                <h3 class="eyebrow">{% trans "Cartographie du site hydroélectrique d'INGA" %}</h3>
+                <p>{% trans "Étude détaillée des infrastructures et de leurs interactions pour soutenir la planification et la gestion de la centrale." %}</p>
             </article>
 
             <article class="box project-card">
-                <h3>Réseau de transport Ouest SNEL</h3>
-                <p>Modélisation et visualisation de données techniques pour mieux piloter les infrastructures de transport électrique.</p>
+                <h3>{% trans "Réseau de transport Ouest SNEL" %}</h3>
+                <p>{% trans "Modélisation et visualisation de données techniques pour mieux piloter les infrastructures de transport électrique." %}</p>
             </article>
 
             <article class="box project-card">
-                <span class="project-tag">Conseil & stratégie</span>
-                <h3>Accompagnement du Comité congolais du Grand Inga</h3>
-                <p>Appui stratégique et méthodologique pour la coordination des acteurs et la mise en œuvre du projet.</p>
+                <span class="project-tag">{% trans "Conseil & stratégie" %}</span>
+                <h3>{% trans "Accompagnement du Comité congolais du Grand Inga" %}</h3>
+                <p>{% trans "Appui stratégique et méthodologique pour la coordination des acteurs et la mise en œuvre du projet." %}</p>
             </article>
 
             <article class="box project-card">
-                <h3>Analyse territoriale</h3>
-                <p>Développement d'analyses territoriales et de solutions numériques au service du développement et de la promotion du projet Grand Inga.</p>
+                <h3>{% trans "Analyse territoriale" %}</h3>
+                <p>{% trans "Développement d'analyses territoriales et de solutions numériques au service du développement et de la promotion du projet Grand Inga." %}</p>
             </article>
         </div>
     </section>

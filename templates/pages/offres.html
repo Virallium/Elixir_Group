@@ -1,8 +1,24 @@
 {% extends "base.html" %}
 {% load i18n %}
-
-            {% block title %}{% trans "Nos offres - Elixir Group" %}{% endblock title %}
-
+{% block title %}{% trans "Nos offres - Elixir Group" %}{% endblock title %}
+{% block active %}
+    <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
+    <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
+    <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
+    <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+{% endblock active %}
+{% block active2 %}
+    <div class="appear">
+        <li><a href='{% url "about" %}'>{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
+        <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
+        <li><a href="{% url 'interventions' %}" >{% translate "Domaines d'intervention" %}</a></li>
+        <li><a href="{% url 'solutions' %}" >{% translate "Nos solutions" %}</a></li>
+        <li><a href="{% url 'offres' %}" class="active-link">{% translate "Nos offres" %}</a></li>
+        <li><a href="{% url 'projets' %}">{% translate "Projets et réalisations" %}</a></li>
+    </div>
+{% endblock active2 %}
 {% block contents %}
     {% if request.user.is_authenticated %}
         <div class="page-shell offers-page"><section class="page-hero page-hero-yellow"><p class="eyebrow">{% trans "Nos offres" %}</p><h1>{% trans "Choisir le bon niveau d'accompagnement." %}</h1><p>{% trans "Des formats souples pour répondre à un besoin ponctuel comme à une transformation de fond." %}</p></section><section class="content-section"><div class="boxs offer-grid"><article class="box offer-card"><p class="eyebrow">{% trans "Diagnostic" %}</p><h2>{% trans "Éclairer" %}</h2><p>{% trans "Un regard externe pour comprendre votre situation, identifier les priorités et décider des prochaines étapes." %}</p><a href="{% url 'contact' %}">{% trans "En parler" %} <i class="fa-solid fa-arrow-right"></i></a></article><article class="box offer-card featured"><p class="eyebrow">{% trans "Projet" %}</p><h2>{% trans "Construire" %}</h2><p>{% trans "Une équipe dédiée pour concevoir et déployer une solution adaptée à vos usages et à vos ressources." %}</p><a href="{% url 'contact' %}">{% trans "Démarrer un projet" %} <i class="fa-solid fa-arrow-right"></i></a></article><article class="box offer-card"><p class="eyebrow">{% trans "Partenariat" %}</p><h2>{% trans "Accélérer" %}</h2><p>{% trans "Un accompagnement continu pour structurer la croissance, les collaborations et la mesure de l'impact." %}</p><a href="{% url 'contact' %}">{% trans "Devenir partenaire" %} <i class="fa-solid fa-arrow-right"></i></a></article></div></section></div>

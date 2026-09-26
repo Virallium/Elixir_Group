@@ -149,6 +149,7 @@ p{
 /* Overlay mobile */
 .rgba {
     background: rgba(16, 42, 67, 0.6);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     width: 100%;
     height: 100vh;
@@ -177,6 +178,7 @@ header {
     left: 0;
     z-index: 100;
     background: rgba(255, 255, 255, 0.85);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(217, 226, 236, 0.5);
     transition: var(--transition);
@@ -255,10 +257,13 @@ nav a:hover {
     white-space: nowrap;
 }
 
-.appear li a:hover {
+.appear li a:hover, .active-link {
     background: var(--paper);
     color: var(--blue);
     padding-left: 1.5rem;
+}
+.active-link-simple{
+    color:var(--blue);
 }
 
 /* Sélecteur de Langue & Boutons */
@@ -1003,6 +1008,13 @@ Détail evenements
     margin-top: 2.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--line);
+}
+.politiques ul li {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:1rem;
 }
 
 .btn-back {
@@ -2161,14 +2173,23 @@ Détail evenements
 
 /* Adaptabilité Mobile */
 @media (max-width: 992px) {
-    .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        padding: 3rem 5%;
+    .content-section.contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+        width: 100%;
+        padding: 3rem 1rem;
     }
 
     .contact-form {
-        padding: 1.8rem;
+        width: 100%;
+        min-width: 0;
+        padding: 1.25rem;
+    }
+
+    .contact-layout > *,
+    .contact-form input,
+    .contact-form textarea {
+        min-width: 0;
     }
 }
 

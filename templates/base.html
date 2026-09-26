@@ -87,14 +87,17 @@
                     <li>
                         <div class='datalive_contents' id="datalive">
                             <ul>
-                                <li class="plus"><a>{% translate "Accueil" %}<i class="fa-solid fa-plus"></i></a></li>
+                                <li class="plus"><p>{% translate "Accueil" %}<i class="fa-solid fa-plus"></i></p></li>
                                 <div class="appear">
-                                    <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-                                    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
-                                    <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
-                                    <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
-                                    <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+                                    {% block active %}
+                                        <li ><a href="{% url 'home' %}" class='active-link'>{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
+                                        <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
+                                        <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+                                        <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
+                                        <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
+                                        <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+                                    {% endblock active %}
+                                    
                                 </div>
                             </ul>
                         </div>
@@ -105,7 +108,7 @@
                         <div class='about' id="about">
                             <ul>
                                 <li>
-                                    <a class="plus">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </a>
+                                    <p class="plus">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </p>
                                 </li>
                                 <div class="appear">
                                     <li><a href='{% url "about" %}'>{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
@@ -121,10 +124,18 @@
                 </ul>
                 
                 <ul>
-                    <li><a href="{% url 'contact' %}">{% translate "Contact" %}</a></li>
+                    <li>
+                        {% block contact %}
+                            <a href="{% url 'contact' %}">{% translate "Contact" %}</a>
+                        {% endblock contact %}
+                    </li>
                 </ul>
                 <ul>
-                    <li><a href="{% url 'carriere' %}">{% translate "Carrière" %}</a></li>
+                    <li>
+                        {% block carrieres %}
+                            <a href="{% url 'carriere' %}">{% translate "Carrière" %}</a>
+                        {% endblock carrieres %}
+                    </li>
                 </ul>
                     <div class="btnLang">
                         <form action="{% url 'set_language' %}" method="post">
@@ -400,9 +411,9 @@
                             {%translate "Elixir Group"%}
                         </p>
                         <div class="social">
-                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=61574833625405" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@elixirdat" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://wa.me/243828126851?text=Bonjour%20j%20aimerais%20en%20savoir%20plus%20sur%20Elixir%20Groupe%20" aria-label="Whatsapp" target='blank'><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -419,10 +430,10 @@
                     <h3>{%translate "Nos politiques"%}</h3>
                     <ul>
                         <li>
-                            <a href="#mentions-legales">{%translate "Mentions légales"%}</a>
-                            <a href="#confidentialite">{%translate "Politiques de confidentialité"%}</a>
-                            <a href="#conditions">{%translate "Conditions générales"%}</a>
-                            <a href="#protection-donnees">{%translate "Politique de protection des données"%}</a>
+                            <a href="{% url 'mentions_legales' %}">{%translate "Mentions légales"%}</a>
+                            <a href="{% url 'confidentialite' %}">{%translate "Politiques de confidentialité"%}</a>
+                            <a href="{% url 'conditions_generales' %}">{%translate "Conditions générales"%}</a>
+                            <a href="{% url 'protection_donnees' %}">{%translate "Politique de protection des données"%}</a>
                         </li>
                     </ul>
                 </div>

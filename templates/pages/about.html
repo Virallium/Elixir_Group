@@ -2,7 +2,24 @@
 {% load static %}
 {% load i18n %}
 {% block title %}{% trans "À propos - Elixir Group" %}{% endblock title %}
-
+{% block active %}
+    <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
+    <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
+    <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
+    <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+{% endblock active %}
+{% block active2 %}
+    <div class="appear">
+        <li><a href='{% url "about" %}' class="active-link">{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
+        <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
+        <li><a href="{% url 'interventions' %}">{% translate "Domaines d'intervention" %}</a></li>
+        <li><a href="{% url 'solutions' %}">{% translate "Nos solutions" %}</a></li>
+        <li><a href="{% url 'offres' %}">{% translate "Nos offres" %}</a></li>
+        <li><a href="{% url 'projets' %}">{% translate "Projets et réalisations" %}</a></li>
+    </div>
+{% endblock active2 %}
 {% block contents %}
 <div class="page-shell about-page">
 	<section class="page-hero">

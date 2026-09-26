@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ policy.title }} - Elixir Group{% endblock title %}
+
+{% block contents %}
+<div class="page-shell policy-page">
+    <section class="page-hero page-hero-blue">
+        <p class="eyebrow">{{ policy.eyebrow }}</p>
+        <h1>{{ policy.title }}</h1>
+        <p>{{ policy.intro }}</p>
+    </section>
+    <section class="content-section policy-content">
+        {% for section in policy.sections %}
+        <article class="policy-section">
+            <h2>{{ section.title }}</h2>
+            {% for paragraph in section.paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </article>
+        {% endfor %}
+        <p class="policy-updated">{% trans "Pour toute question, contactez-nous à" %} <a href="mailto:elixirgroup@gmail.com">elixirgroup@gmail.com</a>.</p>
+    </section>
+</div>
+{% endblock contents %}

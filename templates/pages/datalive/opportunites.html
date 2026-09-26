@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}Opportunité - Elixir Group{% endblock title %}
-
+{% block active %}
+    <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
+    <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
+    <li><a href="{% url 'opportunites' %}" class='active-link'>{% translate "Opportunités" %}</a></li>
+    <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+{% endblock active %}
 {% block contents %}
     <section class="actualites opportunities-page" style="padding-top:6rem;">
         <h1>Quelles sont les opportunités qui vous sont destinées en rejoignant Elixir Group?</h1>

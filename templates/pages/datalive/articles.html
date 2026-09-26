@@ -1,6 +1,14 @@
 {% extends "base.html" %}
-
+{% load i18n %}
 {% block title %}Articles - Elixir Group{% endblock title %}
+{% block active %}
+    <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
+    <li><a href="{% url 'articles' %}" class='active-link'>{% translate "Articles" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
+    <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
+    <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
+{% endblock active %}
 
 {% block contents %}
     <div class="page-shell datalive-page">

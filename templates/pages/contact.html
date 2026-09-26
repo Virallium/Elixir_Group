@@ -2,7 +2,9 @@
 {% load i18n %}
 
 {% block title %}{% trans "Contact - Elixir Group" %}{% endblock title %}
-
+{% block contact %}
+    <a href="{% url 'contact' %}" class="active-link-simple">{% translate "Contact" %}</a>
+{% endblock contact %}
 {% block contents %}
 <div class="page-shell contact-page">
 	<section class="page-hero page-hero-blue" data-aos="fade-up" data-aos-delay="100"><p class="eyebrow">{% trans "Parlons de votre projet" %}</p><h1>{% trans "Une question, une idée ou un défi à résoudre ?" %}</h1><p>{% trans "Notre équipe vous répond et vous oriente vers l'expertise la plus pertinente." %}</p></section>

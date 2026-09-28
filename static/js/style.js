@@ -99,3 +99,16 @@ function preventload(){
     }); 
 }
 preventload()
+
+async function registerServiceWorker(){
+    if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/static/pwa-build/sw.js', {
+    scope: '/'  // <-- Autorise le SW à intercepter TOUT le site
+  }).then(registration => {
+    console.log('SW enregistré avec le scope:', registration.scope);
+  }).catch(err => {
+    console.error('Échec enregistrement SW:', err);
+  });
+}
+}
+window.addEventListener('load', registerServiceWorker);

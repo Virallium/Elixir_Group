@@ -206,8 +206,11 @@ def evenements_detail(request, evenement_id):
     })
 
 def service_worker(request):
+    worker_path = Path(settings.BASE_DIR) / 'static' / 'pwa-build' / 'sw.js'
+    if not worker_path.exists():
+        worker_path = Path(settings.BASE_DIR) / 'static' / 'js' / 'sw.js'
     response = FileResponse(
-        (Path(settings.BASE_DIR) / 'static' / 'js' / 'sw.js').open('rb'),
+        worker_path.open('rb'),
         content_type='application/javascript',
     )
     response['Service-Worker-Allowed'] = '/'

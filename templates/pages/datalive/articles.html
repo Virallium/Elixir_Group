@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}Articles - Elixir Group{% endblock title %}
+{% block title %}{% trans "Articles - Elixir Group" %}{% endblock title %}
 {% block active %}
     <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
     <li><a href="{% url 'articles' %}" class='active-link'>{% translate "Articles" %}</a></li>
-    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Événements" %}</a></li>
     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
     <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
     <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
@@ -13,9 +13,9 @@
 {% block contents %}
     <div class="page-shell datalive-page">
         <section class="page-hero page-hero-blue">
-            <p class="eyebrow">DataLive · Actualités</p>
-            <h1>Les actualités d'Elixir Group.</h1>
-            <p>Retrouvez nos dernières informations, analyses et publications.</p>
+            <p class="eyebrow">{% trans "DataLive · Actualités" %}</p>
+            <h1>{% trans "Les actualités d'Elixir Group." %}</h1>
+            <p>{% trans "Retrouvez nos dernières informations, analyses et publications." %}</p>
         </section>
         <section class="content-section">
             {% if actualites %}
@@ -25,12 +25,12 @@
                             <time datetime="{{ actualite.date_publiee|date:'Y-m-d' }}">{{ actualite.date_publiee|date:'d F Y' }}</time>
                             <h2>{{ actualite.titre }}</h2>
                             <p>{{ actualite.description }}</p>
-                            {% if actualite.source %}<a href="{{ actualite.source }}" target="_blank" rel="noopener">Lire la source</a>{% endif %}
+                            {% if actualite.source %}<a href="{{ actualite.source }}" target="_blank" rel="noopener">{% trans "Lire la source" %}</a>{% endif %}
                         </article>
                     {% endfor %}
                 </div>
             {% else %}
-                <div class="empty-state"><i class="fa-regular fa-newspaper"></i><h2>Aucune actualité publiée pour le moment.</h2><p>Les prochaines actualités apparaîtront ici.</p></div>
+                <div class="empty-state"><i class="fa-regular fa-newspaper"></i><h2>{% trans "Aucune actualité publiée pour le moment." %}</h2><p>{% trans "Les prochaines actualités apparaîtront ici." %}</p></div>
             {% endif %}
         </section>
     </div>

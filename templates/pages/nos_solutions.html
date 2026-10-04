@@ -5,15 +5,15 @@
 {% block active %}
     <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Événements" %}</a></li>
     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
     <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
     <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
 {% endblock active %}
 {% block active2 %}
     <div class="appear">
-        <li><a href='{% url "about" %}'>{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
-        <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
+        <li><a href='{% url "about" %}'>{% translate "À propos de nous" %} <i class="fa-solid fa-plus"></i> </a></li>
+        <li><a href="{% url 'ecosysteme' %}">{% translate "Écosystème" %}</a></li>
         <li><a href="{% url 'interventions' %}" >{% translate "Domaines d'intervention" %}</a></li>
         <li><a href="{% url 'solutions' %}" class="active-link">{% translate "Nos solutions" %}</a></li>
         <li><a href="{% url 'offres' %}">{% translate "Nos offres" %}</a></li>
@@ -106,6 +106,11 @@
                 <p class='description'>{% trans "Des événements pensés pour fédérer, informer et encourager les échanges concrets." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
+                <div class='icon'><i class="fa-solid fa-network-wired"></i></div>
+                <p class="service-name">{% trans "Networking" %}</p>
+                <p class='description'>{% trans "Une intégration complète dans nos réseaux des experts." %}</p>
+            </div>
+            <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
                 <div class='icon'><i class='fa-solid fa-user-gear'></i></div>
                 <p class="service-name">{% trans "Accompagnement des étudiants et chercheurs" %}</p>
                 <p class='description'>{% trans "Un soutien méthodologique pour structurer les projets, idées et démarches de recherche." %}</p>
@@ -136,7 +141,7 @@
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="260">
                 <div class='icon'><i class='fa-solid fa-id-badge'></i></div>
-                <p class="service-name">{% trans "Visibilité profil professionnels" %}</p>
+                <p class="service-name">{% trans "Visibilité des profils professionnels" %}</p>
                 <p class='description'>{% trans "Une image digitale plus forte pour valoriser les compétences et les expertises." %}</p>
             </div>
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="300">
@@ -153,7 +158,7 @@
         <h2 class="pole-title">{% trans "Smart Immo" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
-                <div class='icon'><i class='fa-solid fa-chart-area'></i></div>
+                <div class='icon'><i class="fa-solid fa-house-chimney"></i></div>
                 <p class="service-name">{% trans "Investissement Immobilier" %}</p>
                 <p class='description'>{% trans "Des programmes d'investissements immobiliers adaptés au contexte du pays." %}</p>
             </div>
@@ -161,8 +166,8 @@
         <h2 class="pole-title">{% trans "Cap" %}</h2>
         <div class="boxs solution-grid">
             <div class='box solution-card' data-aos="zoom-in" data-aos-delay="100">
-                <div class='icon'><i class='fa-solid fa-chart-area'></i></div>
-                <p class="service-name">{% trans "Programme spéciale" %}</p>
+                <div class='icon'><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <p class="service-name">{% trans "Programme spécial" %}</p>
                 <p class='description'>{% trans "Un programme spécial d'Elixir Group spécialisé dans la valorisation des collectivités territoriales et la promotion des investissements en RDC." %}</p>
             </div>
         </div>

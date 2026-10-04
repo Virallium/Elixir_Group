@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-24 04:42+0200\n"
+"POT-Creation-Date: 2026-10-05 00:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,462 +18,528 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
-#: .\templates\base.html:24
+
+#: .\templates\base.html:65
 msgid "Accueil - Elixir Group"
 msgstr ""
 
-#: .\templates\base.html:90 .\templates\base.html:412
+#: .\templates\base.html:135 .\templates\base.html:457
 msgid "Accueil"
 msgstr ""
 
-#: .\templates\base.html:92
+#: .\templates\base.html:139 .\templates\pages\about.html:6
+#: .\templates\pages\datalive\articles.html:5
+#: .\templates\pages\datalive\evenements.html:5
+#: .\templates\pages\datalive\interviews.html:5
+#: .\templates\pages\datalive\opportunites.html:6
+#: .\templates\pages\datalive\publications.html:5
+#: .\templates\pages\ecosysteme.html:6 .\templates\pages\intervention.html:6
+#: .\templates\pages\nos_solutions.html:6 .\templates\pages\offres.html:5
+#: .\templates\pages\projets_realisation.html:6
 msgid "home"
 msgstr ""
 
-#: .\templates\base.html:93
+#: .\templates\base.html:140 .\templates\pages\about.html:7
+#: .\templates\pages\datalive\articles.html:6
+#: .\templates\pages\datalive\evenements.html:6
+#: .\templates\pages\datalive\interviews.html:6
+#: .\templates\pages\datalive\opportunites.html:7
+#: .\templates\pages\datalive\publications.html:6
+#: .\templates\pages\ecosysteme.html:7 .\templates\pages\intervention.html:7
+#: .\templates\pages\nos_solutions.html:7 .\templates\pages\offres.html:6
+#: .\templates\pages\projets_realisation.html:7
 msgid "Articles"
 msgstr ""
 
-#: .\templates\base.html:94
-msgid "Evenements"
+#: .\templates\base.html:141 .\templates\pages\about.html:8
+#: .\templates\pages\datalive\articles.html:7
+#: .\templates\pages\datalive\evenements.html:7
+#: .\templates\pages\datalive\interviews.html:7
+#: .\templates\pages\datalive\opportunites.html:8
+#: .\templates\pages\datalive\publications.html:7
+#: .\templates\pages\ecosysteme.html:8 .\templates\pages\intervention.html:8
+#: .\templates\pages\nos_solutions.html:8 .\templates\pages\offres.html:7
+#: .\templates\pages\projets_realisation.html:8
+msgid "Événements"
 msgstr ""
 
-#: .\templates\base.html:95
+#: .\templates\base.html:142 .\templates\pages\about.html:9
+#: .\templates\pages\datalive\articles.html:8
+#: .\templates\pages\datalive\evenements.html:8
+#: .\templates\pages\datalive\interviews.html:8
+#: .\templates\pages\datalive\opportunites.html:9
+#: .\templates\pages\datalive\publications.html:8
+#: .\templates\pages\ecosysteme.html:9 .\templates\pages\intervention.html:9
+#: .\templates\pages\nos_solutions.html:9 .\templates\pages\offres.html:8
+#: .\templates\pages\projets_realisation.html:9
 msgid "Interviews"
 msgstr ""
 
-#: .\templates\base.html:96
+#: .\templates\base.html:143 .\templates\pages\about.html:10
+#: .\templates\pages\datalive\articles.html:9
+#: .\templates\pages\datalive\evenements.html:9
+#: .\templates\pages\datalive\interviews.html:9
+#: .\templates\pages\datalive\opportunites.html:10
+#: .\templates\pages\datalive\publications.html:9
+#: .\templates\pages\ecosysteme.html:10 .\templates\pages\intervention.html:10
+#: .\templates\pages\nos_solutions.html:10 .\templates\pages\offres.html:9
+#: .\templates\pages\projets_realisation.html:10
 msgid "Opportunités"
 msgstr ""
 
-#: .\templates\base.html:97
+#: .\templates\base.html:144 .\templates\pages\about.html:11
+#: .\templates\pages\datalive\articles.html:10
+#: .\templates\pages\datalive\evenements.html:10
+#: .\templates\pages\datalive\interviews.html:10
+#: .\templates\pages\datalive\opportunites.html:11
+#: .\templates\pages\datalive\publications.html:10
+#: .\templates\pages\ecosysteme.html:11 .\templates\pages\intervention.html:11
+#: .\templates\pages\nos_solutions.html:11 .\templates\pages\offres.html:10
+#: .\templates\pages\projets_realisation.html:11
 msgid "Publications"
 msgstr ""
 
-#: .\templates\base.html:108
-msgid "Apropos"
+#: .\templates\base.html:156 .\templates\base.html:458
+msgid "À propos"
 msgstr ""
 
-#: .\templates\base.html:111
-msgid "Surnous"
+#: .\templates\base.html:160 .\templates\pages\about.html:15
+#: .\templates\pages\ecosysteme.html:15 .\templates\pages\intervention.html:15
+#: .\templates\pages\nos_solutions.html:15 .\templates\pages\offres.html:14
+#: .\templates\pages\projets_realisation.html:15
+msgid "À propos de nous"
 msgstr ""
 
-#: .\templates\base.html:112
-msgid "Ecosystème"
+#: .\templates\base.html:161 .\templates\pages\about.html:16
+#: .\templates\pages\datalive\evenements_detail.html:60
+#: .\templates\pages\ecosysteme.html:16 .\templates\pages\intervention.html:16
+#: .\templates\pages\nos_solutions.html:16 .\templates\pages\offres.html:15
+#: .\templates\pages\projets_realisation.html:16
+msgid "Écosystème"
 msgstr ""
 
-#: .\templates\base.html:113 .\templates\pages\intervention.html:9
+#: .\templates\base.html:162 .\templates\pages\about.html:17
+#: .\templates\pages\ecosysteme.html:17 .\templates\pages\intervention.html:17
+#: .\templates\pages\intervention.html:26
+#: .\templates\pages\nos_solutions.html:17 .\templates\pages\offres.html:16
+#: .\templates\pages\projets_realisation.html:17
 msgid "Domaines d'intervention"
 msgstr ""
 
-#: .\templates\base.html:114 .\templates\pages\nos_solutions.html:9
+#: .\templates\base.html:163 .\templates\pages\about.html:18
+#: .\templates\pages\ecosysteme.html:18 .\templates\pages\intervention.html:18
+#: .\templates\pages\nos_solutions.html:18
+#: .\templates\pages\nos_solutions.html:26 .\templates\pages\offres.html:17
+#: .\templates\pages\projets_realisation.html:18
 msgid "Nos solutions"
 msgstr ""
 
-#: .\templates\base.html:115 .\templates\pages\offres.html:8
+#: .\templates\base.html:164 .\templates\pages\about.html:19
+#: .\templates\pages\ecosysteme.html:19 .\templates\pages\intervention.html:19
+#: .\templates\pages\nos_solutions.html:19 .\templates\pages\offres.html:18
+#: .\templates\pages\offres.html:24
+#: .\templates\pages\projets_realisation.html:19
 msgid "Nos offres"
 msgstr ""
 
-#: .\templates\base.html:116
+#: .\templates\base.html:165 .\templates\pages\about.html:20
+#: .\templates\pages\ecosysteme.html:20 .\templates\pages\intervention.html:20
+#: .\templates\pages\nos_solutions.html:20 .\templates\pages\offres.html:19
+#: .\templates\pages\projets_realisation.html:20
 msgid "Projets et réalisations"
 msgstr ""
 
-#: .\templates\base.html:124 .\templates\base.html:414
+#: .\templates\base.html:175 .\templates\base.html:459
+#: .\templates\pages\contact.html:6
 msgid "Contact"
 msgstr ""
 
-#: .\templates\base.html:127 .\templates\base.html:415
+#: .\templates\base.html:182 .\templates\base.html:460
+#: .\templates\pages\carriere.html:6
 msgid "Carrière"
 msgstr ""
 
-#: .\templates\base.html:145
+#: .\templates\base.html:202
 msgid "Déconnexion"
 msgstr ""
 
-#: .\templates\base.html:152
+#: .\templates\base.html:208
 msgid "Se connecter"
 msgstr ""
 
-#: .\templates\base.html:179 .\templates\base.html:400
+#: .\templates\base.html:224 .\templates\base.html:444
+#: .\templates\pages\datalive\actualites.html:9
 msgid "Elixir Group"
 msgstr ""
 
-#: .\templates\base.html:180
+#: .\templates\base.html:225
 msgid ""
-"Intelligence territoriale, innovation, connexion et les solutions <br>au "
-"services des territoires africains"
+"Intelligence territoriale, innovation, connexion et solutions <br>au service "
+"des territoires africains"
 msgstr ""
 
-#: .\templates\base.html:181
+#: .\templates\base.html:226
 msgid ""
 "Elixir Group est un écosystème africain qui réunit expertise, données, "
-"technologies et investissements intelligente dans tous les secteurs."
+"technologies et investissements intelligents dans tous les secteurs."
 msgstr ""
 
-#: .\templates\base.html:184
+#: .\templates\base.html:229
 msgid "Découvrir Elixir Group"
 msgstr ""
 
-#: .\templates\base.html:187
+#: .\templates\base.html:232
 msgid "Explorer nos solutions"
 msgstr ""
 
-#: .\templates\base.html:195
+#: .\templates\base.html:240
 msgid "Un écosystème de pôles spécialisés"
 msgstr ""
 
-#: .\templates\base.html:196
+#: .\templates\base.html:241
 msgid "Des expertises connectées pour faire émerger de nouvelles possibilités"
 msgstr ""
 
-#: .\templates\base.html:197
+#: .\templates\base.html:242
 msgid ""
 "De la donnée à la technologie, de l'investissement à l'accompagnement "
 "stratégique, nos pôles réunissent les compétences qui transforment les idées "
 "en solutions utiles."
 msgstr ""
 
-#: .\templates\base.html:200
+#: .\templates\base.html:245
 msgid "Découvrir nos pôles"
 msgstr ""
 
-#: .\templates\base.html:203
-msgid "Voir notre écosystème"
+#: .\templates\base.html:248
+msgid "Voir nos interventions"
 msgstr ""
 
-#: .\templates\base.html:211
+#: .\templates\base.html:256
 msgid "DataLive"
 msgstr ""
 
-#: .\templates\base.html:212
+#: .\templates\base.html:257
 msgid "Lire les signaux du présent <br>pour décider avec justesse"
 msgstr ""
 
-#: .\templates\base.html:213
+#: .\templates\base.html:258
 msgid ""
 "Nous transformons les données en informations claires, en analyses "
 "pertinentes et en opportunités concrètes pour mieux comprendre les marchés "
 "et les territoires africains."
 msgstr ""
 
-#: .\templates\base.html:216
-msgid "Explorer DataLive"
-msgstr ""
-
-#: .\templates\base.html:219
+#: .\templates\base.html:262
 msgid "Consulter nos analyses"
 msgstr ""
 
-#: .\templates\base.html:227
+#: .\templates\base.html:270
 msgid "Un impact qui se mesure sur le terrain"
 msgstr ""
 
-#: .\templates\base.html:228
+#: .\templates\base.html:271
 msgid "Imaginer aujourd'hui"
 msgstr ""
 
-#: .\templates\base.html:228
+#: .\templates\base.html:271
 msgid "les territoires de demain"
 msgstr ""
 
-#: .\templates\base.html:229
+#: .\templates\base.html:272
 msgid ""
 "Elixir Group accompagne les organisations qui veulent passer à l'action avec "
 "des projets responsables, des outils adaptés et une ambition commune : créer "
 "une croissance durable."
 msgstr ""
 
-#: .\templates\base.html:232
+#: .\templates\base.html:275
 msgid "Découvrir nos projets"
 msgstr ""
 
-#: .\templates\base.html:235
+#: .\templates\base.html:278
 msgid "Construire avec nous"
 msgstr ""
 
-#: .\templates\base.html:244
+#: .\templates\base.html:287
 msgid "Elixir Group en quelques mots"
 msgstr ""
 
-#: .\templates\base.html:245
-msgid "Un groupe. Plusieurs expertise. Une même ambition."
+#: .\templates\base.html:288
+msgid "Un groupe. Plusieurs expertises. Une même ambition."
 msgstr ""
 
-#: .\templates\base.html:246
+#: .\templates\base.html:289
 msgid ""
 "Elixir Group est une structure faîtière qui fédère plusieurs pôles "
-"spécialisés autour d'une ambition commune: celle de transformer les données, "
-"les technologies et les idéesw en solutions à impact <br> <span>Notre "
-"écosystème intervient auprès des entreprises, instituitions, organisations "
-"et porteurs de projets pour repondre aux enjeux de developpement, "
-"d'innovation et de transformation des territoirres"
+"spécialisés autour d'une ambition commune : transformer les données, les "
+"technologies et les idées en solutions à impact.<br><span>Notre écosystème "
+"intervient auprès des entreprises, institutions, organisations et porteurs "
+"de projets pour répondre aux enjeux de développement, d'innovation et de "
+"transformation des territoires."
 msgstr ""
 
-#: .\templates\base.html:247
+#: .\templates\base.html:290
 msgid "En savoir plus sur Elixir Group"
 msgstr ""
 
-#: .\templates\base.html:250
+#: .\templates\base.html:294
 msgid "Notre Mission"
 msgstr ""
 
-#: .\templates\base.html:251
+#: .\templates\base.html:296
 msgid ""
-"Développer des solutions innovantes permettantsaux institutions,entreprises, "
-"organisations et citoyens de mieux comprendre, gérer et développer leurs "
-"territoires , leurs organisations et leurs activités."
+"Développer des solutions innovantes permettant aux institutions, "
+"entreprises, organisations et citoyens de mieux comprendre, gérer et "
+"développer leurs territoires, leurs organisations et leurs activités."
 msgstr ""
 
-#: .\templates\base.html:253
+#: .\templates\base.html:299
 msgid "Nos valeurs"
 msgstr ""
 
-#: .\templates\base.html:255
+#: .\templates\base.html:302
 msgid "Excellence"
 msgstr ""
 
-#: .\templates\base.html:256 .\templates\pages\ecosysteme.html:26
+#: .\templates\base.html:303 .\templates\pages\ecosysteme.html:43
 msgid "Innovation"
 msgstr ""
 
-#: .\templates\base.html:257 .\templates\pages\about.html:44
+#: .\templates\base.html:304 .\templates\pages\about.html:61
 msgid "Intégrité"
 msgstr ""
 
-#: .\templates\base.html:258
+#: .\templates\base.html:305
 msgid "Responsabilité"
 msgstr ""
 
-#: .\templates\base.html:259
+#: .\templates\base.html:306
 msgid "Collaboration"
 msgstr ""
 
-#: .\templates\base.html:260
-msgid "Professionalisme"
+#: .\templates\base.html:307
+msgid "Professionnalisme"
 msgstr ""
 
-#: .\templates\base.html:261
+#: .\templates\base.html:308
 msgid "Esprit d'équipe"
 msgstr ""
 
-#: .\templates\base.html:262
+#: .\templates\base.html:309
 msgid "Transparence"
 msgstr ""
 
-#: .\templates\base.html:263
+#: .\templates\base.html:310
 msgid "Création de valeur"
 msgstr ""
 
-#: .\templates\base.html:264
+#: .\templates\base.html:311
 msgid "Développement durable"
 msgstr ""
 
-#: .\templates\base.html:270
+#: .\templates\base.html:317
 msgid "Nos grands domaines d'intervention"
 msgstr ""
 
-#: .\templates\base.html:274
+#: .\templates\base.html:321
 msgid "Intelligence Territoriale"
 msgstr ""
 
-#: .\templates\base.html:275
+#: .\templates\base.html:322
 msgid "Comprendre, analyser et valoriser les territoires grâce à la donnée."
 msgstr ""
 
-#: .\templates\base.html:279
-msgid "Data & Technologies"
+#: .\templates\base.html:326
+msgid "Data &amp; Technologies"
 msgstr ""
 
-#: .\templates\base.html:280
+#: .\templates\base.html:327
 msgid ""
 "Transformer les données et les technologies en solutions opérationnelles."
 msgstr ""
 
-#: .\templates\base.html:284
-msgid "Media & Information"
+#: .\templates\base.html:331
+msgid "Media &amp; Information"
 msgstr ""
 
-#: .\templates\base.html:285
+#: .\templates\base.html:332
 msgid "Produire, diffuser et valoriser l'information."
 msgstr ""
 
-#: .\templates\base.html:289
-msgid "Formation & connexion"
-msgstr ""
-
-#: .\templates\base.html:290
-msgid "Développer les compétence et connecter les acteurs."
-msgstr ""
-
-#: .\templates\base.html:294
-msgid "Solutions opérationnelles"
-msgstr ""
-
-#: .\templates\base.html:295
-msgid "Transformer les projets en réalisations concrètes."
-msgstr ""
-
-#: .\templates\base.html:299
-msgid "Investissement & conseil"
-msgstr ""
-
-#: .\templates\base.html:300
-msgid "Accompagner les entrepriser, projets et opportunités d'investissements"
-msgstr ""
-
-#: .\templates\base.html:305
-msgid "Elixir en chiffres"
-msgstr ""
-
-#: .\templates\base.html:309
-msgid "Projets réalisés"
-msgstr ""
-
-#: .\templates\base.html:314
-msgid "Partenaires"
-msgstr ""
-
-#: .\templates\base.html:319
-msgid "Experts"
-msgstr ""
-
-#: .\templates\base.html:325
-msgid "Pôles spécialisés"
-msgstr ""
-
-#: .\templates\base.html:330
-msgid "Clients accompagnés"
-msgstr ""
-
 #: .\templates\base.html:336
-msgid "Nos partenaires"
+msgid "Formation &amp; connexion"
 msgstr ""
 
 #: .\templates\base.html:337
+msgid "Développer les compétences et connecter les acteurs."
+msgstr ""
+
+#: .\templates\base.html:341
+msgid "Solutions opérationnelles"
+msgstr ""
+
+#: .\templates\base.html:342
+msgid "Transformer les projets en réalisations concrètes."
+msgstr ""
+
+#: .\templates\base.html:346
+msgid "Investissement &amp; conseil"
+msgstr ""
+
+#: .\templates\base.html:347
+msgid "Accompagner les entreprises, projets et opportunités d'investissement."
+msgstr ""
+
+#: .\templates\base.html:352
+msgid "Elixir en chiffres"
+msgstr ""
+
+#: .\templates\base.html:356
+msgid "Projets réalisés"
+msgstr ""
+
+#: .\templates\base.html:361
+msgid "Partenaires"
+msgstr ""
+
+#: .\templates\base.html:366
+msgid "Experts"
+msgstr ""
+
+#: .\templates\base.html:371
+msgid "Pôles spécialisés"
+msgstr ""
+
+#: .\templates\base.html:376
+msgid "Clients accompagnés"
+msgstr ""
+
+#: .\templates\base.html:382
+msgid "Nos partenaires"
+msgstr ""
+
+#: .\templates\base.html:383
 msgid ""
 "Nous construisons des collaborations durables avec celles et ceux qui "
 "partagent notre ambition pour des territoires africains plus résilients et "
 "plus innovants."
 msgstr ""
 
-#: .\templates\base.html:341
+#: .\templates\base.html:387
 msgid "Institutions publiques"
 msgstr ""
 
-#: .\templates\base.html:342
+#: .\templates\base.html:388
 msgid ""
 "Nous appuyons les décideurs avec des données fiables et des outils d'aide à "
 "la décision."
 msgstr ""
 
-#: .\templates\base.html:346
+#: .\templates\base.html:392
 msgid "Entreprises et investisseurs"
 msgstr ""
 
-#: .\templates\base.html:347
+#: .\templates\base.html:393
 msgid ""
 "Nous révélons les opportunités et accompagnons les projets vers une "
 "croissance responsable."
 msgstr ""
 
-#: .\templates\base.html:351
+#: .\templates\base.html:397
 msgid "Organisations et communautés"
 msgstr ""
 
-#: .\templates\base.html:352
+#: .\templates\base.html:398
 msgid ""
 "Nous rapprochons les expertises, les talents et les besoins pour créer un "
 "impact durable."
 msgstr ""
 
-#: .\templates\base.html:364
+#: .\templates\base.html:410
 msgid "Une équipe engagée pour transformer les idées en impact"
 msgstr ""
 
-#: .\templates\base.html:365
+#: .\templates\base.html:411
 msgid ""
 "Notre comité réunit des profils complémentaires en stratégie, données, "
 "technologie et développement territorial."
 msgstr ""
 
-#: .\templates\base.html:369
+#: .\templates\base.html:415
 msgid "Vision stratégique"
 msgstr ""
 
-#: .\templates\base.html:370
+#: .\templates\base.html:416
 msgid ""
 "Nous donnons une direction claire aux projets et relions chaque décision à "
 "un résultat concret."
 msgstr ""
 
-#: .\templates\base.html:374
+#: .\templates\base.html:420
 msgid "Expertise de terrain"
 msgstr ""
 
-#: .\templates\base.html:375
+#: .\templates\base.html:421
 msgid ""
 "Nous concevons des solutions adaptées aux réalités locales et aux usages de "
 "leurs bénéficiaires."
 msgstr ""
 
-#: .\templates\base.html:379
+#: .\templates\base.html:425
 msgid "Culture de collaboration"
 msgstr ""
 
-#: .\templates\base.html:380
+#: .\templates\base.html:426
 msgid ""
 "Nous faisons circuler les compétences pour faire avancer les projets avec "
 "méthode et confiance."
 msgstr ""
 
-#: .\templates\base.html:385
+#: .\templates\base.html:431
 msgid "Construisons les territoires de demain"
 msgstr ""
 
-#: .\templates\base.html:386
+#: .\templates\base.html:432
 msgid ""
 "Vous portez une idée, une expertise ou un projet à fort potentiel ? "
 "Rejoignez un écosystème qui transforme les défis africains en solutions "
 "utiles, inclusives et durables."
 msgstr ""
 
-#: .\templates\base.html:387
+#: .\templates\base.html:433
 msgid "Découvrir nos opportunités"
 msgstr ""
 
-#: .\templates\base.html:410
+#: .\templates\base.html:455
 msgid "Liens rapides"
 msgstr ""
 
-#: .\templates\base.html:413
-msgid "À propos"
-msgstr ""
-
-#: .\templates\base.html:419
+#: .\templates\base.html:464
 msgid "Nos politiques"
 msgstr ""
 
-#: .\templates\base.html:422
+#: .\templates\base.html:467
 msgid "Mentions légales"
 msgstr ""
 
-#: .\templates\base.html:423
+#: .\templates\base.html:468
 msgid "Politiques de confidentialité"
 msgstr ""
 
-#: .\templates\base.html:424
+#: .\templates\base.html:469
 msgid "Conditions générales"
 msgstr ""
 
-#: .\templates\base.html:425
+#: .\templates\base.html:470
 msgid "Politique de protection des données"
 msgstr ""
 
-#: .\templates\base.html:433
+#: .\templates\base.html:478
 msgid "Adresse du siège"
 msgstr ""
 
-#: .\templates\base.html:434
+#: .\templates\base.html:479
 msgid "Identification Légale RCCM"
 msgstr ""
 
@@ -503,78 +569,78 @@ msgstr ""
 msgid "À propos - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\about.html:9
+#: .\templates\pages\about.html:26
 msgid "Notre identité"
 msgstr ""
 
-#: .\templates\pages\about.html:10
+#: .\templates\pages\about.html:27
 msgid "Elixir Group est une structure faîtière"
 msgstr ""
 
-#: .\templates\pages\about.html:11
+#: .\templates\pages\about.html:28
 msgid ""
 "L'ambition commune est de transformer les données, les technologies et les "
 "idées en solutions à impact direct"
 msgstr ""
 
-#: .\templates\pages\about.html:15
+#: .\templates\pages\about.html:32
 msgid "Un groupe, plusieurs expertises"
 msgstr ""
 
-#: .\templates\pages\about.html:16
+#: .\templates\pages\about.html:33
 msgid "Une même ambition : rendre l'action plus utile."
 msgstr ""
 
-#: .\templates\pages\about.html:19
+#: .\templates\pages\about.html:36
 msgid ""
 "Nous croisons la donnée, la technologie, le conseil, la formation et "
 "l'investissement pour concevoir des réponses adaptées aux réalités du "
 "terrain."
 msgstr ""
 
-#: .\templates\pages\about.html:20
+#: .\templates\pages\about.html:37
 msgid ""
 "Notre rôle est de relier les bonnes personnes, les bons outils et les bonnes "
 "informations afin de faire avancer les projets de manière concrète."
 msgstr ""
 
-#: .\templates\pages\about.html:24
+#: .\templates\pages\about.html:41
 msgid "Elixir team"
 msgstr ""
 
-#: .\templates\pages\about.html:27 .\templates\pages\about.html:30
-#: .\templates\pages\about.html:33
+#: .\templates\pages\about.html:44 .\templates\pages\about.html:47
+#: .\templates\pages\about.html:50
 msgid "photo de la communauté elixir"
 msgstr ""
 
-#: .\templates\pages\about.html:37
+#: .\templates\pages\about.html:54
 msgid ""
 "Nous réunissons des profils aux compétences complémentaires pour accompagner "
 "les organisations dans leur transformation numérique, leur stratégie de "
 "développement et la mise en œuvre de solutions concrètes, durables et utiles."
 msgstr ""
 
-#: .\templates\pages\about.html:41
+#: .\templates\pages\about.html:58
 msgid "Ce qui nous guide"
 msgstr ""
 
-#: .\templates\pages\about.html:43
+#: .\templates\pages\about.html:60
 msgid "Vision"
 msgstr ""
 
-#: .\templates\pages\about.html:43
+#: .\templates\pages\about.html:60
 msgid "Lire les transformations des territoires pour mieux préparer l'avenir."
 msgstr ""
 
-#: .\templates\pages\about.html:44
+#: .\templates\pages\about.html:61
 msgid "Travailler avec exigence, transparence et respect des réalités locales."
 msgstr ""
 
-#: .\templates\pages\about.html:45
+#: .\templates\pages\about.html:62
 msgid "Impact"
 msgstr ""
 
-#: .\templates\pages\about.html:45
+#: .\templates\pages\about.html:62
 msgid "Mesurer l'utilité de chaque solution sur le terrain."
 msgstr ""
 
@@ -582,61 +648,61 @@ msgstr ""
 msgid "Carrière - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid "Rejoindre Elixir Group"
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid "Mettre son talent au service de projets qui comptent."
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid ""
 "Nous recherchons des profils curieux, exigeants et prêts à travailler au "
 "plus près des réalités africaines."
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid "Notre culture"
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid "Apprendre vite, collaborer franchement, livrer utile."
 msgstr ""
 
-#: .\templates\pages\carriere.html:7
+#: .\templates\pages\carriere.html:10
 msgid ""
 "Chez Elixir, les parcours sont différents mais les standards sont communs : "
 "écouter le terrain, partager les idées et aller jusqu'au résultat."
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid "Ce que vous trouverez ici"
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid "Responsabilités réelles"
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid ""
 "Des missions qui donnent une place à votre jugement et à vos initiatives."
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid "Équipe pluridisciplinaire"
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid ""
 "Des échanges quotidiens entre stratégie, données, technologie et terrain."
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid "Impact visible"
 msgstr ""
 
-#: .\templates\pages\carriere.html:11
+#: .\templates\pages\carriere.html:15
 msgid ""
 "Des projets dont l'utilité se mesure dans les organisations et les "
 "territoires."
@@ -646,150 +712,502 @@ msgstr ""
 msgid "Contact - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\contact.html:8
+#: .\templates\pages\contact.html:10
 msgid "Parlons de votre projet"
 msgstr ""
 
-#: .\templates\pages\contact.html:8
+#: .\templates\pages\contact.html:10
 msgid "Une question, une idée ou un défi à résoudre ?"
 msgstr ""
 
-#: .\templates\pages\contact.html:8
+#: .\templates\pages\contact.html:10
 msgid ""
 "Notre équipe vous répond et vous oriente vers l'expertise la plus pertinente."
 msgstr ""
 
-#: .\templates\pages\contact.html:10
+#: .\templates\pages\contact.html:12
 msgid "Nous trouver"
 msgstr ""
 
-#: .\templates\pages\contact.html:10
+#: .\templates\pages\contact.html:12
 msgid "Commençons par un échange simple."
 msgstr ""
 
-#: .\templates\pages\contact.html:10
-msgid "Ngaliema, Binza Pigeon n°20"
-msgstr ""
-
-#: .\templates\pages\contact.html:10
-msgid "Kinshasa, République démocratique du Congo"
+#: .\templates\pages\contact.html:12
+msgid "N°45 Av, KASA-VUBU, C/NGIRI-NGIRI, KINSHASA"
 msgstr ""
 
 #: .\templates\pages\contact.html:12
-msgid "Nom complet"
-msgstr ""
-
-#: .\templates\pages\contact.html:13
-msgid "Votre nom"
+msgid "Kinshasa, République démocratique du Congo"
 msgstr ""
 
 #: .\templates\pages\contact.html:14
-msgid "Adresse email"
+msgid "Nom complet"
 msgstr ""
 
 #: .\templates\pages\contact.html:15
-msgid "vous@exemple.com"
+msgid "Votre nom"
 msgstr ""
 
 #: .\templates\pages\contact.html:16
-msgid "Votre message"
+msgid "Adresse email"
 msgstr ""
 
 #: .\templates\pages\contact.html:17
-msgid "Parlez-nous de votre besoin"
+msgid "vous@exemple.com"
 msgstr ""
 
 #: .\templates\pages\contact.html:18
+msgid "Votre message"
+msgstr ""
+
+#: .\templates\pages\contact.html:19
+msgid "Parlez-nous de votre besoin"
+msgstr ""
+
+#: .\templates\pages\contact.html:20
 msgid "Envoyer le message"
+msgstr ""
+
+#: .\templates\pages\datalive\actualites.html:3
+msgid "Actualités - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\actualites.html:7
+msgid "Suivez vos actualités sans aucune interruption dans notre application."
+msgstr ""
+
+#: .\templates\pages\datalive\actualites.html:8
+msgid "Informez-vous toujours ici en avant-première."
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:3
+msgid "Articles - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:16
+msgid "DataLive · Actualités"
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:17
+msgid "Les actualités d'Elixir Group."
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:18
+msgid "Retrouvez nos dernières informations, analyses et publications."
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:28
+msgid "Lire la source"
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:33
+msgid "Aucune actualité publiée pour le moment."
+msgstr ""
+
+#: .\templates\pages\datalive\articles.html:33
+msgid "Les prochaines actualités apparaîtront ici."
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:3
+msgid "Day Data - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid "DataLive · Day Data"
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid "Une journée pour mettre la donnée en mouvement."
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid ""
+"Rencontres, démonstrations et échanges autour des usages concrets de la "
+"donnée."
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid "Le rendez-vous"
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid "Comprendre la donnée, puis l'utiliser."
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid ""
+"Day Data rassemble décideurs, experts et porteurs de projets autour de "
+"méthodes et de retours d'expérience."
+msgstr ""
+
+#: .\templates\pages\datalive\day_data.html:4
+msgid "Participer à la prochaine édition"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:3
+msgid "Day Earth - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "DataLive · Day Earth"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Observer la planète pour mieux habiter nos territoires."
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid ""
+"Un temps de réflexion sur l'environnement et les choix qui dessinent notre "
+"avenir."
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Ressources"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Comprendre les équilibres qui soutiennent les territoires."
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Résilience"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Imaginer des réponses durables face aux changements."
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Collectif"
+msgstr ""
+
+#: .\templates\pages\datalive\day_earth.html:4
+msgid "Relier les acteurs autour d'une responsabilité partagée."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:3
+msgid "Événements - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:15
+#: .\templates\pages\datalive\evenements_detail.html:8
+msgid "DataLive · Agenda"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:16
+msgid "Les événements qui réunissent les idées et les acteurs."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:17
+msgid ""
+"Retrouvez les rencontres, ateliers et temps forts organisés par Elixir Group."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:28
+msgid "Voir plus"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:33
+msgid "Aucun événement publié pour le moment."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements.html:33
+msgid ""
+"Les prochains rendez-vous apparaîtront ici dès leur ajout dans "
+"l'administration."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:17
+msgid "Présentation"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:18
+msgid "À propos de cet événement"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:23
+msgid "Intervenant"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:32
+msgid "Intervenant Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:41
+msgid "Contenu associé"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:42
+msgid "Interviews liées"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:48
+msgid "Interview de l'événement"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:49
+msgid "Retrouvez les échanges liés à cet événement."
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:61
+msgid "Partenaires associés"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:68
+#, python-format
+msgid "Partenaire #%(partenaire.idPart)s"
+msgstr ""
+
+#: .\templates\pages\datalive\evenements_detail.html:76
+msgid "Retour aux événements"
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:3
+msgid "Interviews - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:14
+msgid "DataLive · Interviews"
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:14
+msgid "Les voix qui font avancer les territoires."
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:14
+msgid ""
+"Découvrez les échanges et les perspectives des intervenants de notre "
+"écosystème."
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:19
+msgid "Interview"
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:23
+msgid "Aucune interview publiée pour le moment."
+msgstr ""
+
+#: .\templates\pages\datalive\interviews.html:23
+msgid "Les prochaines conversations apparaîtront ici."
+msgstr ""
+
+#: .\templates\pages\datalive\opportunites.html:4
+msgid "Opportunité - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\opportunites.html:15
+msgid ""
+"Quelles sont les opportunités qui vous sont destinées en rejoignant Elixir "
+"Group ?"
+msgstr ""
+
+#: .\templates\pages\datalive\opportunites.html:16
+msgid "Avantages"
+msgstr ""
+
+#: .\templates\pages\datalive\opportunites.html:28
+msgid "Aucune opportunité publiée pour le moment."
+msgstr ""
+
+#: .\templates\pages\datalive\opportunites.html:28
+msgid "Les prochaines opportunités apparaîtront ici."
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:3
+msgid "Portraits - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "DataLive · Portraits"
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Celles et ceux qui donnent du sens à l'action."
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Des parcours et des convictions qui nourrissent notre écosystème."
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Talents du terrain"
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Des profils proches des réalités locales."
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Paroles d'experts"
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Des regards croisés sur les transformations en cours."
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Inspirations"
+msgstr ""
+
+#: .\templates\pages\datalive\portraits.html:4
+msgid "Des histoires pour construire autrement."
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:3
+msgid "Projets DataLive - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:7
+msgid "DataLive · Projets"
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:8
+msgid "Les initiatives qui font bouger les lignes."
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:9
+msgid "Suivez les projets et collaborations de notre écosystème."
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:15
+msgid "Territoires observés"
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:16
+msgid "Des projets fondés sur une compréhension fine du terrain."
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:20
+msgid "Solutions testées"
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:21
+msgid "Des idées confrontées aux usages réels."
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:25
+msgid "Impacts suivis"
+msgstr ""
+
+#: .\templates\pages\datalive\projets.html:26
+msgid "Des résultats documentés pour progresser."
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:3
+msgid "Publications - Elixir Group"
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:14
+msgid "DataLive · Publications"
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:14
+msgid "Des ressources pour mieux décider."
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:14
+msgid "Guides, notes et contenus de référence sur les territoires africains."
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:28
+msgid "Aucune publication disponible pour le moment."
+msgstr ""
+
+#: .\templates\pages\datalive\publications.html:28
+msgid "Les prochaines ressources apparaîtront ici."
 msgstr ""
 
 #: .\templates\pages\ecosysteme.html:4
 msgid "Notre écosystème - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:10
+#: .\templates\pages\ecosysteme.html:27
 msgid "Notre écosystème"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:11
+#: .\templates\pages\ecosysteme.html:28
 msgid "Des pôles connectés pour des réponses qui avancent."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:12
+#: .\templates\pages\ecosysteme.html:29
 msgid ""
 "Chaque expertise garde sa profondeur, tout en travaillant avec les autres "
 "pour répondre aux enjeux complexes."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:15
+#: .\templates\pages\ecosysteme.html:32
 msgid "Nos pôles"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:15
+#: .\templates\pages\ecosysteme.html:32
 msgid "Une chaîne de valeur pensée pour passer de l'idée au résultat."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:20 .\templates\pages\intervention.html:19
-#: .\templates\pages\nos_solutions.html:34
+#: .\templates\pages\ecosysteme.html:37 .\templates\pages\intervention.html:36
+#: .\templates\pages\nos_solutions.html:51
 msgid "Intelligence territoriale"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:21
+#: .\templates\pages\ecosysteme.html:38
 msgid ""
 "Elixir Data Solutions — données, SIG, cartographie, analyse territoriale, "
 "web et IA."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:21
+#: .\templates\pages\ecosysteme.html:38
 msgid ""
 "Des données et analyses pour mieux comprendre les marchés, les territoires "
 "et les signaux émergents."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:27
+#: .\templates\pages\ecosysteme.html:44
 msgid ""
 "Elixir Data / SED — innovation territoriale, collecte, cartographie et "
 "outils décisionnels."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:27
+#: .\templates\pages\ecosysteme.html:44
 msgid ""
 "Des solutions numériques pensées pour simplifier les décisions et améliorer "
 "les opérations."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:32
+#: .\templates\pages\ecosysteme.html:49
 msgid "Technologie"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:33
+#: .\templates\pages\ecosysteme.html:50
 msgid ""
 "Elixir Connect — numérique, compétences, formations, événements et coworking."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:33
+#: .\templates\pages\ecosysteme.html:50
 msgid ""
 "Un accompagnement stratégique pour clarifier les priorités, structurer "
 "l’action et accélérer la transformation."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:38
+#: .\templates\pages\ecosysteme.html:55
+#: .\templates\pages\projets_realisation.html:45
 msgid "Connexion"
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:39
+#: .\templates\pages\ecosysteme.html:56
 msgid ""
 "H&M Solutions — opérations, construction, transport, logistique, D-invest — "
 "investissement & conseil."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:39
+#: .\templates\pages\ecosysteme.html:56
 msgid ""
 "Une lecture des opportunités et des partenariats pour soutenir les projets "
 "prometteurs et les initiatives à fort impact."
 msgstr ""
 
-#: .\templates\pages\ecosysteme.html:46 .\templates\pages\offres.html:18
+#: .\templates\pages\ecosysteme.html:63 .\templates\pages\offres.html:34
 msgid "Vous devriez vous connecter pour voir le contenu de cette page"
 msgstr ""
 
@@ -797,29 +1215,29 @@ msgstr ""
 msgid "Domaines d'intervention - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\intervention.html:10
+#: .\templates\pages\intervention.html:27
 msgid "Des expertises au service des décisions concrètes."
 msgstr ""
 
-#: .\templates\pages\intervention.html:11
+#: .\templates\pages\intervention.html:28
 msgid ""
 "Nous intervenons là où la donnée, l'innovation et la coordination peuvent "
 "créer une différence mesurable."
 msgstr ""
 
-#: .\templates\pages\intervention.html:27
+#: .\templates\pages\intervention.html:44
 msgid "Couverture médiatique et visibilité"
 msgstr ""
 
-#: .\templates\pages\intervention.html:35
+#: .\templates\pages\intervention.html:52
 msgid "Connexion d'expertise et formation"
 msgstr ""
 
-#: .\templates\pages\intervention.html:43
+#: .\templates\pages\intervention.html:60
 msgid "Cartographie et valorisation immobilière"
 msgstr ""
 
-#: .\templates\pages\intervention.html:51
+#: .\templates\pages\intervention.html:68
 msgid "Conseil de structuration légal d'un cabinet"
 msgstr ""
 
@@ -827,409 +1245,424 @@ msgstr ""
 msgid "Nos solutions - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:10
+#: .\templates\pages\nos_solutions.html:27
 msgid "Des outils lisibles pour des décisions plus solides."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:11
+#: .\templates\pages\nos_solutions.html:28
 msgid ""
 "Du diagnostic à la mise en œuvre, nous adaptons notre intervention à votre "
 "contexte et à vos objectifs."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:14
+#: .\templates\pages\nos_solutions.html:31
 msgid "Notre méthode"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:14
+#: .\templates\pages\nos_solutions.html:31
 msgid "Comprendre. Concevoir. Déployer."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:18
+#: .\templates\pages\nos_solutions.html:35
 msgid "Comprendre"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:18
+#: .\templates\pages\nos_solutions.html:35
 msgid "Nous partons de vos besoins, de vos données et de votre terrain."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:21
+#: .\templates\pages\nos_solutions.html:38
 msgid "Concevoir"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:21
+#: .\templates\pages\nos_solutions.html:38
 msgid "Nous construisons une réponse claire, réaliste et mesurable."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:23
+#: .\templates\pages\nos_solutions.html:40
 msgid "Déployer"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:23
+#: .\templates\pages\nos_solutions.html:40
 msgid "Nous vous accompagnons jusqu'à l'appropriation de la solution."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:28
+#: .\templates\pages\nos_solutions.html:45
 msgid "Pôle Service Elixir Data"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:35
+#: .\templates\pages\nos_solutions.html:52
 msgid ""
 "Vous avez besoin de connaître un territoire, ses enjeux et ses opportunités ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:39
+#: .\templates\pages\nos_solutions.html:56
 msgid "Géomatique et SIG"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:40
+#: .\templates\pages\nos_solutions.html:57
 msgid ""
 "Vous avez besoin d'une solution numérique pour analyser, modéliser et "
 "piloter vos données spatiales ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:44
+#: .\templates\pages\nos_solutions.html:61
 msgid "Cartographie"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:45
+#: .\templates\pages\nos_solutions.html:62
 msgid ""
 "Vous avez besoin de collecter, organiser et visualiser les informations "
 "utiles à la prise de décision ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:49
-#: .\templates\pages\projets_realisation.html:38
+#: .\templates\pages\nos_solutions.html:66
+#: .\templates\pages\projets_realisation.html:57
+#: .\templates\pages\projets_realisation.html:58
 msgid "Analyse territoriale"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:50
+#: .\templates\pages\nos_solutions.html:67
 msgid ""
 "Vous souhaitez mieux comprendre les dynamiques, les tendances et les leviers "
 "de développement ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:54
+#: .\templates\pages\nos_solutions.html:71
 msgid "Urbanisme et aménagement"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:55
+#: .\templates\pages\nos_solutions.html:72
 msgid ""
 "Vous voulez concevoir des projets urbains et territoriaux plus cohérents, "
 "durables et efficaces ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:59
+#: .\templates\pages\nos_solutions.html:76
 msgid "Recherche scientifique"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:60
+#: .\templates\pages\nos_solutions.html:77
 msgid ""
 "Vous souhaitez appuyer une étude, une analyse ou une innovation avec un "
 "cadre scientifique solide ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:64
+#: .\templates\pages\nos_solutions.html:81
 msgid "Assistance technique"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:65
+#: .\templates\pages\nos_solutions.html:82
 msgid ""
 "Vous cherchez un accompagnement pratique pour renforcer la qualité et la "
 "performance de vos projets ?"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:69
+#: .\templates\pages\nos_solutions.html:86
 msgid "Pôle connect"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:73
+#: .\templates\pages\nos_solutions.html:90
 msgid "Formation"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:74
+#: .\templates\pages\nos_solutions.html:91
 msgid ""
 "Des formations pour renforcer les compétences et accompagner les "
 "transformations professionnelles."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:78
+#: .\templates\pages\nos_solutions.html:95
 msgid "Coworking"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:79
+#: .\templates\pages\nos_solutions.html:96
 msgid ""
 "Un espace de travail collaboratif pour partager, créer et avancer ensemble."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:83
+#: .\templates\pages\nos_solutions.html:100
 msgid "Bibliothèque numérique"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:84
+#: .\templates\pages\nos_solutions.html:101
 msgid ""
 "Des ressources documentaires pour accéder rapidement à des connaissances "
 "utiles et fiables."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:88
+#: .\templates\pages\nos_solutions.html:105
 msgid "Événementiel"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:89
+#: .\templates\pages\nos_solutions.html:106
 msgid ""
 "Des événements pensés pour fédérer, informer et encourager les échanges "
 "concrets."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:93
+#: .\templates\pages\nos_solutions.html:110
+msgid "Networking"
+msgstr ""
+
+#: .\templates\pages\nos_solutions.html:111
+msgid "Une intégration complète dans nos réseaux des experts."
+msgstr ""
+
+#: .\templates\pages\nos_solutions.html:115
 msgid "Accompagnement des étudiants et chercheurs"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:94
+#: .\templates\pages\nos_solutions.html:116
 msgid ""
 "Un soutien méthodologique pour structurer les projets, idées et démarches de "
 "recherche."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:98
+#: .\templates\pages\nos_solutions.html:120
 msgid "Pôle data live"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:102
+#: .\templates\pages\nos_solutions.html:124
 msgid "Montage audiovisuel"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:103
+#: .\templates\pages\nos_solutions.html:125
 msgid ""
 "Des contenus visuels clairs et percutants pour raconter les projets avec "
 "impact."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:107
+#: .\templates\pages\nos_solutions.html:129
 msgid "Communication digitale"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:108
+#: .\templates\pages\nos_solutions.html:130
 msgid ""
 "Une présence digitale pensée pour mieux informer, attirer et engager les "
 "audiences."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:112
+#: .\templates\pages\nos_solutions.html:134
 msgid "Podcast"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:113
+#: .\templates\pages\nos_solutions.html:135
 msgid ""
 "Des conversations qui donnent de la voix aux idées, aux expertises et aux "
 "initiatives."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:117
+#: .\templates\pages\nos_solutions.html:139
 msgid "Couverture événementielle"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:118
+#: .\templates\pages\nos_solutions.html:140
 msgid ""
 "Une mise en image professionnelle des événements pour renforcer leur portée "
 "et leur visibilité."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:122
-msgid "Visibilité profil professionnels"
+#: .\templates\pages\nos_solutions.html:144
+msgid "Visibilité des profils professionnels"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:123
+#: .\templates\pages\nos_solutions.html:145
 msgid ""
 "Une image digitale plus forte pour valoriser les compétences et les "
 "expertises."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:127
+#: .\templates\pages\nos_solutions.html:149
 msgid "Photographie"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:128
+#: .\templates\pages\nos_solutions.html:150
 msgid ""
 "Des clichés qui racontent une histoire, une ambiance et un niveau "
 "d'expertise."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:132
+#: .\templates\pages\nos_solutions.html:154
 msgid "Couverture médiatique"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:133
+#: .\templates\pages\nos_solutions.html:155
 msgid ""
 "Une présence dans les médias pour amplifier la visibilité et la crédibilité "
 "des initiatives."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:136
+#: .\templates\pages\nos_solutions.html:158
 msgid "Smart Immo"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:140
+#: .\templates\pages\nos_solutions.html:162
 msgid "Investissement Immobilier"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:141
+#: .\templates\pages\nos_solutions.html:163
 msgid ""
 "Des programmes d'investissements immobiliers adaptés au contexte du pays."
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:144
+#: .\templates\pages\nos_solutions.html:166
 msgid "Cap"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:148
-msgid "Programme spéciale"
+#: .\templates\pages\nos_solutions.html:170
+msgid "Programme spécial"
 msgstr ""
 
-#: .\templates\pages\nos_solutions.html:149
+#: .\templates\pages\nos_solutions.html:171
 msgid ""
 "Un programme spécial d'Elixir Group spécialisé dans la valorisation des "
 "collectivités territoriales et la promotion des investissements en RDC."
 msgstr ""
 
-#: .\templates\pages\offres.html:4
+#: .\templates\pages\offres.html:3
 msgid "Nos offres - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Choisir le bon niveau d'accompagnement."
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid ""
 "Des formats souples pour répondre à un besoin ponctuel comme à une "
 "transformation de fond."
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Diagnostic"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Éclairer"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid ""
 "Un regard externe pour comprendre votre situation, identifier les priorités "
 "et décider des prochaines étapes."
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "En parler"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Projet"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Construire"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid ""
 "Une équipe dédiée pour concevoir et déployer une solution adaptée à vos "
 "usages et à vos ressources."
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Démarrer un projet"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Partenariat"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Accélérer"
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid ""
 "Un accompagnement continu pour structurer la croissance, les collaborations "
 "et la mesure de l'impact."
 msgstr ""
 
-#: .\templates\pages\offres.html:8
+#: .\templates\pages\offres.html:24
 msgid "Devenir partenaire"
 msgstr ""
 
-#: .\templates\pages\offres.html:10
+#: .\templates\pages\offres.html:26
 msgid "Services"
 msgstr ""
 
-#: .\templates\pages\offres.html:11
+#: .\templates\pages\offres.html:27
 msgid "Des services adaptés à votre personne, à votre emploi du temps."
+msgstr ""
+
+#: .\templates\pages\policy.html:22
+msgid "Pour toute question, contactez-nous à"
 msgstr ""
 
 #: .\templates\pages\projets_realisation.html:4
 msgid "Projets et réalisations - Elixir Group"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:9
+#: .\templates\pages\projets_realisation.html:26
 msgid "Projets & réalisations"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:10
+#: .\templates\pages\projets_realisation.html:27
 msgid "Des idées qui prennent forme sur le terrain."
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:11
+#: .\templates\pages\projets_realisation.html:28
 msgid ""
 "Quelques exemples de la manière dont nos expertises se transforment en "
 "résultats concrets."
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:16
+#: .\templates\pages\projets_realisation.html:33
 msgid "Notre portefeuille"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:17
+#: .\templates\pages\projets_realisation.html:34
 msgid "Des réalisations pensées avec, et pour, leurs utilisateurs."
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:22
-msgid "Cartographie du site hydroélectrique d'INGA"
+#: .\templates\pages\projets_realisation.html:39
+msgid "Hydroelectricité"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:23
+#: .\templates\pages\projets_realisation.html:40
+msgid "Cartographie des infrastructures du site hydroélectrique d'INGA"
+msgstr ""
+
+#: .\templates\pages\projets_realisation.html:41
 msgid ""
 "Étude détaillée des infrastructures et de leurs interactions pour soutenir "
 "la planification et la gestion de la centrale."
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:27
+#: .\templates\pages\projets_realisation.html:46
 msgid "Réseau de transport Ouest SNEL"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:28
-msgid ""
-"Modélisation et visualisation de données techniques pour mieux piloter les "
-"infrastructures de transport électrique."
+#: .\templates\pages\projets_realisation.html:47
+msgid "Cartographie de transport ouest SNEL"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:32
+#: .\templates\pages\projets_realisation.html:51
 msgid "Conseil & stratégie"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:33
-msgid "Accompagnement du Comité congolais du Grand Inga"
+#: .\templates\pages\projets_realisation.html:52
+msgid "Accompagnement du Comité congolais des grands barrages"
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:34
+#: .\templates\pages\projets_realisation.html:53
 msgid ""
 "Appui stratégique et méthodologique pour la coordination des acteurs et la "
 "mise en œuvre du projet."
 msgstr ""
 
-#: .\templates\pages\projets_realisation.html:39
+#: .\templates\pages\projets_realisation.html:59
 msgid ""
 "Développement d'analyses territoriales et de solutions numériques au service "
 "du développement et de la promotion du projet Grand Inga."

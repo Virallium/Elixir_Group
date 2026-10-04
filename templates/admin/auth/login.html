@@ -30,7 +30,7 @@
 <main class="auth-page">
 	<section class="auth-card" aria-labelledby="login-title">
 		<h1 id="login-title">Se connecter</h1>
-		<p>Accedez a votre espace Elixir Group.</p>
+		<p>Accédez à votre espace Elixir Group.</p>
 
 		{% if form.non_field_errors %}
 			<div class="auth-errors" role="alert">{{ form.non_field_errors }}</div>
@@ -50,7 +50,7 @@
 			</div>
 			<button class="auth-submit" type="submit">Se connecter</button>
 		</form>
-		<p class="auth-switch">Pas encore de compte ? <a href="{% url 'register' %}">Creer un compte</a></p>
+		<p class="auth-switch">Pas encore de compte ? <a href="{% url 'register' %}">Créer un compte</a></p>
 		<p class="auth-switch">Personnels <a href="{% url 'personnels' %}">Se connecter</a></p>
 	</section>
 </main>

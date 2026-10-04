@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}Événements - Elixir Group{% endblock title %}
+{% block title %}{% trans "Événements - Elixir Group" %}{% endblock title %}
 {% block active %}
     <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-    <li><a href="{% url 'evenements' %}"class='active-link'>{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'evenements' %}"class='active-link'>{% translate "Événements" %}</a></li>
     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
     <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
     <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
@@ -12,9 +12,9 @@
 {% block contents %}
     <div class="page-shell datalive-page">
         <section class="page-hero page-hero-blue">
-            <p class="eyebrow">DataLive · Agenda</p>
-            <h1>Les événements qui réunissent les idées et les acteurs.</h1>
-            <p>Retrouvez les rencontres, ateliers et temps forts organisés par Elixir Group.</p>
+            <p class="eyebrow">{% trans "DataLive · Agenda" %}</p>
+            <h1>{% trans "Les événements qui réunissent les idées et les acteurs." %}</h1>
+            <p>{% trans "Retrouvez les rencontres, ateliers et temps forts organisés par Elixir Group." %}</p>
         </section>
         <section class="content-section">
             {% if evenements %}
@@ -25,12 +25,12 @@
                             <h2>{{ evenement.titre }}</h2>
                             <p>{{ evenement.description }}</p>
                             <p class="event-speaker"><i class="fa-solid fa-user"></i> {{ evenement.idInt.prenom }} {{ evenement.idInt.nom }}<br><span>{{ evenement.idInt.specialites }}</span></p>
-                            <a href="{% url 'evenements_detail' evenement.id %}">Voir Plus</a>
+                            <a href="{% url 'evenements_detail' evenement.id %}">{% trans "Voir plus" %}</a>
                         </article>
                     {% endfor %}
                 </div>
             {% else %}
-                <div class="empty-state"><i class="fa-regular fa-calendar"></i><h2>Aucun événement publié pour le moment.</h2><p>Les prochains rendez-vous apparaîtront ici dès leur ajout dans l'administration.</p></div>
+                <div class="empty-state"><i class="fa-regular fa-calendar"></i><h2>{% trans "Aucun événement publié pour le moment." %}</h2><p>{% trans "Les prochains rendez-vous apparaîtront ici dès leur ajout dans l'administration." %}</p></div>
             {% endif %}
         </section>
     </div>

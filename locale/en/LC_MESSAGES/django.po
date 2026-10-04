@@ -1,14 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-24 04:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,1219 +10,1103 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\templates\base.html:24
-msgid "Accueil - Elixir Group"
-msgstr "Home - Elixir Group"
 
-#: .\templates\base.html:90 .\templates\base.html:412
+msgid "Accompagnement des étudiants et chercheurs"
+msgstr "Support for students and researchers"
+
+msgid "Accompagner les entreprises, projets et opportunités d'investissement."
+msgstr "Supporting businesses, projects, and investment opportunities."
+
 msgid "Accueil"
 msgstr "Home"
 
-#: .\templates\base.html:92
-msgid "home"
-msgstr "home"
+msgid "Accueil - Elixir Group"
+msgstr "Home - Elixir Group"
 
-#: .\templates\base.html:93
+msgid "Accélérer"
+msgstr "Accelerate"
+
+msgid "Adresse du siège"
+msgstr "Headquarters Address"
+
+msgid "Adresse email"
+msgstr "Email address"
+
+msgid "Analyse territoriale"
+msgstr "Territorial analysis"
+
+msgid "Apprendre vite, collaborer franchement, livrer utile."
+msgstr "Learn quickly, collaborate openly, deliver useful results."
+
+msgid ""
+"Appui stratégique et méthodologique pour la coordination des acteurs et la "
+"mise en œuvre du projet."
+msgstr ""
+"Strategic and methodological support for stakeholder coordination and "
+"project implementation."
+
 msgid "Articles"
 msgstr "Articles"
 
-#: .\templates\base.html:94
-msgid "Evenements"
-msgstr "Events"
+msgid "Assistance technique"
+msgstr "Technical assistance"
 
-#: .\templates\base.html:95
-msgid "Interviews"
-msgstr "Interviews"
+msgid "Aucune opportunité publiée pour le moment."
+msgstr "No opportunity published yet."
 
-#: .\templates\base.html:96
-msgid "Opportunités"
-msgstr "Opportunities"
+msgid "Avantages"
+msgstr "Benefits"
 
-#: .\templates\base.html:97
-msgid "Publications"
-msgstr "Publications"
+msgid "Bibliothèque numérique"
+msgstr "Digital library"
 
-#: .\templates\base.html:108
-msgid "Apropos"
-msgstr "About Us"
+msgid "Cap"
+msgstr "Cap"
 
-#: .\templates\base.html:111
-msgid "Surnous"
-msgstr "About Us"
-
-#: .\templates\base.html:112
-msgid "Ecosystème"
-msgstr "Ecosystem"
-
-#: .\templates\base.html:113 .\templates\pages\intervention.html:9
-msgid "Domaines d'intervention"
-msgstr "Areas of Expertise"
-
-#: .\templates\base.html:114 .\templates\pages\nos_solutions.html:9
-msgid "Nos solutions"
-msgstr "Our Solutions"
-
-#: .\templates\base.html:115 .\templates\pages\offres.html:8
-msgid "Nos offres"
-msgstr "Our Offers"
-
-#: .\templates\base.html:116
-msgid "Projets et réalisations"
-msgstr "Projects and Achievements"
-
-#: .\templates\base.html:124 .\templates\base.html:414
-msgid "Contact"
-msgstr "Contact"
-
-#: .\templates\base.html:127 .\templates\base.html:415
 msgid "Carrière"
 msgstr "Careers"
 
-#: .\templates\base.html:145
-msgid "Déconnexion"
-msgstr "Log Out"
+msgid "Carrière - Elixir Group"
+msgstr "Careers - Elixir Group"
 
-#: .\templates\base.html:152
-msgid "Se connecter"
-msgstr "Log In"
+msgid "Cartographie"
+msgstr "Mapping"
 
-#: .\templates\base.html:179 .\templates\base.html:400
-msgid "Elixir Group"
-msgstr "Elixir Group"
+msgid "Cartographie et valorisation immobilière"
+msgstr "Real estate mapping and valuation"
 
-#: .\templates\base.html:180
+msgid "Ce que vous trouverez ici"
+msgstr "What you will find here"
+
+msgid "Ce qui nous guide"
+msgstr "What guides us"
+
+msgid "Cette page a quitté son territoire"
+msgstr "This page has left its territory"
+
 msgid ""
-"Intelligence territoriale, innovation, connexion et les solutions <br>au "
-"services des territoires africains"
-msgstr "Territorial intelligence, innovation, connectivity, and solutions <br>serving African territories"
+"Chaque expertise garde sa profondeur, tout en travaillant avec les autres "
+"pour répondre aux enjeux complexes."
+msgstr ""
+"Each area of expertise keeps its depth while working with the others to "
+"address complex challenges."
 
-#: .\templates\base.html:181
 msgid ""
-"Elixir Group est un écosystème africain qui réunit expertise, données, "
-"technologies et investissements intelligente dans tous les secteurs."
-msgstr "Elixir Group is an African ecosystem bringing together expertise, data, technology and smart investment across all sectors."
+"Chez Elixir, les parcours sont différents mais les standards sont communs : "
+"écouter le terrain, partager les idées et aller jusqu'au résultat."
+msgstr ""
+"At Elixir, backgrounds differ but our standards are shared: listen to the "
+"field, share ideas and deliver results."
 
-#: .\templates\base.html:184
-msgid "Découvrir Elixir Group"
-msgstr "Discover Elixir Group"
+msgid "Choisir le bon niveau d'accompagnement."
+msgstr "Choose the right level of support."
 
-#: .\templates\base.html:187
-msgid "Explorer nos solutions"
-msgstr "Explore Our Solutions"
+msgid "Clients accompagnés"
+msgstr "Clients Supported"
 
-#: .\templates\base.html:195
-msgid "Un écosystème de pôles spécialisés"
-msgstr "An Ecosystem of Specialized Hubs"
+msgid "Collaboration"
+msgstr "Collaboration"
 
-#: .\templates\base.html:196
-msgid "Des expertises connectées pour faire émerger de nouvelles possibilités"
-msgstr "Connected Expertise to Unlock New Possibilities"
+msgid "Commençons par un échange simple."
+msgstr "Let's start with a simple conversation."
 
-#: .\templates\base.html:197
+msgid "Communication digitale"
+msgstr "Digital communication"
+
+msgid "Comprendre"
+msgstr "Understand"
+
+msgid "Comprendre, analyser et valoriser les territoires grâce à la donnée."
+msgstr "Understanding, analyzing, and enhancing territories through data."
+
+msgid "Comprendre. Concevoir. Déployer."
+msgstr "Understand. Design. Deploy."
+
+msgid "Concevoir"
+msgstr "Design"
+
+msgid "Conditions générales"
+msgstr "Terms & Conditions"
+
+msgid "Connexion"
+msgstr "Connection"
+
+msgid "Connexion d'expertise et formation"
+msgstr "Expertise connections and training"
+
+msgid "Conseil & stratégie"
+msgstr "Advisory & strategy"
+
+msgid "Conseil de structuration légal d'un cabinet"
+msgstr "Legal structuring advice for a firm"
+
+msgid "Construire"
+msgstr "Build"
+
+msgid "Construire avec nous"
+msgstr "Build With Us"
+
+msgid "Construisons les territoires de demain"
+msgstr "Let's Build Tomorrow's Territories"
+
+msgid "Consulter nos analyses"
+msgstr "Read Our Analyses"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Contact - Elixir Group"
+msgstr "Contact - Elixir Group"
+
+msgid "Couverture médiatique"
+msgstr "Media coverage"
+
+msgid "Couverture médiatique et visibilité"
+msgstr "Media coverage and visibility"
+
+msgid "Couverture événementielle"
+msgstr "Event coverage"
+
+msgid "Coworking"
+msgstr "Coworking"
+
+msgid "Création de valeur"
+msgstr "Value Creation"
+
+msgid "Culture de collaboration"
+msgstr "Collaborative Culture"
+
+msgid "DataLive"
+msgstr "DataLive"
+
 msgid ""
 "De la donnée à la technologie, de l'investissement à l'accompagnement "
 "stratégique, nos pôles réunissent les compétences qui transforment les idées "
 "en solutions utiles."
-msgstr "From data to technology, from investment to strategic support, our hubs bring together the skills that turn ideas into impactful solutions."
+msgstr ""
+"From data to technology, from investment to strategic support, our hubs "
+"bring together the skills that turn ideas into impactful solutions."
 
-#: .\templates\base.html:200
-msgid "Découvrir nos pôles"
-msgstr "Discover Our Hubs"
-
-#: .\templates\base.html:203
-msgid "Voir notre écosystème"
-msgstr "View Our Ecosystem"
-
-#: .\templates\base.html:211
-msgid "DataLive"
-msgstr "DataLive"
-
-#: .\templates\base.html:212
-msgid "Lire les signaux du présent <br>pour décider avec justesse"
-msgstr "Reading Present Signals <br>to Make Accurate Decisions"
-
-#: .\templates\base.html:213
-msgid ""
-"Nous transformons les données en informations claires, en analyses "
-"pertinentes et en opportunités concrètes pour mieux comprendre les marchés "
-"et les territoires africains."
-msgstr "We transform data into clear insights, relevant analyses, and concrete opportunities to better understand African markets and territories."
-
-#: .\templates\base.html:216
-msgid "Explorer DataLive"
-msgstr "Explore DataLive"
-
-#: .\templates\base.html:219
-msgid "Consulter nos analyses"
-msgstr "Read Our Analyses"
-
-#: .\templates\base.html:227
-msgid "Un impact qui se mesure sur le terrain"
-msgstr "Impact Measured on the Ground"
-
-#: .\templates\base.html:228
-msgid "Imaginer aujourd'hui"
-msgstr "Envisioning Today"
-
-#: .\templates\base.html:228
-msgid "les territoires de demain"
-msgstr "the Territories of Tomorrow"
-
-#: .\templates\base.html:229
-msgid ""
-"Elixir Group accompagne les organisations qui veulent passer à l'action avec "
-"des projets responsables, des outils adaptés et une ambition commune : créer "
-"une croissance durable."
-msgstr "Elixir Group supports organizations taking action through sustainable projects, tailored tools, and a shared goal: driving sustainable growth."
-
-#: .\templates\base.html:232
-msgid "Découvrir nos projets"
-msgstr "Discover Our Projects"
-
-#: .\templates\base.html:235
-msgid "Construire avec nous"
-msgstr "Build With Us"
-
-#: .\templates\base.html:244
-msgid "Elixir Group en quelques mots"
-msgstr "Elixir Group in a Nutshell"
-
-#: .\templates\base.html:245
-msgid "Un groupe. Plusieurs expertise. Une même ambition."
-msgstr "One Group. Multiple Expertises. Single Ambition."
-
-#: .\templates\base.html:246
-msgid ""
-"Elixir Group est une structure faîtière qui fédère plusieurs pôles "
-"spécialisés autour d'une ambition commune: celle de transformer les données, "
-"les technologies et les idéesw en solutions à impact <br> <span>Notre "
-"écosystème intervient auprès des entreprises, instituitions, organisations "
-"et porteurs de projets pour repondre aux enjeux de developpement, "
-"d'innovation et de transformation des territoirres"
-msgstr "Elixir Group is a parent organization uniting specialized hubs around a shared ambition: converting data, technology, and ideas into impactful solutions. <br> <span>Our ecosystem works with companies, institutions, organizations, and project leaders to address development, innovation, and territorial transformation challenges.</span>"
-
-#: .\templates\base.html:247
-msgid "En savoir plus sur Elixir Group"
-msgstr "Learn More About Elixir Group"
-
-#: .\templates\base.html:250
-msgid "Notre Mission"
-msgstr "Our Mission"
-
-#: .\templates\base.html:251
-msgid ""
-"Développer des solutions innovantes permettantsaux institutions,entreprises, "
-"organisations et citoyens de mieux comprendre, gérer et développer leurs "
-"territoires , leurs organisations et leurs activités."
-msgstr "Developing innovative solutions that enable institutions, businesses, organizations, and citizens to better understand, manage, and grow their territories, organizations, and activities."
-
-#: .\templates\base.html:253
-msgid "Nos valeurs"
-msgstr "Our Values"
-
-#: .\templates\base.html:255
-msgid "Excellence"
-msgstr "Excellence"
-
-#: .\templates\base.html:256 .\templates\pages\ecosysteme.html:26
-msgid "Innovation"
-msgstr "Innovation"
-
-#: .\templates\base.html:257 .\templates\pages\about.html:44
-msgid "Intégrité"
-msgstr "Integrity"
-
-#: .\templates\base.html:258
-msgid "Responsabilité"
-msgstr "Responsibility"
-
-#: .\templates\base.html:259
-msgid "Collaboration"
-msgstr "Collaboration"
-
-#: .\templates\base.html:260
-msgid "Professionalisme"
-msgstr "Professionalism"
-
-#: .\templates\base.html:261
-msgid "Esprit d'équipe"
-msgstr "Team Spirit"
-
-#: .\templates\base.html:262
-msgid "Transparence"
-msgstr "Transparency"
-
-#: .\templates\base.html:263
-msgid "Création de valeur"
-msgstr "Value Creation"
-
-#: .\templates\base.html:264
-msgid "Développement durable"
-msgstr "Sustainable Development"
-
-#: .\templates\base.html:270
-msgid "Nos grands domaines d'intervention"
-msgstr "Our Main Key Focus Areas"
-
-#: .\templates\base.html:274
-msgid "Intelligence Territoriale"
-msgstr "Territorial Intelligence"
-
-#: .\templates\base.html:275
-msgid "Comprendre, analyser et valoriser les territoires grâce à la donnée."
-msgstr "Understanding, analyzing, and enhancing territories through data."
-
-#: .\templates\base.html:279
-msgid "Data & Technologies"
-msgstr "Data & Technologies"
-
-#: .\templates\base.html:280
-msgid ""
-"Transformer les données et les technologies en solutions opérationnelles."
-msgstr "Transforming data and technology into operational solutions."
-
-#: .\templates\base.html:284
-msgid "Media & Information"
-msgstr "Media & Information"
-
-#: .\templates\base.html:285
-msgid "Produire, diffuser et valoriser l'information."
-msgstr "Producing, broadcasting, and promoting information."
-
-#: .\templates\base.html:289
-msgid "Formation & connexion"
-msgstr "Training & Networking"
-
-#: .\templates\base.html:290
-msgid "Développer les compétence et connecter les acteurs."
-msgstr "Developing skills and connecting key stakeholders."
-
-#: .\templates\base.html:294
-msgid "Solutions opérationnelles"
-msgstr "Operational Solutions"
-
-#: .\templates\base.html:295
-msgid "Transformer les projets en réalisations concrètes."
-msgstr "Turning projects into tangible achievements."
-
-#: .\templates\base.html:299
-msgid "Investissement & conseil"
-msgstr "Investment & Advisory"
-
-#: .\templates\base.html:300
-msgid "Accompagner les entrepriser, projets et opportunités d'investissements"
-msgstr "Supporting businesses, projects, and investment opportunities."
-
-#: .\templates\base.html:305
-msgid "Elixir en chiffres"
-msgstr "Elixir in Numbers"
-
-#: .\templates\base.html:309
-msgid "Projets réalisés"
-msgstr "Completed Projects"
-
-#: .\templates\base.html:314
-msgid "Partenaires"
-msgstr "Partners"
-
-#: .\templates\base.html:319
-msgid "Experts"
-msgstr "Experts"
-
-#: .\templates\base.html:325
-msgid "Pôles spécialisés"
-msgstr "Specialized Hubs"
-
-#: .\templates\base.html:330
-msgid "Clients accompagnés"
-msgstr "Clients Supported"
-
-#: .\templates\base.html:336
-msgid "Nos partenaires"
-msgstr "Our Partners"
-
-#: .\templates\base.html:337
-msgid ""
-"Nous construisons des collaborations durables avec celles et ceux qui "
-"partagent notre ambition pour des territoires africains plus résilients et "
-"plus innovants."
-msgstr "We build lasting partnerships with those who share our ambition for more resilient and innovative African territories."
-
-#: .\templates\base.html:341
-msgid "Institutions publiques"
-msgstr "Public Institutions"
-
-#: .\templates\base.html:342
-msgid ""
-"Nous appuyons les décideurs avec des données fiables et des outils d'aide à "
-"la décision."
-msgstr "We support decision-makers with reliable data and decision-support tools."
-
-#: .\templates\base.html:346
-msgid "Entreprises et investisseurs"
-msgstr "Businesses & Investors"
-
-#: .\templates\base.html:347
-msgid ""
-"Nous révélons les opportunités et accompagnons les projets vers une "
-"croissance responsable."
-msgstr "We uncover opportunities and guide projects toward sustainable growth."
-
-#: .\templates\base.html:351
-msgid "Organisations et communautés"
-msgstr "Organizations & Communities"
-
-#: .\templates\base.html:352
-msgid ""
-"Nous rapprochons les expertises, les talents et les besoins pour créer un "
-"impact durable."
-msgstr "We connect expertise, talent, and needs to create a lasting impact."
-
-#: .\templates\base.html:364
-msgid "Une équipe engagée pour transformer les idées en impact"
-msgstr "A Committed Team Turning Ideas into Impact"
-
-#: .\templates\base.html:365
-msgid ""
-"Notre comité réunit des profils complémentaires en stratégie, données, "
-"technologie et développement territorial."
-msgstr "Our committee brings together complementary expertise in strategy, data, technology, and territorial development."
-
-#: .\templates\base.html:369
-msgid "Vision stratégique"
-msgstr "Strategic Vision"
-
-#: .\templates\base.html:370
-msgid ""
-"Nous donnons une direction claire aux projets et relions chaque décision à "
-"un résultat concret."
-msgstr "We provide clear direction to projects and connect each decision to a concrete result."
-
-#: .\templates\base.html:374
-msgid "Expertise de terrain"
-msgstr "Field Expertise"
-
-#: .\templates\base.html:375
-msgid ""
-"Nous concevons des solutions adaptées aux réalités locales et aux usages de "
-"leurs bénéficiaires."
-msgstr "We design solutions tailored to local realities and the needs of their beneficiaries."
-
-#: .\templates\base.html:379
-msgid "Culture de collaboration"
-msgstr "Collaborative Culture"
-
-#: .\templates\base.html:380
-msgid ""
-"Nous faisons circuler les compétences pour faire avancer les projets avec "
-"méthode et confiance."
-msgstr "We foster skill-sharing to advance projects with structured methodology and trust."
-
-#: .\templates\base.html:385
-msgid "Construisons les territoires de demain"
-msgstr "Let's Build Tomorrow's Territories"
-
-#: .\templates\base.html:386
-msgid ""
-"Vous portez une idée, une expertise ou un projet à fort potentiel ? "
-"Rejoignez un écosystème qui transforme les défis africains en solutions "
-"utiles, inclusives et durables."
-msgstr "Have an idea, expertise, or high-potential project? Join an ecosystem that transforms African challenges into practical, inclusive, and sustainable solutions."
-
-#: .\templates\base.html:387
-msgid "Découvrir nos opportunités"
-msgstr "Discover Our Opportunities"
-
-#: .\templates\base.html:410
-msgid "Liens rapides"
-msgstr "Quick Links"
-
-#: .\templates\base.html:413
-msgid "À propos"
-msgstr "About Us"
-
-#: .\templates\base.html:419
-msgid "Nos politiques"
-msgstr "Our Policies"
-
-#: .\templates\base.html:422
-msgid "Mentions légales"
-msgstr "Legal Notice"
-
-#: .\templates\base.html:423
-msgid "Politiques de confidentialité"
-msgstr "Privacy Policy"
-
-#: .\templates\base.html:424
-msgid "Conditions générales"
-msgstr "Terms & Conditions"
-
-#: .\templates\base.html:425
-msgid "Politique de protection des données"
-msgstr "Data Protection Policy"
-
-#: .\templates\base.html:433
-msgid "Adresse du siège"
-msgstr "Headquarters Address"
-
-#: .\templates\base.html:434
-msgid "Identification Légale RCCM"
-msgstr "Legal Identification (RCCM)"
-
-#: .\templates\pages\404.html:4
-msgid "Page introuvable - Elixir Group"
-msgstr "Page Not Found - Elixir Group"
-
-#: .\templates\pages\404.html:13
-msgid "Cette page a quitté son territoire"
-msgstr "This page has left its territory"
-
-#: .\templates\pages\404.html:14
-msgid ""
-"L'adresse demandée est introuvable ou n'est plus disponible. Repartons "
-"depuis un point de départ clair."
-msgstr "The requested URL was not found or is no longer available. Let's start fresh from a clear starting point."
-
-#: .\templates\pages\404.html:18
-msgid "Retour à l'accueil"
-msgstr "Back to Home"
-
-#: .\templates\pages\404.html:22
-msgid "Nous contacter"
-msgstr "Contact Us"
-
-#: .\templates\pages\about.html:4
-msgid "À propos - Elixir Group"
-msgstr "About - Elixir Group"
-
-#: .\templates\pages\about.html:9
-msgid "Notre identité"
-msgstr "Our identity"
-
-#: .\templates\pages\about.html:10
-msgid "Elixir Group est une structure faîtière"
-msgstr "Elixir Group is a parent organization"
-
-#: .\templates\pages\about.html:11
-msgid ""
-"L'ambition commune est de transformer les données, les technologies et les "
-"idées en solutions à impact direct"
-msgstr "Our shared ambition is to transform data, technology and ideas into solutions with direct impact"
-
-#: .\templates\pages\about.html:15
-msgid "Un groupe, plusieurs expertises"
-msgstr "One group, multiple areas of expertise"
-
-#: .\templates\pages\about.html:16
-msgid "Une même ambition : rendre l'action plus utile."
-msgstr "One shared ambition: make action more useful."
-
-#: .\templates\pages\about.html:19
-msgid ""
-"Nous croisons la donnée, la technologie, le conseil, la formation et "
-"l'investissement pour concevoir des réponses adaptées aux réalités du "
-"terrain."
-msgstr "We combine data, technology, consulting, training and investment to design responses adapted to realities on the ground."
-
-#: .\templates\pages\about.html:20
-msgid ""
-"Notre rôle est de relier les bonnes personnes, les bons outils et les bonnes "
-"informations afin de faire avancer les projets de manière concrète."
-msgstr "Our role is to connect the right people, tools and information so projects can move forward in practical ways."
-
-#: .\templates\pages\about.html:24
-msgid "Elixir team"
-msgstr "Elixir team"
-
-#: .\templates\pages\about.html:27 .\templates\pages\about.html:30
-#: .\templates\pages\about.html:33
-msgid "photo de la communauté elixir"
-msgstr "Photo of the Elixir community"
-
-#: .\templates\pages\about.html:37
-msgid ""
-"Nous réunissons des profils aux compétences complémentaires pour accompagner "
-"les organisations dans leur transformation numérique, leur stratégie de "
-"développement et la mise en œuvre de solutions concrètes, durables et utiles."
-msgstr "We bring together complementary profiles to support organizations in their digital transformation, development strategy and implementation of concrete, sustainable and useful solutions."
-
-#: .\templates\pages\about.html:41
-msgid "Ce qui nous guide"
-msgstr "What guides us"
-
-#: .\templates\pages\about.html:43
-msgid "Vision"
-msgstr "Vision"
-
-#: .\templates\pages\about.html:43
-msgid "Lire les transformations des territoires pour mieux préparer l'avenir."
-msgstr "Read how territories are changing to better prepare for the future."
-
-#: .\templates\pages\about.html:44
-msgid "Travailler avec exigence, transparence et respect des réalités locales."
-msgstr "Work with high standards, transparency and respect for local realities."
-
-#: .\templates\pages\about.html:45
-msgid "Impact"
-msgstr "Impact"
-
-#: .\templates\pages\about.html:45
-msgid "Mesurer l'utilité de chaque solution sur le terrain."
-msgstr "Measure the usefulness of every solution on the ground."
-
-#: .\templates\pages\carriere.html:4
-msgid "Carrière - Elixir Group"
-msgstr "Careers - Elixir Group"
-
-#: .\templates\pages\carriere.html:7
-msgid "Rejoindre Elixir Group"
-msgstr "Join Elixir Group"
-
-#: .\templates\pages\carriere.html:7
-msgid "Mettre son talent au service de projets qui comptent."
-msgstr "Put your talent to work on projects that matter."
-
-#: .\templates\pages\carriere.html:7
-msgid ""
-"Nous recherchons des profils curieux, exigeants et prêts à travailler au "
-"plus près des réalités africaines."
-msgstr "We are looking for curious, demanding professionals ready to work closely with African realities."
-
-#: .\templates\pages\carriere.html:7
-msgid "Notre culture"
-msgstr "Our culture"
-
-#: .\templates\pages\carriere.html:7
-msgid "Apprendre vite, collaborer franchement, livrer utile."
-msgstr "Learn quickly, collaborate openly, deliver useful results."
-
-#: .\templates\pages\carriere.html:7
-msgid ""
-"Chez Elixir, les parcours sont différents mais les standards sont communs : "
-"écouter le terrain, partager les idées et aller jusqu'au résultat."
-msgstr "At Elixir, backgrounds differ but our standards are shared: listen to the field, share ideas and deliver results."
-
-#: .\templates\pages\carriere.html:11
-msgid "Ce que vous trouverez ici"
-msgstr "What you will find here"
-
-#: .\templates\pages\carriere.html:11
-msgid "Responsabilités réelles"
-msgstr "Real responsibilities"
-
-#: .\templates\pages\carriere.html:11
-msgid ""
-"Des missions qui donnent une place à votre jugement et à vos initiatives."
-msgstr "Assignments that give room for your judgment and initiative."
-
-#: .\templates\pages\carriere.html:11
-msgid "Équipe pluridisciplinaire"
-msgstr "Multidisciplinary team"
-
-#: .\templates\pages\carriere.html:11
-msgid ""
-"Des échanges quotidiens entre stratégie, données, technologie et terrain."
-msgstr "Daily collaboration across strategy, data, technology and field operations."
-
-#: .\templates\pages\carriere.html:11
-msgid "Impact visible"
-msgstr "Visible impact"
-
-#: .\templates\pages\carriere.html:11
-msgid ""
-"Des projets dont l'utilité se mesure dans les organisations et les "
-"territoires."
-msgstr "Projects whose usefulness can be measured in organizations and territories."
-
-#: .\templates\pages\contact.html:4
-msgid "Contact - Elixir Group"
-msgstr "Contact - Elixir Group"
-
-#: .\templates\pages\contact.html:8
-msgid "Parlons de votre projet"
-msgstr "Let's talk about your project"
-
-#: .\templates\pages\contact.html:8
-msgid "Une question, une idée ou un défi à résoudre ?"
-msgstr "A question, an idea or a challenge to solve?"
-
-#: .\templates\pages\contact.html:8
-msgid ""
-"Notre équipe vous répond et vous oriente vers l'expertise la plus pertinente."
-msgstr "Our team will answer you and direct you to the most relevant expertise."
-
-#: .\templates\pages\contact.html:10
-msgid "Nous trouver"
-msgstr "Find us"
-
-#: .\templates\pages\contact.html:10
-msgid "Commençons par un échange simple."
-msgstr "Let's start with a simple conversation."
-
-#: .\templates\pages\contact.html:10
-msgid "Ngaliema, Binza Pigeon n°20"
-msgstr "Ngaliema, Binza Pigeon No. 20"
-
-#: .\templates\pages\contact.html:10
-msgid "Kinshasa, République démocratique du Congo"
-msgstr "Kinshasa, Democratic Republic of the Congo"
-
-#: .\templates\pages\contact.html:12
-msgid "Nom complet"
-msgstr "Full name"
-
-#: .\templates\pages\contact.html:13
-msgid "Votre nom"
-msgstr "Your name"
-
-#: .\templates\pages\contact.html:14
-msgid "Adresse email"
-msgstr "Email address"
-
-#: .\templates\pages\contact.html:15
-msgid "vous@exemple.com"
-msgstr "you@example.com"
-
-#: .\templates\pages\contact.html:16
-msgid "Votre message"
-msgstr "Your message"
-
-#: .\templates\pages\contact.html:17
-msgid "Parlez-nous de votre besoin"
-msgstr "Tell us what you need"
-
-#: .\templates\pages\contact.html:18
-msgid "Envoyer le message"
-msgstr "Send the message"
-
-#: .\templates\pages\ecosysteme.html:4
-msgid "Notre écosystème - Elixir Group"
-msgstr "Our Ecosystem - Elixir Group"
-
-#: .\templates\pages\ecosysteme.html:10
-msgid "Notre écosystème"
-msgstr "Our ecosystem"
-
-#: .\templates\pages\ecosysteme.html:11
-msgid "Des pôles connectés pour des réponses qui avancent."
-msgstr "Connected hubs for solutions that move forward."
-
-#: .\templates\pages\ecosysteme.html:12
-msgid ""
-"Chaque expertise garde sa profondeur, tout en travaillant avec les autres "
-"pour répondre aux enjeux complexes."
-msgstr "Each area of expertise keeps its depth while working with the others to address complex challenges."
-
-#: .\templates\pages\ecosysteme.html:15
-msgid "Nos pôles"
-msgstr "Our hubs"
-
-#: .\templates\pages\ecosysteme.html:15
-msgid "Une chaîne de valeur pensée pour passer de l'idée au résultat."
-msgstr "A value chain designed to turn ideas into results."
-
-#: .\templates\pages\ecosysteme.html:20 .\templates\pages\intervention.html:19
-#: .\templates\pages\nos_solutions.html:34
-msgid "Intelligence territoriale"
-msgstr "Territorial intelligence"
-
-#: .\templates\pages\ecosysteme.html:21
-msgid ""
-"Elixir Data Solutions — données, SIG, cartographie, analyse territoriale, "
-"web et IA."
-msgstr "Elixir Data Solutions — data, GIS, mapping, territorial analysis, web and AI."
-
-#: .\templates\pages\ecosysteme.html:21
-msgid ""
-"Des données et analyses pour mieux comprendre les marchés, les territoires "
-"et les signaux émergents."
-msgstr "Data and analysis to better understand markets, territories and emerging signals."
-
-#: .\templates\pages\ecosysteme.html:27
-msgid ""
-"Elixir Data / SED — innovation territoriale, collecte, cartographie et "
-"outils décisionnels."
-msgstr "Elixir Data / SED — territorial innovation, data collection, mapping and decision-making tools."
-
-#: .\templates\pages\ecosysteme.html:27
-msgid ""
-"Des solutions numériques pensées pour simplifier les décisions et améliorer "
-"les opérations."
-msgstr "Digital solutions designed to simplify decisions and improve operations."
-
-#: .\templates\pages\ecosysteme.html:32
-msgid "Technologie"
-msgstr "Technology"
-
-#: .\templates\pages\ecosysteme.html:33
-msgid ""
-"Elixir Connect — numérique, compétences, formations, événements et coworking."
-msgstr "Elixir Connect — digital services, skills, training, events and coworking."
-
-#: .\templates\pages\ecosysteme.html:33
-msgid ""
-"Un accompagnement stratégique pour clarifier les priorités, structurer "
-"l’action et accélérer la transformation."
-msgstr "Strategic support to clarify priorities, structure action and accelerate transformation."
-
-#: .\templates\pages\ecosysteme.html:38
-msgid "Connexion"
-msgstr "Connection"
-
-#: .\templates\pages\ecosysteme.html:39
-msgid ""
-"H&M Solutions — opérations, construction, transport, logistique, D-invest — "
-"investissement & conseil."
-msgstr "H&M Solutions — operations, construction, transport, logistics, D-invest — investment and advisory."
-
-#: .\templates\pages\ecosysteme.html:39
-msgid ""
-"Une lecture des opportunités et des partenariats pour soutenir les projets "
-"prometteurs et les initiatives à fort impact."
-msgstr "Insight into opportunities and partnerships to support promising projects and high-impact initiatives."
-
-#: .\templates\pages\ecosysteme.html:46 .\templates\pages\offres.html:18
-msgid "Vous devriez vous connecter pour voir le contenu de cette page"
-msgstr "You should log in to view the content of this page"
-
-#: .\templates\pages\intervention.html:4
-msgid "Domaines d'intervention - Elixir Group"
-msgstr "Areas of Expertise - Elixir Group"
-
-#: .\templates\pages\intervention.html:10
-msgid "Des expertises au service des décisions concrètes."
-msgstr "Expertise at the service of concrete decisions."
-
-#: .\templates\pages\intervention.html:11
-msgid ""
-"Nous intervenons là où la donnée, l'innovation et la coordination peuvent "
-"créer une différence mesurable."
-msgstr "We work where data, innovation and coordination can make a measurable difference."
-
-#: .\templates\pages\intervention.html:27
-msgid "Couverture médiatique et visibilité"
-msgstr "Media coverage and visibility"
-
-#: .\templates\pages\intervention.html:35
-msgid "Connexion d'expertise et formation"
-msgstr "Expertise connections and training"
-
-#: .\templates\pages\intervention.html:43
-msgid "Cartographie et valorisation immobilière"
-msgstr "Real estate mapping and valuation"
-
-#: .\templates\pages\intervention.html:51
-msgid "Conseil de structuration légal d'un cabinet"
-msgstr "Legal structuring advice for a firm"
-
-#: .\templates\pages\nos_solutions.html:4
-msgid "Nos solutions - Elixir Group"
-msgstr "Our Solutions - Elixir Group"
-
-#: .\templates\pages\nos_solutions.html:10
-msgid "Des outils lisibles pour des décisions plus solides."
-msgstr "Clear tools for stronger decisions."
-
-#: .\templates\pages\nos_solutions.html:11
-msgid ""
-"Du diagnostic à la mise en œuvre, nous adaptons notre intervention à votre "
-"contexte et à vos objectifs."
-msgstr "From diagnosis to implementation, we adapt our approach to your context and objectives."
-
-#: .\templates\pages\nos_solutions.html:14
-msgid "Notre méthode"
-msgstr "Our method"
-
-#: .\templates\pages\nos_solutions.html:14
-msgid "Comprendre. Concevoir. Déployer."
-msgstr "Understand. Design. Deploy."
-
-#: .\templates\pages\nos_solutions.html:18
-msgid "Comprendre"
-msgstr "Understand"
-
-#: .\templates\pages\nos_solutions.html:18
-msgid "Nous partons de vos besoins, de vos données et de votre terrain."
-msgstr "We start with your needs, data and field reality."
-
-#: .\templates\pages\nos_solutions.html:21
-msgid "Concevoir"
-msgstr "Design"
-
-#: .\templates\pages\nos_solutions.html:21
-msgid "Nous construisons une réponse claire, réaliste et mesurable."
-msgstr "We build a clear, realistic and measurable response."
-
-#: .\templates\pages\nos_solutions.html:23
-msgid "Déployer"
-msgstr "Deploy"
-
-#: .\templates\pages\nos_solutions.html:23
-msgid "Nous vous accompagnons jusqu'à l'appropriation de la solution."
-msgstr "We support you through the adoption of the solution."
-
-#: .\templates\pages\nos_solutions.html:28
-msgid "Pôle Service Elixir Data"
-msgstr "Elixir Data Services Hub"
-
-#: .\templates\pages\nos_solutions.html:35
-msgid ""
-"Vous avez besoin de connaître un territoire, ses enjeux et ses opportunités ?"
-msgstr "Do you need to understand a territory, its challenges and opportunities?"
-
-#: .\templates\pages\nos_solutions.html:39
-msgid "Géomatique et SIG"
-msgstr "Geomatics and GIS"
-
-#: .\templates\pages\nos_solutions.html:40
-msgid ""
-"Vous avez besoin d'une solution numérique pour analyser, modéliser et "
-"piloter vos données spatiales ?"
-msgstr "Do you need a digital solution to analyze, model and manage your spatial data?"
-
-#: .\templates\pages\nos_solutions.html:44
-msgid "Cartographie"
-msgstr "Mapping"
-
-#: .\templates\pages\nos_solutions.html:45
-msgid ""
-"Vous avez besoin de collecter, organiser et visualiser les informations "
-"utiles à la prise de décision ?"
-msgstr "Do you need to collect, organize and visualize information useful for decision-making?"
-
-#: .\templates\pages\nos_solutions.html:49
-#: .\templates\pages\projets_realisation.html:38
-msgid "Analyse territoriale"
-msgstr "Territorial analysis"
-
-#: .\templates\pages\nos_solutions.html:50
-msgid ""
-"Vous souhaitez mieux comprendre les dynamiques, les tendances et les leviers "
-"de développement ?"
-msgstr "Would you like to better understand dynamics, trends and development levers?"
-
-#: .\templates\pages\nos_solutions.html:54
-msgid "Urbanisme et aménagement"
-msgstr "Urban planning and development"
-
-#: .\templates\pages\nos_solutions.html:55
-msgid ""
-"Vous voulez concevoir des projets urbains et territoriaux plus cohérents, "
-"durables et efficaces ?"
-msgstr "Do you want to design more coherent, sustainable and effective urban and territorial projects?"
-
-#: .\templates\pages\nos_solutions.html:59
-msgid "Recherche scientifique"
-msgstr "Scientific research"
-
-#: .\templates\pages\nos_solutions.html:60
-msgid ""
-"Vous souhaitez appuyer une étude, une analyse ou une innovation avec un "
-"cadre scientifique solide ?"
-msgstr "Would you like to support a study, analysis or innovation with a strong scientific framework?"
-
-#: .\templates\pages\nos_solutions.html:64
-msgid "Assistance technique"
-msgstr "Technical assistance"
-
-#: .\templates\pages\nos_solutions.html:65
-msgid ""
-"Vous cherchez un accompagnement pratique pour renforcer la qualité et la "
-"performance de vos projets ?"
-msgstr "Are you looking for practical support to improve the quality and performance of your projects?"
-
-#: .\templates\pages\nos_solutions.html:69
-msgid "Pôle connect"
-msgstr "Connect Hub"
-
-#: .\templates\pages\nos_solutions.html:73
-msgid "Formation"
-msgstr "Training"
-
-#: .\templates\pages\nos_solutions.html:74
-msgid ""
-"Des formations pour renforcer les compétences et accompagner les "
-"transformations professionnelles."
-msgstr "Training to strengthen skills and support professional transformations."
-
-#: .\templates\pages\nos_solutions.html:78
-msgid "Coworking"
-msgstr "Coworking"
-
-#: .\templates\pages\nos_solutions.html:79
-msgid ""
-"Un espace de travail collaboratif pour partager, créer et avancer ensemble."
-msgstr "A collaborative workspace to share, create and move forward together."
-
-#: .\templates\pages\nos_solutions.html:83
-msgid "Bibliothèque numérique"
-msgstr "Digital library"
-
-#: .\templates\pages\nos_solutions.html:84
-msgid ""
-"Des ressources documentaires pour accéder rapidement à des connaissances "
-"utiles et fiables."
-msgstr "Documentary resources for quick access to useful and reliable knowledge."
-
-#: .\templates\pages\nos_solutions.html:88
-msgid "Événementiel"
-msgstr "Events"
-
-#: .\templates\pages\nos_solutions.html:89
-msgid ""
-"Des événements pensés pour fédérer, informer et encourager les échanges "
-"concrets."
-msgstr "Events designed to bring people together, inform and encourage practical exchange."
-
-#: .\templates\pages\nos_solutions.html:93
-msgid "Accompagnement des étudiants et chercheurs"
-msgstr "Support for students and researchers"
-
-#: .\templates\pages\nos_solutions.html:94
-msgid ""
-"Un soutien méthodologique pour structurer les projets, idées et démarches de "
-"recherche."
-msgstr "Methodological support to structure projects, ideas and research processes."
-
-#: .\templates\pages\nos_solutions.html:98
-msgid "Pôle data live"
-msgstr "DataLive Hub"
-
-#: .\templates\pages\nos_solutions.html:102
-msgid "Montage audiovisuel"
-msgstr "Video editing"
-
-#: .\templates\pages\nos_solutions.html:103
-msgid ""
-"Des contenus visuels clairs et percutants pour raconter les projets avec "
-"impact."
-msgstr "Clear and compelling visual content to tell project stories with impact."
-
-#: .\templates\pages\nos_solutions.html:107
-msgid "Communication digitale"
-msgstr "Digital communication"
-
-#: .\templates\pages\nos_solutions.html:108
-msgid ""
-"Une présence digitale pensée pour mieux informer, attirer et engager les "
-"audiences."
-msgstr "A digital presence designed to inform, attract and engage audiences."
-
-#: .\templates\pages\nos_solutions.html:112
-msgid "Podcast"
-msgstr "Podcast"
-
-#: .\templates\pages\nos_solutions.html:113
-msgid ""
-"Des conversations qui donnent de la voix aux idées, aux expertises et aux "
-"initiatives."
-msgstr "Conversations that give a voice to ideas, expertise and initiatives."
-
-#: .\templates\pages\nos_solutions.html:117
-msgid "Couverture événementielle"
-msgstr "Event coverage"
-
-#: .\templates\pages\nos_solutions.html:118
-msgid ""
-"Une mise en image professionnelle des événements pour renforcer leur portée "
-"et leur visibilité."
-msgstr "Professional event visuals to extend their reach and visibility."
-
-#: .\templates\pages\nos_solutions.html:122
-msgid "Visibilité profil professionnels"
-msgstr "Professional profile visibility"
-
-#: .\templates\pages\nos_solutions.html:123
-msgid ""
-"Une image digitale plus forte pour valoriser les compétences et les "
-"expertises."
-msgstr "A stronger digital image to showcase skills and expertise."
-
-#: .\templates\pages\nos_solutions.html:127
-msgid "Photographie"
-msgstr "Photography"
-
-#: .\templates\pages\nos_solutions.html:128
 msgid ""
 "Des clichés qui racontent une histoire, une ambiance et un niveau "
 "d'expertise."
 msgstr "Images that tell a story, capture an atmosphere and convey expertise."
 
-#: .\templates\pages\nos_solutions.html:132
-msgid "Couverture médiatique"
-msgstr "Media coverage"
-
-#: .\templates\pages\nos_solutions.html:133
 msgid ""
-"Une présence dans les médias pour amplifier la visibilité et la crédibilité "
-"des initiatives."
-msgstr "Media presence to amplify the visibility and credibility of initiatives."
+"Des contenus visuels clairs et percutants pour raconter les projets avec "
+"impact."
+msgstr ""
+"Clear and compelling visual content to tell project stories with impact."
 
-#: .\templates\pages\nos_solutions.html:136
-msgid "Smart Immo"
-msgstr "Smart Immo"
+msgid ""
+"Des conversations qui donnent de la voix aux idées, aux expertises et aux "
+"initiatives."
+msgstr "Conversations that give a voice to ideas, expertise and initiatives."
 
-#: .\templates\pages\nos_solutions.html:140
-msgid "Investissement Immobilier"
-msgstr "Real estate investment"
+msgid ""
+"Des données et analyses pour mieux comprendre les marchés, les territoires "
+"et les signaux émergents."
+msgstr ""
+"Data and analysis to better understand markets, territories and emerging "
+"signals."
 
-#: .\templates\pages\nos_solutions.html:141
+msgid "Des expertises au service des décisions concrètes."
+msgstr "Expertise at the service of concrete decisions."
+
+msgid "Des expertises connectées pour faire émerger de nouvelles possibilités"
+msgstr "Connected Expertise to Unlock New Possibilities"
+
+msgid ""
+"Des formations pour renforcer les compétences et accompagner les "
+"transformations professionnelles."
+msgstr ""
+"Training to strengthen skills and support professional transformations."
+
+msgid ""
+"Des formats souples pour répondre à un besoin ponctuel comme à une "
+"transformation de fond."
+msgstr ""
+"Flexible formats to meet both one-off needs and long-term transformation."
+
+msgid "Des idées qui prennent forme sur le terrain."
+msgstr "Ideas taking shape on the ground."
+
+msgid ""
+"Des missions qui donnent une place à votre jugement et à vos initiatives."
+msgstr "Assignments that give room for your judgment and initiative."
+
+msgid "Des outils lisibles pour des décisions plus solides."
+msgstr "Clear tools for stronger decisions."
+
 msgid ""
 "Des programmes d'investissements immobiliers adaptés au contexte du pays."
 msgstr "Real estate investment programs adapted to the country's context."
 
-#: .\templates\pages\nos_solutions.html:144
-msgid "Cap"
-msgstr "Cap"
-
-#: .\templates\pages\nos_solutions.html:148
-msgid "Programme spéciale"
-msgstr "Special program"
-
-#: .\templates\pages\nos_solutions.html:149
 msgid ""
-"Un programme spécial d'Elixir Group spécialisé dans la valorisation des "
-"collectivités territoriales et la promotion des investissements en RDC."
-msgstr "A special Elixir Group program focused on enhancing local authorities and promoting investment in the DRC."
+"Des projets dont l'utilité se mesure dans les organisations et les "
+"territoires."
+msgstr ""
+"Projects whose usefulness can be measured in organizations and territories."
 
-#: .\templates\pages\offres.html:4
-msgid "Nos offres - Elixir Group"
-msgstr "Our Offers - Elixir Group"
+msgid "Des pôles connectés pour des réponses qui avancent."
+msgstr "Connected hubs for solutions that move forward."
 
-#: .\templates\pages\offres.html:8
-msgid "Choisir le bon niveau d'accompagnement."
-msgstr "Choose the right level of support."
-
-#: .\templates\pages\offres.html:8
 msgid ""
-"Des formats souples pour répondre à un besoin ponctuel comme à une "
-"transformation de fond."
-msgstr "Flexible formats to meet both one-off needs and long-term transformation."
+"Des ressources documentaires pour accéder rapidement à des connaissances "
+"utiles et fiables."
+msgstr ""
+"Documentary resources for quick access to useful and reliable knowledge."
 
-#: .\templates\pages\offres.html:8
-msgid "Diagnostic"
-msgstr "Assessment"
+msgid "Des réalisations pensées avec, et pour, leurs utilisateurs."
+msgstr "Achievements designed with and for their users."
 
-#: .\templates\pages\offres.html:8
-msgid "Éclairer"
-msgstr "Clarify"
-
-#: .\templates\pages\offres.html:8
-msgid ""
-"Un regard externe pour comprendre votre situation, identifier les priorités "
-"et décider des prochaines étapes."
-msgstr "An outside perspective to understand your situation, identify priorities and decide on next steps."
-
-#: .\templates\pages\offres.html:8
-msgid "En parler"
-msgstr "Talk about it"
-
-#: .\templates\pages\offres.html:8
-msgid "Projet"
-msgstr "Project"
-
-#: .\templates\pages\offres.html:8
-msgid "Construire"
-msgstr "Build"
-
-#: .\templates\pages\offres.html:8
-msgid ""
-"Une équipe dédiée pour concevoir et déployer une solution adaptée à vos "
-"usages et à vos ressources."
-msgstr "A dedicated team to design and deploy a solution adapted to your uses and resources."
-
-#: .\templates\pages\offres.html:8
-msgid "Démarrer un projet"
-msgstr "Start a project"
-
-#: .\templates\pages\offres.html:8
-msgid "Partenariat"
-msgstr "Partnership"
-
-#: .\templates\pages\offres.html:8
-msgid "Accélérer"
-msgstr "Accelerate"
-
-#: .\templates\pages\offres.html:8
-msgid ""
-"Un accompagnement continu pour structurer la croissance, les collaborations "
-"et la mesure de l'impact."
-msgstr "Ongoing support to structure growth, collaborations and impact measurement."
-
-#: .\templates\pages\offres.html:8
-msgid "Devenir partenaire"
-msgstr "Become a partner"
-
-#: .\templates\pages\offres.html:10
-msgid "Services"
-msgstr "Services"
-
-#: .\templates\pages\offres.html:11
 msgid "Des services adaptés à votre personne, à votre emploi du temps."
 msgstr "Services adapted to you and your schedule."
 
-#: .\templates\pages\projets_realisation.html:4
-msgid "Projets et réalisations - Elixir Group"
-msgstr "Projects and Achievements - Elixir Group"
+msgid ""
+"Des solutions numériques pensées pour simplifier les décisions et améliorer "
+"les opérations."
+msgstr ""
+"Digital solutions designed to simplify decisions and improve operations."
 
-#: .\templates\pages\projets_realisation.html:9
+msgid ""
+"Des échanges quotidiens entre stratégie, données, technologie et terrain."
+msgstr ""
+"Daily collaboration across strategy, data, technology and field operations."
+
+msgid ""
+"Des événements pensés pour fédérer, informer et encourager les échanges "
+"concrets."
+msgstr ""
+"Events designed to bring people together, inform and encourage practical "
+"exchange."
+
+msgid "Devenir partenaire"
+msgstr "Become a partner"
+
+msgid "Diagnostic"
+msgstr "Assessment"
+
+msgid "Domaines d'intervention"
+msgstr "Areas of Expertise"
+
+msgid "Domaines d'intervention - Elixir Group"
+msgstr "Areas of Expertise - Elixir Group"
+
+msgid ""
+"Du diagnostic à la mise en œuvre, nous adaptons notre intervention à votre "
+"contexte et à vos objectifs."
+msgstr ""
+"From diagnosis to implementation, we adapt our approach to your context and "
+"objectives."
+
+msgid "Déconnexion"
+msgstr "Log Out"
+
+msgid "Découvrir Elixir Group"
+msgstr "Discover Elixir Group"
+
+msgid "Découvrir nos opportunités"
+msgstr "Discover Our Opportunities"
+
+msgid "Découvrir nos projets"
+msgstr "Discover Our Projects"
+
+msgid "Découvrir nos pôles"
+msgstr "Discover Our Hubs"
+
+msgid "Démarrer un projet"
+msgstr "Start a project"
+
+msgid "Déployer"
+msgstr "Deploy"
+
+msgid ""
+"Développement d'analyses territoriales et de solutions numériques au service "
+"du développement et de la promotion du projet Grand Inga."
+msgstr ""
+"Development of territorial analyses and digital solutions supporting the "
+"development and promotion of the Grand Inga project."
+
+msgid "Développement durable"
+msgstr "Sustainable Development"
+
+msgid ""
+"Développer des solutions innovantes permettant aux institutions, "
+"entreprises, organisations et citoyens de mieux comprendre, gérer et "
+"développer leurs territoires, leurs organisations et leurs activités."
+msgstr ""
+"Developing innovative solutions that enable institutions, businesses, "
+"organizations, and citizens to better understand, manage, and grow their "
+"territories, organizations, and activities."
+
+msgid "Développer les compétences et connecter les acteurs."
+msgstr "Developing skills and connecting key stakeholders."
+
+msgid ""
+"Elixir Connect — numérique, compétences, formations, événements et coworking."
+msgstr ""
+"Elixir Connect — digital services, skills, training, events and coworking."
+
+msgid ""
+"Elixir Data / SED — innovation territoriale, collecte, cartographie et "
+"outils décisionnels."
+msgstr ""
+"Elixir Data / SED — territorial innovation, data collection, mapping and "
+"decision-making tools."
+
+msgid ""
+"Elixir Data Solutions — données, SIG, cartographie, analyse territoriale, "
+"web et IA."
+msgstr ""
+"Elixir Data Solutions — data, GIS, mapping, territorial analysis, web and AI."
+
+msgid "Elixir Group"
+msgstr "Elixir Group"
+
+msgid ""
+"Elixir Group accompagne les organisations qui veulent passer à l'action avec "
+"des projets responsables, des outils adaptés et une ambition commune : créer "
+"une croissance durable."
+msgstr ""
+"Elixir Group supports organizations taking action through sustainable "
+"projects, tailored tools, and a shared goal: driving sustainable growth."
+
+msgid "Elixir Group en quelques mots"
+msgstr "Elixir Group in a Nutshell"
+
+msgid ""
+"Elixir Group est un écosystème africain qui réunit expertise, données, "
+"technologies et investissements intelligents dans tous les secteurs."
+msgstr ""
+"Elixir Group is an African ecosystem bringing together expertise, data, "
+"technology and smart investment across all sectors."
+
+msgid "Elixir Group est une structure faîtière"
+msgstr "Elixir Group is a parent organization"
+
+msgid ""
+"Elixir Group est une structure faîtière qui fédère plusieurs pôles "
+"spécialisés autour d'une ambition commune : transformer les données, les "
+"technologies et les idées en solutions à impact.<br><span>Notre écosystème "
+"intervient auprès des entreprises, institutions, organisations et porteurs "
+"de projets pour répondre aux enjeux de développement, d'innovation et de "
+"transformation des territoires."
+msgstr ""
+"Elixir Group is a parent organization uniting specialized hubs around a "
+"shared ambition: converting data, technology, and ideas into impactful "
+"solutions. <br> <span>Our ecosystem works with companies, institutions, "
+"organizations, and project leaders to address development, innovation, and "
+"territorial transformation challenges.</span>"
+
+msgid "Elixir en chiffres"
+msgstr "Elixir in Numbers"
+
+msgid "Elixir team"
+msgstr "Elixir team"
+
+msgid "En parler"
+msgstr "Talk about it"
+
+msgid "En savoir plus sur Elixir Group"
+msgstr "Learn More About Elixir Group"
+
+msgid "Entreprises et investisseurs"
+msgstr "Businesses & Investors"
+
+msgid "Envoyer le message"
+msgstr "Send the message"
+
+msgid "Esprit d'équipe"
+msgstr "Team Spirit"
+
+msgid "Excellence"
+msgstr "Excellence"
+
+msgid "Expertise de terrain"
+msgstr "Field Expertise"
+
+msgid "Experts"
+msgstr "Experts"
+
+msgid "Explorer nos solutions"
+msgstr "Explore Our Solutions"
+
+msgid "Formation"
+msgstr "Training"
+
+msgid "Formation &amp; connexion"
+msgstr "Training & Networking"
+
+msgid "Géomatique et SIG"
+msgstr "Geomatics and GIS"
+
+msgid ""
+"H&M Solutions — opérations, construction, transport, logistique, D-invest — "
+"investissement & conseil."
+msgstr ""
+"H&M Solutions — operations, construction, transport, logistics, D-invest — "
+"investment and advisory."
+
+msgid "Identification Légale RCCM"
+msgstr "Legal Identification (RCCM)"
+
+msgid "Imaginer aujourd'hui"
+msgstr "Envisioning Today"
+
+msgid "Impact"
+msgstr "Impact"
+
+msgid "Impact visible"
+msgstr "Visible impact"
+
+msgid "Innovation"
+msgstr "Innovation"
+
+msgid "Institutions publiques"
+msgstr "Public Institutions"
+
+msgid "Intelligence Territoriale"
+msgstr "Territorial Intelligence"
+
+msgid "Intelligence territoriale"
+msgstr "Territorial intelligence"
+
+msgid ""
+"Intelligence territoriale, innovation, connexion et solutions <br>au service "
+"des territoires africains"
+msgstr ""
+"Territorial intelligence, innovation, connectivity, and solutions "
+"<br>serving African territories"
+
+msgid "Interviews"
+msgstr "Interviews"
+
+msgid "Intégrité"
+msgstr "Integrity"
+
+msgid "Investissement Immobilier"
+msgstr "Real estate investment"
+
+msgid "Kinshasa, République démocratique du Congo"
+msgstr "Kinshasa, Democratic Republic of the Congo"
+
+msgid ""
+"L'adresse demandée est introuvable ou n'est plus disponible. Repartons "
+"depuis un point de départ clair."
+msgstr ""
+"The requested URL was not found or is no longer available. Let's start fresh "
+"from a clear starting point."
+
+msgid ""
+"L'ambition commune est de transformer les données, les technologies et les "
+"idées en solutions à impact direct"
+msgstr ""
+"Our shared ambition is to transform data, technology and ideas into "
+"solutions with direct impact"
+
+msgid "Les prochaines opportunités apparaîtront ici."
+msgstr "Upcoming opportunities will appear here."
+
+msgid "Liens rapides"
+msgstr "Quick Links"
+
+msgid "Lire les signaux du présent <br>pour décider avec justesse"
+msgstr "Reading Present Signals <br>to Make Accurate Decisions"
+
+msgid "Lire les transformations des territoires pour mieux préparer l'avenir."
+msgstr "Read how territories are changing to better prepare for the future."
+
+msgid "Media &amp; Information"
+msgstr "Media & Information"
+
+msgid "Mentions légales"
+msgstr "Legal Notice"
+
+msgid "Mesurer l'utilité de chaque solution sur le terrain."
+msgstr "Measure the usefulness of every solution on the ground."
+
+msgid "Mettre son talent au service de projets qui comptent."
+msgstr "Put your talent to work on projects that matter."
+
+msgid "Montage audiovisuel"
+msgstr "Video editing"
+
+msgid "Nom complet"
+msgstr "Full name"
+
+msgid "Nos grands domaines d'intervention"
+msgstr "Our Main Key Focus Areas"
+
+msgid "Nos offres"
+msgstr "Our Offers"
+
+msgid "Nos offres - Elixir Group"
+msgstr "Our Offers - Elixir Group"
+
+msgid "Nos partenaires"
+msgstr "Our Partners"
+
+msgid "Nos politiques"
+msgstr "Our Policies"
+
+msgid "Nos pôles"
+msgstr "Our hubs"
+
+msgid "Nos solutions"
+msgstr "Our Solutions"
+
+msgid "Nos solutions - Elixir Group"
+msgstr "Our Solutions - Elixir Group"
+
+msgid "Nos valeurs"
+msgstr "Our Values"
+
+msgid "Notre Mission"
+msgstr "Our Mission"
+
+msgid ""
+"Notre comité réunit des profils complémentaires en stratégie, données, "
+"technologie et développement territorial."
+msgstr ""
+"Our committee brings together complementary expertise in strategy, data, "
+"technology, and territorial development."
+
+msgid "Notre culture"
+msgstr "Our culture"
+
+msgid "Notre identité"
+msgstr "Our identity"
+
+msgid "Notre méthode"
+msgstr "Our method"
+
+msgid "Notre portefeuille"
+msgstr "Our portfolio"
+
+msgid ""
+"Notre rôle est de relier les bonnes personnes, les bons outils et les bonnes "
+"informations afin de faire avancer les projets de manière concrète."
+msgstr ""
+"Our role is to connect the right people, tools and information so projects "
+"can move forward in practical ways."
+
+msgid "Notre écosystème"
+msgstr "Our ecosystem"
+
+msgid "Notre écosystème - Elixir Group"
+msgstr "Our Ecosystem - Elixir Group"
+
+msgid ""
+"Notre équipe vous répond et vous oriente vers l'expertise la plus pertinente."
+msgstr ""
+"Our team will answer you and direct you to the most relevant expertise."
+
+msgid ""
+"Nous appuyons les décideurs avec des données fiables et des outils d'aide à "
+"la décision."
+msgstr ""
+"We support decision-makers with reliable data and decision-support tools."
+
+msgid ""
+"Nous concevons des solutions adaptées aux réalités locales et aux usages de "
+"leurs bénéficiaires."
+msgstr ""
+"We design solutions tailored to local realities and the needs of their "
+"beneficiaries."
+
+msgid ""
+"Nous construisons des collaborations durables avec celles et ceux qui "
+"partagent notre ambition pour des territoires africains plus résilients et "
+"plus innovants."
+msgstr ""
+"We build lasting partnerships with those who share our ambition for more "
+"resilient and innovative African territories."
+
+msgid "Nous construisons une réponse claire, réaliste et mesurable."
+msgstr "We build a clear, realistic and measurable response."
+
+msgid "Nous contacter"
+msgstr "Contact Us"
+
+msgid ""
+"Nous croisons la donnée, la technologie, le conseil, la formation et "
+"l'investissement pour concevoir des réponses adaptées aux réalités du "
+"terrain."
+msgstr ""
+"We combine data, technology, consulting, training and investment to design "
+"responses adapted to realities on the ground."
+
+msgid ""
+"Nous donnons une direction claire aux projets et relions chaque décision à "
+"un résultat concret."
+msgstr ""
+"We provide clear direction to projects and connect each decision to a "
+"concrete result."
+
+msgid ""
+"Nous faisons circuler les compétences pour faire avancer les projets avec "
+"méthode et confiance."
+msgstr ""
+"We foster skill-sharing to advance projects with structured methodology and "
+"trust."
+
+msgid ""
+"Nous intervenons là où la donnée, l'innovation et la coordination peuvent "
+"créer une différence mesurable."
+msgstr ""
+"We work where data, innovation and coordination can make a measurable "
+"difference."
+
+msgid "Nous partons de vos besoins, de vos données et de votre terrain."
+msgstr "We start with your needs, data and field reality."
+
+msgid ""
+"Nous rapprochons les expertises, les talents et les besoins pour créer un "
+"impact durable."
+msgstr "We connect expertise, talent, and needs to create a lasting impact."
+
+msgid ""
+"Nous recherchons des profils curieux, exigeants et prêts à travailler au "
+"plus près des réalités africaines."
+msgstr ""
+"We are looking for curious, demanding professionals ready to work closely "
+"with African realities."
+
+msgid ""
+"Nous réunissons des profils aux compétences complémentaires pour accompagner "
+"les organisations dans leur transformation numérique, leur stratégie de "
+"développement et la mise en œuvre de solutions concrètes, durables et utiles."
+msgstr ""
+"We bring together complementary profiles to support organizations in their "
+"digital transformation, development strategy and implementation of concrete, "
+"sustainable and useful solutions."
+
+msgid ""
+"Nous révélons les opportunités et accompagnons les projets vers une "
+"croissance responsable."
+msgstr "We uncover opportunities and guide projects toward sustainable growth."
+
+msgid ""
+"Nous transformons les données en informations claires, en analyses "
+"pertinentes et en opportunités concrètes pour mieux comprendre les marchés "
+"et les territoires africains."
+msgstr ""
+"We transform data into clear insights, relevant analyses, and concrete "
+"opportunities to better understand African markets and territories."
+
+msgid "Nous trouver"
+msgstr "Find us"
+
+msgid "Nous vous accompagnons jusqu'à l'appropriation de la solution."
+msgstr "We support you through the adoption of the solution."
+
+msgid "Opportunité - Elixir Group"
+msgstr "Opportunity - Elixir Group"
+
+msgid "Opportunités"
+msgstr "Opportunities"
+
+msgid "Organisations et communautés"
+msgstr "Organizations & Communities"
+
+msgid "Page introuvable - Elixir Group"
+msgstr "Page Not Found - Elixir Group"
+
+msgid "Parlez-nous de votre besoin"
+msgstr "Tell us what you need"
+
+msgid "Parlons de votre projet"
+msgstr "Let's talk about your project"
+
+msgid "Partenaires"
+msgstr "Partners"
+
+msgid "Partenariat"
+msgstr "Partnership"
+
+msgid "Photographie"
+msgstr "Photography"
+
+msgid "Podcast"
+msgstr "Podcast"
+
+msgid "Politique de protection des données"
+msgstr "Data Protection Policy"
+
+msgid "Politiques de confidentialité"
+msgstr "Privacy Policy"
+
+msgid "Produire, diffuser et valoriser l'information."
+msgstr "Producing, broadcasting, and promoting information."
+
+msgid "Professionnalisme"
+msgstr "Professionalism"
+
+msgid "Projet"
+msgstr "Project"
+
 msgid "Projets & réalisations"
 msgstr "Projects & achievements"
 
-#: .\templates\pages\projets_realisation.html:10
-msgid "Des idées qui prennent forme sur le terrain."
-msgstr "Ideas taking shape on the ground."
+msgid "Projets et réalisations"
+msgstr "Projects and Achievements"
 
-#: .\templates\pages\projets_realisation.html:11
+msgid "Projets et réalisations - Elixir Group"
+msgstr "Projects and Achievements - Elixir Group"
+
+msgid "Projets réalisés"
+msgstr "Completed Projects"
+
+msgid "Publications"
+msgstr "Publications"
+
+msgid "Pôle Service Elixir Data"
+msgstr "Elixir Data Services Hub"
+
+msgid "Pôle connect"
+msgstr "Connect Hub"
+
+msgid "Pôle data live"
+msgstr "DataLive Hub"
+
+msgid "Pôles spécialisés"
+msgstr "Specialized Hubs"
+
+msgid ""
+"Quelles sont les opportunités qui vous sont destinées en rejoignant Elixir "
+"Group ?"
+msgstr "Which opportunities are meant for you when joining Elixir Group?"
+
 msgid ""
 "Quelques exemples de la manière dont nos expertises se transforment en "
 "résultats concrets."
 msgstr "Examples of how our expertise translates into concrete results."
 
-#: .\templates\pages\projets_realisation.html:16
-msgid "Notre portefeuille"
-msgstr "Our portfolio"
+msgid "Recherche scientifique"
+msgstr "Scientific research"
 
-#: .\templates\pages\projets_realisation.html:17
-msgid "Des réalisations pensées avec, et pour, leurs utilisateurs."
-msgstr "Achievements designed with and for their users."
+msgid "Rejoindre Elixir Group"
+msgstr "Join Elixir Group"
 
-#: .\templates\pages\projets_realisation.html:22
-msgid "Cartographie du site hydroélectrique d'INGA"
-msgstr "Mapping of the INGA hydroelectric site"
+msgid "Responsabilité"
+msgstr "Responsibility"
 
-#: .\templates\pages\projets_realisation.html:23
-msgid ""
-"Étude détaillée des infrastructures et de leurs interactions pour soutenir "
-"la planification et la gestion de la centrale."
-msgstr "Detailed study of the infrastructure and its interactions to support power plant planning and management."
+msgid "Responsabilités réelles"
+msgstr "Real responsibilities"
 
-#: .\templates\pages\projets_realisation.html:27
+msgid "Retour à l'accueil"
+msgstr "Back to Home"
+
 msgid "Réseau de transport Ouest SNEL"
 msgstr "SNEL Western Transmission Network"
 
-#: .\templates\pages\projets_realisation.html:28
+msgid "Se connecter"
+msgstr "Log In"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Smart Immo"
+msgstr "Smart Immo"
+
+msgid "Solutions opérationnelles"
+msgstr "Operational Solutions"
+
+msgid "Technologie"
+msgstr "Technology"
+
 msgid ""
-"Modélisation et visualisation de données techniques pour mieux piloter les "
-"infrastructures de transport électrique."
-msgstr "Modeling and visualization of technical data to better manage electricity transmission infrastructure."
+"Transformer les données et les technologies en solutions opérationnelles."
+msgstr "Transforming data and technology into operational solutions."
 
-#: .\templates\pages\projets_realisation.html:32
-msgid "Conseil & stratégie"
-msgstr "Advisory & strategy"
+msgid "Transformer les projets en réalisations concrètes."
+msgstr "Turning projects into tangible achievements."
 
-#: .\templates\pages\projets_realisation.html:33
-msgid "Accompagnement du Comité congolais du Grand Inga"
-msgstr "Support for the Congolese Grand Inga Committee"
+msgid "Transparence"
+msgstr "Transparency"
 
-#: .\templates\pages\projets_realisation.html:34
+msgid "Travailler avec exigence, transparence et respect des réalités locales."
+msgstr ""
+"Work with high standards, transparency and respect for local realities."
+
 msgid ""
-"Appui stratégique et méthodologique pour la coordination des acteurs et la "
-"mise en œuvre du projet."
-msgstr "Strategic and methodological support for stakeholder coordination and project implementation."
+"Un accompagnement continu pour structurer la croissance, les collaborations "
+"et la mesure de l'impact."
+msgstr ""
+"Ongoing support to structure growth, collaborations and impact measurement."
 
-#: .\templates\pages\projets_realisation.html:39
 msgid ""
-"Développement d'analyses territoriales et de solutions numériques au service "
-"du développement et de la promotion du projet Grand Inga."
-msgstr "Development of territorial analyses and digital solutions supporting the development and promotion of the Grand Inga project."
+"Un accompagnement stratégique pour clarifier les priorités, structurer "
+"l’action et accélérer la transformation."
+msgstr ""
+"Strategic support to clarify priorities, structure action and accelerate "
+"transformation."
+
+msgid ""
+"Un espace de travail collaboratif pour partager, créer et avancer ensemble."
+msgstr "A collaborative workspace to share, create and move forward together."
+
+msgid "Un groupe, plusieurs expertises"
+msgstr "One group, multiple areas of expertise"
+
+msgid "Un groupe. Plusieurs expertises. Une même ambition."
+msgstr "One Group. Multiple Expertises. Single Ambition."
+
+msgid "Un impact qui se mesure sur le terrain"
+msgstr "Impact Measured on the Ground"
+
+msgid ""
+"Un programme spécial d'Elixir Group spécialisé dans la valorisation des "
+"collectivités territoriales et la promotion des investissements en RDC."
+msgstr ""
+"A special Elixir Group program focused on enhancing local authorities and "
+"promoting investment in the DRC."
+
+msgid ""
+"Un regard externe pour comprendre votre situation, identifier les priorités "
+"et décider des prochaines étapes."
+msgstr ""
+"An outside perspective to understand your situation, identify priorities and "
+"decide on next steps."
+
+msgid ""
+"Un soutien méthodologique pour structurer les projets, idées et démarches de "
+"recherche."
+msgstr ""
+"Methodological support to structure projects, ideas and research processes."
+
+msgid "Un écosystème de pôles spécialisés"
+msgstr "An Ecosystem of Specialized Hubs"
+
+msgid "Une chaîne de valeur pensée pour passer de l'idée au résultat."
+msgstr "A value chain designed to turn ideas into results."
+
+msgid ""
+"Une image digitale plus forte pour valoriser les compétences et les "
+"expertises."
+msgstr "A stronger digital image to showcase skills and expertise."
+
+msgid ""
+"Une lecture des opportunités et des partenariats pour soutenir les projets "
+"prometteurs et les initiatives à fort impact."
+msgstr ""
+"Insight into opportunities and partnerships to support promising projects "
+"and high-impact initiatives."
+
+msgid ""
+"Une mise en image professionnelle des événements pour renforcer leur portée "
+"et leur visibilité."
+msgstr "Professional event visuals to extend their reach and visibility."
+
+msgid "Une même ambition : rendre l'action plus utile."
+msgstr "One shared ambition: make action more useful."
+
+msgid ""
+"Une présence dans les médias pour amplifier la visibilité et la crédibilité "
+"des initiatives."
+msgstr ""
+"Media presence to amplify the visibility and credibility of initiatives."
+
+msgid ""
+"Une présence digitale pensée pour mieux informer, attirer et engager les "
+"audiences."
+msgstr "A digital presence designed to inform, attract and engage audiences."
+
+msgid "Une question, une idée ou un défi à résoudre ?"
+msgstr "A question, an idea or a challenge to solve?"
+
+msgid ""
+"Une équipe dédiée pour concevoir et déployer une solution adaptée à vos "
+"usages et à vos ressources."
+msgstr ""
+"A dedicated team to design and deploy a solution adapted to your uses and "
+"resources."
+
+msgid "Une équipe engagée pour transformer les idées en impact"
+msgstr "A Committed Team Turning Ideas into Impact"
+
+msgid "Urbanisme et aménagement"
+msgstr "Urban planning and development"
+
+msgid "Vision"
+msgstr "Vision"
+
+msgid "Vision stratégique"
+msgstr "Strategic Vision"
+
+msgid "Votre message"
+msgstr "Your message"
+
+msgid "Votre nom"
+msgstr "Your name"
+
+msgid ""
+"Vous avez besoin d'une solution numérique pour analyser, modéliser et "
+"piloter vos données spatiales ?"
+msgstr ""
+"Do you need a digital solution to analyze, model and manage your spatial "
+"data?"
+
+msgid ""
+"Vous avez besoin de collecter, organiser et visualiser les informations "
+"utiles à la prise de décision ?"
+msgstr ""
+"Do you need to collect, organize and visualize information useful for "
+"decision-making?"
+
+msgid ""
+"Vous avez besoin de connaître un territoire, ses enjeux et ses opportunités ?"
+msgstr ""
+"Do you need to understand a territory, its challenges and opportunities?"
+
+msgid ""
+"Vous cherchez un accompagnement pratique pour renforcer la qualité et la "
+"performance de vos projets ?"
+msgstr ""
+"Are you looking for practical support to improve the quality and performance "
+"of your projects?"
+
+msgid "Vous devriez vous connecter pour voir le contenu de cette page"
+msgstr "You should log in to view the content of this page"
+
+msgid ""
+"Vous portez une idée, une expertise ou un projet à fort potentiel ? "
+"Rejoignez un écosystème qui transforme les défis africains en solutions "
+"utiles, inclusives et durables."
+msgstr ""
+"Have an idea, expertise, or high-potential project? Join an ecosystem that "
+"transforms African challenges into practical, inclusive, and sustainable "
+"solutions."
+
+msgid ""
+"Vous souhaitez appuyer une étude, une analyse ou une innovation avec un "
+"cadre scientifique solide ?"
+msgstr ""
+"Would you like to support a study, analysis or innovation with a strong "
+"scientific framework?"
+
+msgid ""
+"Vous souhaitez mieux comprendre les dynamiques, les tendances et les leviers "
+"de développement ?"
+msgstr ""
+"Would you like to better understand dynamics, trends and development levers?"
+
+msgid ""
+"Vous voulez concevoir des projets urbains et territoriaux plus cohérents, "
+"durables et efficaces ?"
+msgstr ""
+"Do you want to design more coherent, sustainable and effective urban and "
+"territorial projects?"
+
+msgid "home"
+msgstr "home"
+
+msgid "les territoires de demain"
+msgstr "the Territories of Tomorrow"
+
+msgid "photo de la communauté elixir"
+msgstr "Photo of the Elixir community"
+
+msgid "vous@exemple.com"
+msgstr "you@example.com"
+
+msgid "À propos"
+msgstr "About Us"
+
+msgid "À propos - Elixir Group"
+msgstr "About - Elixir Group"
+
+msgid "À propos de nous"
+msgstr "About Us"
+
+msgid "Éclairer"
+msgstr "Clarify"
+
+msgid "Écosystème"
+msgstr "Ecosystem"
+
+msgid "Équipe pluridisciplinaire"
+msgstr "Multidisciplinary team"
+
+msgid ""
+"Étude détaillée des infrastructures et de leurs interactions pour soutenir "
+"la planification et la gestion de la centrale."
+msgstr ""
+"Detailed study of the infrastructure and its interactions to support power "
+"plant planning and management."
+
+msgid "Événementiel"
+msgstr "Events"
+
+msgid "Événements"
+msgstr "Events"
+
+msgid "DataLive · Actualités"
+msgstr "DataLive · News"
+
+msgid "Les actualités d'Elixir Group."
+msgstr "Elixir Group news."
+
+msgid "Retrouvez nos dernières informations, analyses et publications."
+msgstr "Explore our latest news, analysis, and publications."
+
+msgid "Aucune actualité publiée pour le moment."
+msgstr "No news has been published yet."
+
+msgid "Les prochaines actualités apparaîtront ici."
+msgstr "Upcoming news will appear here."
+
+msgid "DataLive · Agenda"
+msgstr "DataLive · Events"
+
+msgid "Les événements qui réunissent les idées et les acteurs."
+msgstr "Events that bring ideas and people together."
+
+msgid "Retrouvez les rencontres, ateliers et temps forts organisés par Elixir Group."
+msgstr "Discover the meetings, workshops, and highlights organized by Elixir Group."
+
+msgid "Aucun événement publié pour le moment."
+msgstr "No events have been published yet."
+
+msgid "Les prochains rendez-vous apparaîtront ici dès leur ajout dans l'administration."
+msgstr "Upcoming events will appear here as soon as they are added in the admin."
+
+msgid "DataLive · Interviews"
+msgstr "DataLive · Interviews"
+
+msgid "Les voix qui font avancer les territoires."
+msgstr "The voices driving territories forward."
+
+msgid "Découvrez les échanges et les perspectives des intervenants de notre écosystème."
+msgstr "Discover the conversations and perspectives of speakers across our ecosystem."
+
+msgid "Aucune interview publiée pour le moment."
+msgstr "No interviews have been published yet."
+
+msgid "Les prochaines conversations apparaîtront ici."
+msgstr "Upcoming conversations will appear here."
+
+msgid "DataLive · Publications"
+msgstr "DataLive · Publications"
+
+msgid "Des ressources pour mieux décider."
+msgstr "Resources for better decision-making."
+
+msgid "Guides, notes et contenus de référence sur les territoires africains."
+msgstr "Guides, briefs, and reference materials on African territories."
+
+msgid "Aucune publication disponible pour le moment."
+msgstr "No publications are available yet."
+
+msgid "Les prochaines ressources apparaîtront ici."
+msgstr "Upcoming resources will appear here."
+
+msgid "Hydroelectricité"
+msgstr "Hydropower"
+
+msgid "Cartographie des infrastructures du site hydroélectrique d'INGA"
+msgstr "Mapping the infrastructure of the INGA hydroelectric site"
+
+msgid "Accompagnement du Comité congolais des grands barrages"
+msgstr "Support for the Congolese Committee for Large Dams"

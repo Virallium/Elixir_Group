@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}Publications - Elixir Group{% endblock title %}
+{% block title %}{% trans "Publications - Elixir Group" %}{% endblock title %}
 {% block active %}
     <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+	<li><a href="{% url 'evenements' %}">{% translate "Événements" %}</a></li>
     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
     <li><a href="{% url 'opportunites' %}" >{% translate "Opportunités" %}</a></li>
     <li><a href="{% url 'publications' %}" class='active-link'>{% translate "Publications" %}</a></li>
 {% endblock active %}
 {% block contents %}
 <div class="page-shell publications-page">
-	<section class="page-hero page-hero-blue"><p class="eyebrow">DataLive · Publications</p><h1>Des ressources pour mieux décider.</h1><p>Guides, notes et contenus de référence sur les territoires africains.</p></section>
+	<section class="page-hero page-hero-blue"><p class="eyebrow">{% trans "DataLive · Publications" %}</p><h1>{% trans "Des ressources pour mieux décider." %}</h1><p>{% trans "Guides, notes et contenus de référence sur les territoires africains." %}</p></section>
 	<section class="content-section">
 		{% if publications %}
 			<div class="boxs datalive-grid">
@@ -25,7 +25,7 @@
 				{% endfor %}
 			</div>
 		{% else %}
-			<div class="empty-state"><i class="fa-solid fa-file-lines"></i><h2>Aucune publication disponible pour le moment.</h2><p>Les prochaines ressources apparaîtront ici.</p></div>
+			<div class="empty-state"><i class="fa-solid fa-file-lines"></i><h2>{% trans "Aucune publication disponible pour le moment." %}</h2><p>{% trans "Les prochaines ressources apparaîtront ici." %}</p></div>
 		{% endif %}
 	</section>
 </div>

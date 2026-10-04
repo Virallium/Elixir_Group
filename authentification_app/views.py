@@ -15,10 +15,10 @@ def login_view(request):
             
             if user is not None:
                 auth_login(request, user)
-                messages.success(request, 'Connexion reussi')
+                messages.success(request, 'Connexion réussie.')
                 return redirect('home')
             else :
-                messages.error(request,"Il y'a un problème")
+                messages.error(request, 'Un problème est survenu.')
             
             
         
@@ -34,7 +34,7 @@ def register_view(request):
                 first_name=form.cleaned_data['name'],
                 password=form.cleaned_data['password'],
             )
-            messages.success(request, 'Compte crée avec succès')
+            messages.success(request, 'Compte créé avec succès.')
             return redirect('login')
         else:
             messages.error(request, "Le formulaire n'est pas valide")
@@ -51,7 +51,7 @@ def Admin_login(request):
             user = authenticate(username=username, password=password)
             if user is not None and user.username=='Elixir_Groupe':
                 auth_login(request, user)
-                messages.success(request,'Connexion réussi!')            
+                messages.success(request, 'Connexion réussie !')
                 return redirect('dashboard')
             messages.error(request, "Identifiants du personnel incorrects.")
     return render(request, 'admin/auth/personnels.html', {'form': form})

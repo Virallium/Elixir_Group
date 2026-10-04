@@ -29,8 +29,8 @@
 {% block contents %}
 <main class="auth-page">
 	<section class="auth-card" aria-labelledby="register-title">
-		<h1 id="register-title">Creer un compte</h1>
-		<p>Rejoignez l espace Elixir Group.</p>
+		<h1 id="register-title">Créer un compte</h1>
+		<p>Rejoignez l’espace Elixir Group.</p>
 
 		{% if form.non_field_errors %}
 			<div class="auth-errors" role="alert">{{ form.non_field_errors }}</div>
@@ -53,9 +53,9 @@
 				{{ form.password }}
 				{% for error in form.password.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
 			</div>
-			<button class="auth-submit" type="submit">Creer mon compte</button>
+			<button class="auth-submit" type="submit">Créer mon compte</button>
 		</form>
-		<p class="auth-switch">Deja inscrit ? <a href="{% url 'login' %}">Se connecter</a></p>
+		<p class="auth-switch">Déjà inscrit ? <a href="{% url 'login' %}">Se connecter</a></p>
 	</section>
 </main>
 {% endblock contents %}

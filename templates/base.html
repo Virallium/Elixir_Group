@@ -76,10 +76,10 @@
         "url": "{{ request.build_absolute_uri }}",
         "logo": "{% static 'photos/logo_elixir.png' %}",
         "description": "Écosystème africain spécialisé dans la donnée, la technologie, l'innovation et le développement territorial.",
-        "email": "elixirgroup@gmail.com",
+        "email": "elixirgroupe94@gmail.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Ngaliema Binza Pigeon n°20",
+          "streetAddress": "N°45 Av, KASA-VUBU, C/NGIRI-NGIRI",
           "addressLocality": "Kinshasa",
           "addressCountry": "CD"
         },
@@ -138,7 +138,7 @@
                     {% block active %}
                     <li><a href="{% url 'home' %}" class="active-link">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
                     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-                    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+                    <li><a href="{% url 'evenements' %}">{% translate "Événements" %}</a></li>
                     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
                     <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
                     <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
@@ -153,16 +153,18 @@
               <div class="about" id="about">
                 <ul>
                   <li>
-                    <p class="plus">{% translate "Apropos" %} <i class="fa-solid fa-plus"></i> </p>
+                    <p class="plus">{% translate "À propos" %} <i class="fa-solid fa-plus"></i> </p>
                   </li>
-                  <div class="appear">
-                    <li><a href="{% url 'about' %}">{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
-                    <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
-                    <li><a href="{% url 'interventions' %}">{% translate "Domaines d'intervention" %}</a></li>
-                    <li><a href="{% url 'solutions' %}">{% translate "Nos solutions" %}</a></li>
-                    <li><a href="{% url 'offres' %}">{% translate "Nos offres" %}</a></li>
-                    <li><a href="{% url 'projets' %}">{% translate "Projets et réalisations" %}</a></li>
-                  </div>
+                  {% block active2 %}
+                    <div class="appear">
+                    <li><a href='{% url "about" %}'>{% translate "À propos de nous" %} <i class="fa-solid fa-plus"></i> </a></li>
+                    <li><a href="{% url 'ecosysteme' %}">{% translate "Écosystème" %}</a></li>
+                        <li><a href="{% url 'interventions' %}">{% translate "Domaines d'intervention" %}</a></li>
+                        <li><a href="{% url 'solutions' %}">{% translate "Nos solutions" %}</a></li>
+                        <li><a href="{% url 'offres' %}">{% translate "Nos offres" %}</a></li>
+                        <li><a href="{% url 'projets' %}">{% translate "Projets et réalisations" %}</a></li>
+                    </div>
+                {% endblock active2 %}
                 </ul>
               </div>
             </li>
@@ -220,8 +222,8 @@
               <img src=" {% static 'photos/nature.jpeg' %}">
               <div class="text">
                 <h3>{% translate 'Elixir Group'%}</h3>
-                <h1>{% translate "Intelligence territoriale, innovation, connexion et les solutions <br>au services des territoires africains"%}</h1>
-                <p>{%translate "Elixir Group est un écosystème africain qui réunit expertise, données, technologies et investissements intelligente dans tous les secteurs."%}</p>
+                <h1>{% translate "Intelligence territoriale, innovation, connexion et solutions <br>au service des territoires africains"%}</h1>
+                <p>{%translate "Elixir Group est un écosystème africain qui réunit expertise, données, technologies et investissements intelligents dans tous les secteurs."%}</p>
                 <div class="btns">
                   <a href="{% url 'about' %}">
                     {%translate 'Découvrir Elixir Group'%}
@@ -283,15 +285,15 @@
         <div class="about_us">
           <div class="left skeleton">
             <h3>{%translate "Elixir Group en quelques mots"%}</h3>
-            <p>{%translate "Un groupe. Plusieurs expertise. Une même ambition."%}</p>
-            <p>{%translate "Elixir Group est une structure faîtière qui fédère plusieurs pôles spécialisés autour d'une ambition commune: celle de transformer les données, les technologies et les idées en solutions à impact <br> <span>Notre écosystème intervient auprès des entreprises, instituitions, organisations et porteurs de projets pour repondre aux enjeux de developpement, d'innovation et de transformation des territoirres"%}</span></p>
+            <p>{%translate "Un groupe. Plusieurs expertises. Une même ambition."%}</p>
+            <p>{%translate "Elixir Group est une structure faîtière qui fédère plusieurs pôles spécialisés autour d'une ambition commune : transformer les données, les technologies et les idées en solutions à impact.<br><span>Notre écosystème intervient auprès des entreprises, institutions, organisations et porteurs de projets pour répondre aux enjeux de développement, d'innovation et de transformation des territoires."%}</span></p>
             <a href="{% url 'about' %}">{%translate "En savoir plus sur Elixir Group"%}</a>
           </div>
           <div class="right skeleton">
             <h3>
               <div class="icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>{%translate "Notre Mission"%}
             </h3>
-            <p>{%translate "Développer des solutions innovantes permettantsaux institutions,entreprises, organisations et citoyens de mieux comprendre, gérer et développer leurs territoires , leurs organisations et leurs activités."%} </p>
+            <p>{%translate "Développer des solutions innovantes permettant aux institutions, entreprises, organisations et citoyens de mieux comprendre, gérer et développer leurs territoires, leurs organisations et leurs activités."%} </p>
             <div class="values">
               <h3>
                 <div class="icon"><i class="fa-solid fa-gem" aria-hidden="true"></i></div>{%translate "Nos valeurs"%}
@@ -302,7 +304,7 @@
                 <li>{%translate "Intégrité"%}</li>
                 <li>{%translate "Responsabilité"%}</li>
                 <li>{%translate "Collaboration"%}</li>
-                <li>{%translate "Professionalisme"%}</li>
+                <li>{%translate "Professionnalisme"%}</li>
                 <li>{%translate "Esprit d'équipe"%}</li>
                 <li>{%translate "Transparence"%}</li>
                 <li>{%translate "Création de valeur"%}</li>
@@ -332,7 +334,7 @@
             <div class="box skeleton">
               <div class="icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
               <h4>{%translate "Formation &amp; connexion"%}</h4>
-              <p>{%translate "Développer les compétence et connecter les acteurs."%}</p>
+              <p>{%translate "Développer les compétences et connecter les acteurs."%}</p>
             </div>
             <div class="box skeleton">
               <div class="icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
@@ -342,7 +344,7 @@
             <div class="box skeleton">
               <div class="icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
               <h4>{%translate "Investissement &amp; conseil"%}</h4>
-              <p>{%translate "Accompagner les entrepriser, projets et opportunités d'investissements"%}.</p>
+              <p>{%translate "Accompagner les entreprises, projets et opportunités d'investissement."%}</p>
             </div>
           </div>
         </div>

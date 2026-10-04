@@ -5,15 +5,15 @@
 {% block active %}
     <li ><a href="{% url 'home' %}">{% translate "home" %}<i class="fa-solid fa-plus"></i></a></li>
     <li><a href="{% url 'articles' %}">{% translate "Articles" %}</a></li>
-    <li><a href="{% url 'evenements' %}">{% translate "Evenements" %}</a></li>
+    <li><a href="{% url 'evenements' %}">{% translate "Événements" %}</a></li>
     <li><a href="{% url 'interviews' %}">{% translate "Interviews" %}</a></li>
     <li><a href="{% url 'opportunites' %}">{% translate "Opportunités" %}</a></li>
     <li><a href="{% url 'publications' %}">{% translate "Publications" %}</a></li>
 {% endblock active %}
 {% block active2 %}
     <div class="appear">
-        <li><a href='{% url "about" %}'>{% translate "Surnous" %} <i class="fa-solid fa-plus"></i> </a></li>
-        <li><a href="{% url 'ecosysteme' %}">{% translate "Ecosystème" %}</a></li>
+        <li><a href='{% url "about" %}'>{% translate "À propos de nous" %} <i class="fa-solid fa-plus"></i> </a></li>
+        <li><a href="{% url 'ecosysteme' %}">{% translate "Écosystème" %}</a></li>
         <li><a href="{% url 'interventions' %}" >{% translate "Domaines d'intervention" %}</a></li>
         <li><a href="{% url 'solutions' %}" >{% translate "Nos solutions" %}</a></li>
         <li><a href="{% url 'offres' %}" >{% translate "Nos offres" %}</a></li>
@@ -36,22 +36,25 @@
 
         <div class="boxs project-grid">
             <article class="box project-card">
-                <h3 class="eyebrow">{% trans "Cartographie du site hydroélectrique d'INGA" %}</h3>
+                <span class="project-tag">{% trans 'Hydroelectricité' %}</span>
+                <h3 class="eyebrow">{% trans "Cartographie des infrastructures du site hydroélectrique d'INGA" %}</h3>
                 <p>{% trans "Étude détaillée des infrastructures et de leurs interactions pour soutenir la planification et la gestion de la centrale." %}</p>
             </article>
 
             <article class="box project-card">
+                <span class="project-tag">{% trans 'Connexion' %}</span>
                 <h3>{% trans "Réseau de transport Ouest SNEL" %}</h3>
-                <p>{% trans "Modélisation et visualisation de données techniques pour mieux piloter les infrastructures de transport électrique." %}</p>
+                <p>{% trans "Cartographie de transport ouest SNEL" %}</p>
             </article>
 
             <article class="box project-card">
                 <span class="project-tag">{% trans "Conseil & stratégie" %}</span>
-                <h3>{% trans "Accompagnement du Comité congolais du Grand Inga" %}</h3>
+                <h3>{% trans "Accompagnement du Comité congolais des grands barrages" %}</h3>
                 <p>{% trans "Appui stratégique et méthodologique pour la coordination des acteurs et la mise en œuvre du projet." %}</p>
             </article>
 
             <article class="box project-card">
+                <span class="project-tag"> {% trans 'Analyse territoriale' %}</span>
                 <h3>{% trans "Analyse territoriale" %}</h3>
                 <p>{% trans "Développement d'analyses territoriales et de solutions numériques au service du développement et de la promotion du projet Grand Inga." %}</p>
             </article>

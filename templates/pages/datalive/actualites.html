@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}Actualités - Elixir Group{% endblock title %}
+{% block title %}{% trans "Actualités - Elixir Group" %}{% endblock title %}
 
 {% block contents %}
     <section class="actualites actualites-page">
-        <h1>Suivez Vos actualité sans aucune intérruption dans notre application.</h1>
-        <p>Informez-vous toujours ici en avance</p>
-        <a href="{% url 'home' %}">Elixir Group</a>
+        <h1>{% trans "Suivez vos actualités sans aucune interruption dans notre application." %}</h1>
+        <p>{% trans "Informez-vous toujours ici en avant-première." %}</p>
+        <a href="{% url 'home' %}">{% trans "Elixir Group" %}</a>
         <div class="boxs">
             
         </div>
